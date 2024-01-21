@@ -1,0 +1,877 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Untitled},
+  pdfauthor={Bbosa Robert},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+\title{Untitled}
+\author{Bbosa Robert}
+\date{4/27/2020}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{pulling-the-coronvirus-data-from-john-hopkins-repo}{%
+\section{Pulling the coronvirus data from John Hopkins
+repo}\label{pulling-the-coronvirus-data-from-john-hopkins-repo}}
+
+\hypertarget{httpsgithub.comcssegisanddatacovid-19}{%
+\section{\texorpdfstring{\url{https://github.com/CSSEGISandData/COVID-19}}{https://github.com/CSSEGISandData/COVID-19}}\label{httpsgithub.comcssegisanddatacovid-19}}
+
+\#------------ Pulling confirmed cases------------
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{conf_url <-}\StringTok{ "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"}
+\NormalTok{raw_conf <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\DataTypeTok{file =}\NormalTok{ conf_url, }\DataTypeTok{stringsAsFactors =} \OtherTok{FALSE}\NormalTok{)}
+
+\KeywordTok{lapply}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\KeywordTok{ncol}\NormalTok{(raw_conf), }\ControlFlowTok{function}\NormalTok{(i)\{}
+  \ControlFlowTok{if}\NormalTok{(}\KeywordTok{all}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(raw_conf[, i])))\{}
+\NormalTok{    raw_conf <<-}\StringTok{ }\NormalTok{raw_conf[, }\OperatorTok{-}\NormalTok{i]}
+    \KeywordTok{return}\NormalTok{(}\KeywordTok{print}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"Column"}\NormalTok{, }\KeywordTok{names}\NormalTok{(raw_conf)[i], }\StringTok{"is missing"}\NormalTok{, }\DataTypeTok{sep =} \StringTok{" "}\NormalTok{)))}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+    \KeywordTok{return}\NormalTok{(}\OtherTok{NULL}\NormalTok{)}
+\NormalTok{  \}}
+\NormalTok{\})}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [[1]]
+## NULL
+## 
+## [[2]]
+## NULL
+## 
+## [[3]]
+## NULL
+## 
+## [[4]]
+## NULL
+## 
+## [[5]]
+## NULL
+## 
+## [[6]]
+## NULL
+## 
+## [[7]]
+## NULL
+## 
+## [[8]]
+## NULL
+## 
+## [[9]]
+## NULL
+## 
+## [[10]]
+## NULL
+## 
+## [[11]]
+## NULL
+## 
+## [[12]]
+## NULL
+## 
+## [[13]]
+## NULL
+## 
+## [[14]]
+## NULL
+## 
+## [[15]]
+## NULL
+## 
+## [[16]]
+## NULL
+## 
+## [[17]]
+## NULL
+## 
+## [[18]]
+## NULL
+## 
+## [[19]]
+## NULL
+## 
+## [[20]]
+## NULL
+## 
+## [[21]]
+## NULL
+## 
+## [[22]]
+## NULL
+## 
+## [[23]]
+## NULL
+## 
+## [[24]]
+## NULL
+## 
+## [[25]]
+## NULL
+## 
+## [[26]]
+## NULL
+## 
+## [[27]]
+## NULL
+## 
+## [[28]]
+## NULL
+## 
+## [[29]]
+## NULL
+## 
+## [[30]]
+## NULL
+## 
+## [[31]]
+## NULL
+## 
+## [[32]]
+## NULL
+## 
+## [[33]]
+## NULL
+## 
+## [[34]]
+## NULL
+## 
+## [[35]]
+## NULL
+## 
+## [[36]]
+## NULL
+## 
+## [[37]]
+## NULL
+## 
+## [[38]]
+## NULL
+## 
+## [[39]]
+## NULL
+## 
+## [[40]]
+## NULL
+## 
+## [[41]]
+## NULL
+## 
+## [[42]]
+## NULL
+## 
+## [[43]]
+## NULL
+## 
+## [[44]]
+## NULL
+## 
+## [[45]]
+## NULL
+## 
+## [[46]]
+## NULL
+## 
+## [[47]]
+## NULL
+## 
+## [[48]]
+## NULL
+## 
+## [[49]]
+## NULL
+## 
+## [[50]]
+## NULL
+## 
+## [[51]]
+## NULL
+## 
+## [[52]]
+## NULL
+## 
+## [[53]]
+## NULL
+## 
+## [[54]]
+## NULL
+## 
+## [[55]]
+## NULL
+## 
+## [[56]]
+## NULL
+## 
+## [[57]]
+## NULL
+## 
+## [[58]]
+## NULL
+## 
+## [[59]]
+## NULL
+## 
+## [[60]]
+## NULL
+## 
+## [[61]]
+## NULL
+## 
+## [[62]]
+## NULL
+## 
+## [[63]]
+## NULL
+## 
+## [[64]]
+## NULL
+## 
+## [[65]]
+## NULL
+## 
+## [[66]]
+## NULL
+## 
+## [[67]]
+## NULL
+## 
+## [[68]]
+## NULL
+## 
+## [[69]]
+## NULL
+## 
+## [[70]]
+## NULL
+## 
+## [[71]]
+## NULL
+## 
+## [[72]]
+## NULL
+## 
+## [[73]]
+## NULL
+## 
+## [[74]]
+## NULL
+## 
+## [[75]]
+## NULL
+## 
+## [[76]]
+## NULL
+## 
+## [[77]]
+## NULL
+## 
+## [[78]]
+## NULL
+## 
+## [[79]]
+## NULL
+## 
+## [[80]]
+## NULL
+## 
+## [[81]]
+## NULL
+## 
+## [[82]]
+## NULL
+## 
+## [[83]]
+## NULL
+## 
+## [[84]]
+## NULL
+## 
+## [[85]]
+## NULL
+## 
+## [[86]]
+## NULL
+## 
+## [[87]]
+## NULL
+## 
+## [[88]]
+## NULL
+## 
+## [[89]]
+## NULL
+## 
+## [[90]]
+## NULL
+## 
+## [[91]]
+## NULL
+## 
+## [[92]]
+## NULL
+## 
+## [[93]]
+## NULL
+## 
+## [[94]]
+## NULL
+## 
+## [[95]]
+## NULL
+## 
+## [[96]]
+## NULL
+## 
+## [[97]]
+## NULL
+## 
+## [[98]]
+## NULL
+## 
+## [[99]]
+## NULL
+## 
+## [[100]]
+## NULL
+\end{verbatim}
+
+\hypertarget{transforming-the-data-from-wide-to-long}{%
+\section{Transforming the data from wide to
+long}\label{transforming-the-data-from-wide-to-long}}
+
+\hypertarget{creating-new-data-frame}{%
+\section{Creating new data frame}\label{creating-new-data-frame}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyr)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 3.6.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_conf <-}\StringTok{ }\NormalTok{raw_conf[, }\DecValTok{1}\OperatorTok{:}\DecValTok{4}\NormalTok{]}
+
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{5}\OperatorTok{:}\KeywordTok{ncol}\NormalTok{(raw_conf))\{}
+
+\NormalTok{  raw_conf[,i] <-}\StringTok{ }\KeywordTok{as.integer}\NormalTok{(raw_conf[,i])}
+  \CommentTok{# raw_conf[,i] <- ifelse(is.na(raw_conf[, i]), 0 , raw_conf[, i])}
+    \KeywordTok{print}\NormalTok{(}\KeywordTok{names}\NormalTok{(raw_conf)[i])}
+
+  \ControlFlowTok{if}\NormalTok{(i }\OperatorTok{==}\StringTok{ }\DecValTok{5}\NormalTok{)\{}
+\NormalTok{    df_conf[[}\KeywordTok{names}\NormalTok{(raw_conf)[i]]] <-}\StringTok{ }\NormalTok{raw_conf[, i]}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{    df_conf[[}\KeywordTok{names}\NormalTok{(raw_conf)[i]]] <-}\StringTok{ }\NormalTok{raw_conf[, i] }\OperatorTok{-}\StringTok{ }\NormalTok{raw_conf[, i }\OperatorTok{-}\StringTok{ }\DecValTok{1}\NormalTok{]}
+\NormalTok{  \}}
+
+
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "X1.22.20"
+## [1] "X1.23.20"
+## [1] "X1.24.20"
+## [1] "X1.25.20"
+## [1] "X1.26.20"
+## [1] "X1.27.20"
+## [1] "X1.28.20"
+## [1] "X1.29.20"
+## [1] "X1.30.20"
+## [1] "X1.31.20"
+## [1] "X2.1.20"
+## [1] "X2.2.20"
+## [1] "X2.3.20"
+## [1] "X2.4.20"
+## [1] "X2.5.20"
+## [1] "X2.6.20"
+## [1] "X2.7.20"
+## [1] "X2.8.20"
+## [1] "X2.9.20"
+## [1] "X2.10.20"
+## [1] "X2.11.20"
+## [1] "X2.12.20"
+## [1] "X2.13.20"
+## [1] "X2.14.20"
+## [1] "X2.15.20"
+## [1] "X2.16.20"
+## [1] "X2.17.20"
+## [1] "X2.18.20"
+## [1] "X2.19.20"
+## [1] "X2.20.20"
+## [1] "X2.21.20"
+## [1] "X2.22.20"
+## [1] "X2.23.20"
+## [1] "X2.24.20"
+## [1] "X2.25.20"
+## [1] "X2.26.20"
+## [1] "X2.27.20"
+## [1] "X2.28.20"
+## [1] "X2.29.20"
+## [1] "X3.1.20"
+## [1] "X3.2.20"
+## [1] "X3.3.20"
+## [1] "X3.4.20"
+## [1] "X3.5.20"
+## [1] "X3.6.20"
+## [1] "X3.7.20"
+## [1] "X3.8.20"
+## [1] "X3.9.20"
+## [1] "X3.10.20"
+## [1] "X3.11.20"
+## [1] "X3.12.20"
+## [1] "X3.13.20"
+## [1] "X3.14.20"
+## [1] "X3.15.20"
+## [1] "X3.16.20"
+## [1] "X3.17.20"
+## [1] "X3.18.20"
+## [1] "X3.19.20"
+## [1] "X3.20.20"
+## [1] "X3.21.20"
+## [1] "X3.22.20"
+## [1] "X3.23.20"
+## [1] "X3.24.20"
+## [1] "X3.25.20"
+## [1] "X3.26.20"
+## [1] "X3.27.20"
+## [1] "X3.28.20"
+## [1] "X3.29.20"
+## [1] "X3.30.20"
+## [1] "X3.31.20"
+## [1] "X4.1.20"
+## [1] "X4.2.20"
+## [1] "X4.3.20"
+## [1] "X4.4.20"
+## [1] "X4.5.20"
+## [1] "X4.6.20"
+## [1] "X4.7.20"
+## [1] "X4.8.20"
+## [1] "X4.9.20"
+## [1] "X4.10.20"
+## [1] "X4.11.20"
+## [1] "X4.12.20"
+## [1] "X4.13.20"
+## [1] "X4.14.20"
+## [1] "X4.15.20"
+## [1] "X4.16.20"
+## [1] "X4.17.20"
+## [1] "X4.18.20"
+## [1] "X4.19.20"
+## [1] "X4.20.20"
+## [1] "X4.21.20"
+## [1] "X4.22.20"
+## [1] "X4.23.20"
+## [1] "X4.24.20"
+## [1] "X4.25.20"
+## [1] "X4.26.20"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_conf1 <-}\StringTok{  }\NormalTok{df_conf }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidyr}\OperatorTok{::}\KeywordTok{pivot_longer}\NormalTok{(}\DataTypeTok{cols =}\NormalTok{ dplyr}\OperatorTok{::}\KeywordTok{starts_with}\NormalTok{(}\StringTok{"X"}\NormalTok{),}
+                                             \DataTypeTok{names_to =} \StringTok{"date_temp"}\NormalTok{,}
+                                             \DataTypeTok{values_to =} \StringTok{"cases_temp"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{parsing-the-date}{%
+\section{Parsing the date}\label{parsing-the-date}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_conf1}\OperatorTok{$}\NormalTok{month <-}\StringTok{ }\KeywordTok{sub}\NormalTok{(}\StringTok{"X"}\NormalTok{, }\StringTok{""}\NormalTok{,}
+                      \KeywordTok{strsplit}\NormalTok{(df_conf1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{                        }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{1}\NormalTok{]) )}
+
+\NormalTok{df_conf1}\OperatorTok{$}\NormalTok{day <-}\StringTok{ }\KeywordTok{strsplit}\NormalTok{(df_conf1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{2}\NormalTok{])}
+
+
+\NormalTok{df_conf1}\OperatorTok{$}\NormalTok{date <-}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"2020"}\NormalTok{, df_conf1}\OperatorTok{$}\NormalTok{month, df_conf1}\OperatorTok{$}\NormalTok{day, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{aggregate-the-data-to-daily}{%
+\section{Aggregate the data to
+daily}\label{aggregate-the-data-to-daily}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_conf2 <-}\StringTok{ }\NormalTok{df_conf1 }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{group_by}\NormalTok{(Province.State, Country.Region, Lat, Long, date) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{cases =} \KeywordTok{sum}\NormalTok{(cases_temp)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{type =} \StringTok{"confirmed"}\NormalTok{,}
+                \DataTypeTok{Country.Region =} \KeywordTok{trimws}\NormalTok{(Country.Region),}
+                \DataTypeTok{Province.State =} \KeywordTok{trimws}\NormalTok{(Province.State))}
+\KeywordTok{head}\NormalTok{(df_conf2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type     
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>    
+## 1 ""             Afghanistan       33    65 2020-01-22     0 confirmed
+## 2 ""             Afghanistan       33    65 2020-01-23     0 confirmed
+## 3 ""             Afghanistan       33    65 2020-01-24     0 confirmed
+## 4 ""             Afghanistan       33    65 2020-01-25     0 confirmed
+## 5 ""             Afghanistan       33    65 2020-01-26     0 confirmed
+## 6 ""             Afghanistan       33    65 2020-01-27     0 confirmed
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(df_conf2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type     
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>    
+## 1 Zhejiang       China           29.2  120. 2020-04-21     0 confirmed
+## 2 Zhejiang       China           29.2  120. 2020-04-22     0 confirmed
+## 3 Zhejiang       China           29.2  120. 2020-04-23     0 confirmed
+## 4 Zhejiang       China           29.2  120. 2020-04-24     0 confirmed
+## 5 Zhejiang       China           29.2  120. 2020-04-25     0 confirmed
+## 6 Zhejiang       China           29.2  120. 2020-04-26     0 confirmed
+\end{verbatim}
+
+\hypertarget{pulling-death-cases}{%
+\section{Pulling death cases}\label{pulling-death-cases}}
+
+\hypertarget{transforming-the-data-from-wide-to-long-1}{%
+\section{Transforming the data from wide to
+long}\label{transforming-the-data-from-wide-to-long-1}}
+
+\hypertarget{creating-new-data-frame-1}{%
+\section{Creating new data frame}\label{creating-new-data-frame-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Parsing the date}
+\NormalTok{df_death1}\OperatorTok{$}\NormalTok{month <-}\StringTok{ }\KeywordTok{sub}\NormalTok{(}\StringTok{"X"}\NormalTok{, }\StringTok{""}\NormalTok{,}
+                       \KeywordTok{strsplit}\NormalTok{(df_death1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{                         }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{1}\NormalTok{]) )}
+
+\NormalTok{df_death1}\OperatorTok{$}\NormalTok{day <-}\StringTok{ }\KeywordTok{strsplit}\NormalTok{(df_death1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{2}\NormalTok{])}
+
+
+\NormalTok{df_death1}\OperatorTok{$}\NormalTok{date <-}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"2020"}\NormalTok{, df_death1}\OperatorTok{$}\NormalTok{month, df_death1}\OperatorTok{$}\NormalTok{day, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{aggregate-the-data-to-daily-1}{%
+\section{Aggregate the data to
+daily}\label{aggregate-the-data-to-daily-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_death2 <-}\StringTok{ }\NormalTok{df_death1 }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{group_by}\NormalTok{(Province.State, Country.Region, Lat, Long, date) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{cases =} \KeywordTok{sum}\NormalTok{(cases_temp)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{type =} \StringTok{"death"}\NormalTok{,}
+                \DataTypeTok{Country.Region =} \KeywordTok{trimws}\NormalTok{(Country.Region),}
+                \DataTypeTok{Province.State =} \KeywordTok{trimws}\NormalTok{(Province.State))}
+
+\KeywordTok{head}\NormalTok{(df_death2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type 
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>
+## 1 ""             Afghanistan       33    65 2020-01-22     0 death
+## 2 ""             Afghanistan       33    65 2020-01-23     0 death
+## 3 ""             Afghanistan       33    65 2020-01-24     0 death
+## 4 ""             Afghanistan       33    65 2020-01-25     0 death
+## 5 ""             Afghanistan       33    65 2020-01-26     0 death
+## 6 ""             Afghanistan       33    65 2020-01-27     0 death
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(df_death2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type 
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>
+## 1 Zhejiang       China           29.2  120. 2020-04-21     0 death
+## 2 Zhejiang       China           29.2  120. 2020-04-22     0 death
+## 3 Zhejiang       China           29.2  120. 2020-04-23     0 death
+## 4 Zhejiang       China           29.2  120. 2020-04-24     0 death
+## 5 Zhejiang       China           29.2  120. 2020-04-25     0 death
+## 6 Zhejiang       China           29.2  120. 2020-04-26     0 death
+\end{verbatim}
+
+\hypertarget{pulling-recovered-cases}{%
+\section{Pulling recovered cases}\label{pulling-recovered-cases}}
+
+\hypertarget{transforming-the-data-from-wide-to-long-2}{%
+\section{Transforming the data from wide to
+long}\label{transforming-the-data-from-wide-to-long-2}}
+
+\hypertarget{creating-new-data-frame-2}{%
+\section{Creating new data frame}\label{creating-new-data-frame-2}}
+
+\hypertarget{parsing-the-date-1}{%
+\section{Parsing the date}\label{parsing-the-date-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_rec1}\OperatorTok{$}\NormalTok{month <-}\StringTok{ }\KeywordTok{sub}\NormalTok{(}\StringTok{"X"}\NormalTok{, }\StringTok{""}\NormalTok{,}
+                     \KeywordTok{strsplit}\NormalTok{(df_rec1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{                       }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{1}\NormalTok{]) )}
+
+\NormalTok{df_rec1}\OperatorTok{$}\NormalTok{day <-}\StringTok{ }\KeywordTok{strsplit}\NormalTok{(df_rec1}\OperatorTok{$}\NormalTok{date_temp, }\DataTypeTok{split =} \StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{."}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{purrr}\OperatorTok{::}\KeywordTok{map_chr}\NormalTok{(}\OperatorTok{~}\NormalTok{.x[}\DecValTok{2}\NormalTok{])}
+
+
+\NormalTok{df_rec1}\OperatorTok{$}\NormalTok{date <-}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\KeywordTok{paste}\NormalTok{(}\StringTok{"2020"}\NormalTok{, df_rec1}\OperatorTok{$}\NormalTok{month, df_rec1}\OperatorTok{$}\NormalTok{day, }\DataTypeTok{sep =} \StringTok{"-"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{aggregate-the-data-to-daily-2}{%
+\section{Aggregate the data to
+daily}\label{aggregate-the-data-to-daily-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df_rec2 <-}\StringTok{ }\NormalTok{df_rec1 }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{group_by}\NormalTok{(Province.State, Country.Region, Lat, Long, date) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{summarise}\NormalTok{(}\DataTypeTok{cases =} \KeywordTok{sum}\NormalTok{(cases_temp)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{type =} \StringTok{"recovered"}\NormalTok{,}
+                \DataTypeTok{Country.Region =} \KeywordTok{trimws}\NormalTok{(Country.Region),}
+                \DataTypeTok{Province.State =} \KeywordTok{trimws}\NormalTok{(Province.State))}
+
+\KeywordTok{head}\NormalTok{(df_rec2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type     
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>    
+## 1 ""             Afghanistan       33    65 2020-01-22     0 recovered
+## 2 ""             Afghanistan       33    65 2020-01-23     0 recovered
+## 3 ""             Afghanistan       33    65 2020-01-24     0 recovered
+## 4 ""             Afghanistan       33    65 2020-01-25     0 recovered
+## 5 ""             Afghanistan       33    65 2020-01-26     0 recovered
+## 6 ""             Afghanistan       33    65 2020-01-27     0 recovered
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(df_rec2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 7
+##   Province.State Country.Region   Lat  Long date       cases type     
+##   <chr>          <chr>          <dbl> <dbl> <date>     <int> <chr>    
+## 1 Zhejiang       China           29.2  120. 2020-04-21     2 recovered
+## 2 Zhejiang       China           29.2  120. 2020-04-22     1 recovered
+## 3 Zhejiang       China           29.2  120. 2020-04-23     4 recovered
+## 4 Zhejiang       China           29.2  120. 2020-04-24     0 recovered
+## 5 Zhejiang       China           29.2  120. 2020-04-25     1 recovered
+## 6 Zhejiang       China           29.2  120. 2020-04-26     1 recovered
+\end{verbatim}
+
+\#---------------- Aggregate all cases ----------------
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{coronavirus <-}\StringTok{ }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{bind_rows}\NormalTok{(df_conf2, df_death2, df_rec2) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{as.data.frame}\NormalTok{()}
+
+
+
+\KeywordTok{head}\NormalTok{(coronavirus)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Province.State Country.Region Lat Long       date cases      type
+## 1                   Afghanistan  33   65 2020-01-22     0 confirmed
+## 2                   Afghanistan  33   65 2020-01-23     0 confirmed
+## 3                   Afghanistan  33   65 2020-01-24     0 confirmed
+## 4                   Afghanistan  33   65 2020-01-25     0 confirmed
+## 5                   Afghanistan  33   65 2020-01-26     0 confirmed
+## 6                   Afghanistan  33   65 2020-01-27     0 confirmed
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(coronavirus)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       Province.State Country.Region     Lat     Long       date cases      type
+## 74683       Zhejiang          China 29.1832 120.0934 2020-04-21     2 recovered
+## 74684       Zhejiang          China 29.1832 120.0934 2020-04-22     1 recovered
+## 74685       Zhejiang          China 29.1832 120.0934 2020-04-23     4 recovered
+## 74686       Zhejiang          China 29.1832 120.0934 2020-04-24     0 recovered
+## 74687       Zhejiang          China 29.1832 120.0934 2020-04-25     1 recovered
+## 74688       Zhejiang          China 29.1832 120.0934 2020-04-26     1 recovered
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+ \ControlFlowTok{if}\NormalTok{(}\KeywordTok{ncol}\NormalTok{(coronavirus) }\OperatorTok{!=}\StringTok{ }\DecValTok{7}\NormalTok{)\{}
+    \KeywordTok{stop}\NormalTok{(}\StringTok{"The number of columns is invalid"}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\KeywordTok{nrow}\NormalTok{(coronavirus)}\OperatorTok{<}\StringTok{ }\DecValTok{69000}\NormalTok{)\{}
+    \KeywordTok{stop}\NormalTok{(}\StringTok{"The number of raws does not match the minimum number of rows"}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{(}\KeywordTok{min}\NormalTok{(coronavirus}\OperatorTok{$}\NormalTok{date) }\OperatorTok{!=}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(}\StringTok{"2020-01-22"}\NormalTok{))\{}
+    \KeywordTok{stop}\NormalTok{(}\StringTok{"The starting date is invalid"}\NormalTok{)}
+\NormalTok{  \}}
+\end{Highlighting}
+\end{Shaded}
+
+\#---------------- Exporting files ----------------
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{write.csv}\NormalTok{(coronavirus, }\StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/coronavirus.csv"}\NormalTok{, }\DataTypeTok{row.names =} \OtherTok{FALSE}\NormalTok{)}
+
+\NormalTok{writexl}\OperatorTok{::}\KeywordTok{write_xlsx}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ coronavirus, }\DataTypeTok{path =} \StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/coronavirus.xlsx"}\NormalTok{, }\DataTypeTok{col_names =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\end{document}

@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+author: "Bbosa Robert"
+date: "5/7/2020"
+output: html_document
+---
+
+
+```{r}
+fileUrl <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest_withnotes.csv"
+download.file(fileUrl, destfile = "~/COVID-19/COVID-19_Data/OXford_COVID_19.csv", method = "curl")
+list.files(getwd())
+dateDownloaded <- date()
+dateDownloaded
+```
+
+```{r}
+OXford_COVID_19_policies <- read.csv("~/COVID-19/COVID-19_Data/OXford_COVID_19.csv")
+head(OXford_COVID_19_policies)
+```
+
+

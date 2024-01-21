@@ -1,0 +1,326 @@
+---
+title: "Line chart with R and ggplot2"
+author: "Bbosa Robert"
+date: "4/28/2020"
+output: html_document
+---
+
+# Important packages
+
+```{r eval=FALSE, include=FALSE}
+install.packages("ggplot2")
+install.packages("hrbrthemes")
+install.packages("babynames")
+install.packages("dplyr")
+install.packages("viridis")
+install.packages("tidyverse")
+install.packages("plotly")
+install.packages("patchwork")
+install.packages("kableExtra")
+install.packages("streamgraph")
+install.packages("DT")
+```
+
+
+# Basic line chart with ggplot2 and geom_line()
+
+A line chart or line graph displays the evolution of one or several numeric variables. Data points are connected by straight line segments. It is similar to a scatter plot except that the measurement points are ordered (typically by their x-axis value) and joined with straight line segments. A line chart is often used to visualize a trend in data over intervals of time – a time series – thus the line is often drawn chronologically.
+
+The following example shows the evolution of the bitcoin price between April 2013 and April 2018. Data comes from the CoinMarketCap website.
+
+```{r}
+# Libraries
+library(tidyverse)
+library(hrbrthemes)
+library(plotly)
+library(patchwork)
+library(babynames)
+library(viridis)
+
+# Load dataset from github
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/
+Example_dataset/3_TwoNumOrdered.csv", header=T)
+data$date <- as.Date(data$date)
+
+# plot
+data %>%
+  ggplot( aes(x=date, y=value)) +
+    geom_line(color="#69b3a2") +
+    ggtitle("Evolution of Bitcoin price") +
+    ylab("bitcoin price ($)") +
+    theme_ipsum()
+```
+
+# Line chart
+Line chart can be used to show the evolution of one (like above) or several variables. Here is an example showing the evolution of three baby name frequencies in the US between 1880 and 2015. Note that this works well for a low number of group to display. With more than a few, the graphic get cluttered and becomes unreadable. This is called a spaghetti chart.
+
+```{r}
+# Load dataset from github
+don <- babynames %>% 
+  filter(name %in% c("Ashley", "Patricia", "Helen")) %>%
+  filter(sex=="F")
+  don
+# Plot
+don %>%
+  ggplot( aes(x=year, y=n, group=name, color=name)) +
+    geom_line() +
+    scale_color_viridis(discrete = TRUE) +
+    ggtitle("Popularity of American names in the previous 30 years") +
+    theme_ipsum() +
+    ylab("Number of babies born")
+```
+
+# Variation
+
+If the number of data points is low, it is advised to represent each individual observation with a dot. It allows to understand when exactly the observation have been made:
+```{r}
+data %>%
+  tail(10) %>%
+  ggplot( aes(x=date, y=value)) +
+    geom_line(color="#69b3a2") +
+    geom_point(color="#69b3a2", size=4) +
+    ggtitle("Cuting") +
+    ylab("bitcoin price ($)") +
+    theme_ipsum()
+```
+
+Note that lines are also used to show trends in a scatterplot. Here is an example using Smoothed conditional means and showing confidence interval around it:
+
+```{r}
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point() +
+  geom_smooth(color="#69b3a2") +
+  theme_ipsum()
+```
+
+# Common caveats
+
+The line chart is subject to a lot of discussion concerning potential caveats. Here is an overview:
+
+    To cut or not to cut the Y axis? Wether or not the Y axis must start at 0 is a hot topic leading to intense debates. The graphic below presents the same data, starting at 0 (left) or not (right). Generally, line plot do not need to start at 0 since it allows to observe patterns more efficiently, but you probably want to learn more about it here.
+```{r}
+p1 <- data %>%
+  tail(10) %>%
+  ggplot( aes(x=date, y=value)) +
+    geom_line(color="#69b3a2") +
+    geom_point(color="#69b3a2", size=4) +
+    ggtitle("Not cuting") +
+    ylab("bitcoin price ($)") +
+    theme_ipsum() +
+    ylim(0,10000)
+
+p2 <- data %>%
+  tail(10) %>%
+  ggplot( aes(x=date, y=value)) +
+    geom_line(color="#69b3a2") +
+    geom_point(color="#69b3a2", size=4) +
+    ggtitle("Cuting") +
+    ylab("bitcoin price ($)") +
+    theme_ipsum()
+
+p1 + p2
+```
+
+    If you need to compare the evolution of 2 different variables, do not use dual axis. Indeed dual axis can show very different results depending on what range you apply to the axis. Read more about it.
+    Mind the spaghetti chart: too many lines make the chart unreadable.
+    Think about the aspect ratio of the graphic, extreme ratio make the chart unreadable.
+
+
+```{r}
+# Libraries
+library(ggplot2)
+
+# create data
+xValue <- 1:10
+yValue <- cumsum(rnorm(10))
+data <- data.frame(xValue,yValue)
+
+data
+```
+
+
+```{r}
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_line()
+```
+
+
+# Customize the line chart
+
+
+
+Several options are available to customize the line chart appearance:
+
+    Add a title with `ggtitle()`.
+    Change line style with arguments like `shape`,`size`, `color` and more.
+    Custom the general theme with the `theme_ipsum()` function of the `hrbrthemes package`.
+
+More generally, visit the [ggplot2 section] for more ggplot2 related stuff.
+
+```{r}
+# Libraries
+library(hrbrthemes)
+
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_line( color="#69b3a2", size=2, alpha=0.9, linetype=2) +
+  theme_ipsum() +
+  ggtitle("Evolution of something")
+```
+
+# Basic version
+
+If you’re not familiar with the `geom_line() function`, you should probably have a look to the most basic line chart first.
+
+Here, the input data frame is composed by 3 columns:
+
+    An ordered numeric variable for the X axis
+    Another numeric variable for the Y axis
+    A categorical variable that specify the group of the observation
+
+The idea is to draw one line per group. This is doable by specifying a different color to each group with the `color` argument of `ggplot2`.
+
+```{r}
+# Libraries
+library(ggplot2)
+library(babynames) # provide the dataset: a dataframe called babynames
+library(dplyr)
+
+# Keep only 3 names
+don <- babynames %>% 
+  filter(name %in% c("Ashley", "Patricia", "Helen")) %>%
+  filter(sex=="F")
+  
+# Plot
+don %>%
+  ggplot( aes(x=year, y=n, group=name, color=name)) +
+    geom_line()
+```
+
+# Customize the grouped line chart
+
+Several options are available to customize the line chart appearance:
+
+    Add a title with `ggtitle()`.
+    Change line style with arguments like `shape`, `size`, `color` and more.
+    Use the `viridis package` to get a nice color palette.
+    Custom the general theme with the `theme_ipsum() function` of the `hrbrthemes package`.
+
+More generally, visit the [ggplot2 section] for more ggplot2 related stuff.
+
+```{r}
+# Libraries
+library(viridis)
+
+# Keep only 3 names
+don <- babynames %>% 
+  filter(name %in% c("Ashley", "Patricia", "Helen")) %>%
+  filter(sex=="F")
+  
+# Plot
+don %>%
+  ggplot( aes(x=year, y=n, group=name, color=name)) +
+    geom_line() +
+    scale_color_viridis(discrete = TRUE) +
+    ggtitle("Popularity of American names in the previous 30 years") +
+    theme_ipsum() +
+    ylab("Number of babies born")
+```
+
+# The Spaghetti plot
+A Spaghetti plot is a line plot with many lines displayed together. With more than a few (~5?) groups this kind of graphic gets really hard to read, and thus provides little insight about the data. Let’s make an example with the evolution of baby names in the US from 1880 to 2015.
+
+```{r}
+library(tidyverse)
+library(hrbrthemes)
+library(kableExtra)
+options(knitr.table.format = "html")
+library(babynames)
+#library(streamgraph)
+library(viridis)
+library(DT)
+library(plotly)
+
+# Load dataset from github
+data <- babynames %>% 
+  filter(name %in% c("Mary","Emma", "Ida", "Ashley", "Amanda", "Jessica",    "Patricia", "Linda", "Deborah",   "Dorothy", "Betty", "Helen")) %>%
+  filter(sex=="F")
+
+# Plot
+data %>%
+  ggplot( aes(x=year, y=n, group=name, color=name)) +
+    geom_line() +
+    scale_color_viridis(discrete = TRUE) +
+    theme(
+      legend.position="none",
+      plot.title = element_text(size=14)
+    ) +
+    ggtitle("A spaghetti chart of baby names popularity") +
+    theme_ipsum()
+```
+
+It is very hard to follow a line to understand the evolution of a specific name’s popularity. Plus, even if you manage to follow a line, you then need to link it with the legend which is even harder. Let’s try to find a few workarounds to improve this graphic.
+
+Target a specific group *** Let’s say you plot many groups, but the actual reason for that is to explain the feature of one particular group compared to the others. Then a good workaround is to highlight this group: make it appear different, and give it a proper annotation. Here, the evolution of Amanda’s popularity is obvious. Leaving the other lines is important since it allows you to compare Amanda to all other names.
+
+```{r}
+data %>%
+  mutate( highlight=ifelse(name=="Amanda", "Amanda", "Other")) %>%
+  ggplot( aes(x=year, y=n, group=name, color=highlight, size=highlight)) +
+    geom_line() +
+    scale_color_manual(values = c("#69b3a2", "lightgrey")) +
+    scale_size_manual(values=c(1.5,0.2)) +
+    theme(legend.position="none") +
+    ggtitle("Popularity of American names in the previous 30 years") +
+    theme_ipsum() +
+    geom_label( x=1990, y=55000, label="Amanda reached 3550\nbabies in 1970", size=4, color="#69b3a2") +
+    theme(
+      legend.position="none",
+      plot.title = element_text(size=14)
+)
+```
+
+
+Use small multiples *** Area charts can be used to give a more general overview of the dataset, especially when used in combination with small multiples. In the following chart, it is easy to get a glimpse of the evolution of any name:
+
+```{r}
+data %>%
+  ggplot( aes(x=year, y=n, group=name, fill=name)) +
+    geom_area() +
+    scale_fill_viridis(discrete = TRUE) +
+    theme(legend.position="none") +
+    ggtitle("Popularity of American names in the previous 30 years") +
+    theme_ipsum() +
+    theme(
+      legend.position="none",
+      panel.spacing = unit(0.1, "lines"),
+      strip.text.x = element_text(size = 8),
+      plot.title = element_text(size=14)
+    ) +
+    facet_wrap(~name)
+```
+
+For instance, Linda was a really popular name for a really short period of time. On another hand, Ida has never been very popular, but was used a little during several decades.
+
+Combine approaches *** Note that if you want to compare the evolution of each line compared to the others, you can combine both approaches:
+
+```{r}
+tmp <- data %>%
+  mutate(name2=name)
+
+tmp %>%
+  ggplot( aes(x=year, y=n)) +
+    geom_line( data=tmp %>% dplyr::select(-name), aes(group=name2), color="grey", size=0.5, alpha=0.5) +
+    geom_line( aes(color=name), color="#69b3a2", size=1.2 )+
+    scale_color_viridis(discrete = TRUE) +
+    theme_ipsum() +
+    theme(
+      legend.position="none",
+      plot.title = element_text(size=14),
+      panel.grid = element_blank()
+    ) +
+    ggtitle("A spaghetti chart of baby names popularity") +
+    facet_wrap(~name)
+```
+

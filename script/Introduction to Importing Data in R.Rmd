@@ -1,0 +1,9 @@
+---
+title: "Introduction to Importing Data in R."
+author: "Bbosa Robert"
+date: "4/27/2020"
+output: html_document
+---
+## Importing data in R
+***
+* 5 types

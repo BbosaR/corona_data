@@ -1,0 +1,2369 @@
+"country","date","cases","type","total_cases","infection_rate"
+"Benin",2020-01-22,0,"confirmed",0,0
+"Benin",2020-01-23,0,"confirmed",0,0
+"Benin",2020-01-24,0,"confirmed",0,0
+"Benin",2020-01-25,0,"confirmed",0,0
+"Benin",2020-01-26,0,"confirmed",0,0
+"Benin",2020-01-27,0,"confirmed",0,0
+"Benin",2020-01-28,0,"confirmed",0,0
+"Benin",2020-01-29,0,"confirmed",0,0
+"Benin",2020-01-30,0,"confirmed",0,0
+"Benin",2020-01-31,0,"confirmed",0,0
+"Benin",2020-02-01,0,"confirmed",0,0
+"Benin",2020-02-02,0,"confirmed",0,0
+"Benin",2020-02-03,0,"confirmed",0,0
+"Benin",2020-02-04,0,"confirmed",0,0
+"Benin",2020-02-05,0,"confirmed",0,0
+"Benin",2020-02-06,0,"confirmed",0,0
+"Benin",2020-02-07,0,"confirmed",0,0
+"Benin",2020-02-08,0,"confirmed",0,0
+"Benin",2020-02-09,0,"confirmed",0,0
+"Benin",2020-02-10,0,"confirmed",0,0
+"Benin",2020-02-11,0,"confirmed",0,0
+"Benin",2020-02-12,0,"confirmed",0,0
+"Benin",2020-02-13,0,"confirmed",0,0
+"Benin",2020-02-14,0,"confirmed",0,0
+"Benin",2020-02-15,0,"confirmed",0,0
+"Benin",2020-02-16,0,"confirmed",0,0
+"Benin",2020-02-17,0,"confirmed",0,0
+"Benin",2020-02-18,0,"confirmed",0,0
+"Benin",2020-02-19,0,"confirmed",0,0
+"Benin",2020-02-20,0,"confirmed",0,0
+"Benin",2020-02-21,0,"confirmed",0,0
+"Benin",2020-02-22,0,"confirmed",0,0
+"Benin",2020-02-23,0,"confirmed",0,0
+"Benin",2020-02-24,0,"confirmed",0,0
+"Benin",2020-02-25,0,"confirmed",0,0
+"Benin",2020-02-26,0,"confirmed",0,0
+"Benin",2020-02-27,0,"confirmed",0,0
+"Benin",2020-02-28,0,"confirmed",0,0
+"Benin",2020-02-29,0,"confirmed",0,0
+"Benin",2020-03-01,0,"confirmed",0,0
+"Benin",2020-03-02,0,"confirmed",0,0
+"Benin",2020-03-03,0,"confirmed",0,0
+"Benin",2020-03-04,0,"confirmed",0,0
+"Benin",2020-03-05,0,"confirmed",0,0
+"Benin",2020-03-06,0,"confirmed",0,0
+"Benin",2020-03-07,0,"confirmed",0,0
+"Benin",2020-03-08,0,"confirmed",0,0
+"Benin",2020-03-09,0,"confirmed",0,0
+"Benin",2020-03-10,0,"confirmed",0,0
+"Benin",2020-03-11,0,"confirmed",0,0
+"Benin",2020-03-12,0,"confirmed",0,0
+"Benin",2020-03-13,0,"confirmed",0,0
+"Benin",2020-03-14,0,"confirmed",0,0
+"Benin",2020-03-15,0,"confirmed",0,0
+"Benin",2020-03-16,1,"confirmed",1,0.0824864722185562
+"Benin",2020-03-17,0,"confirmed",1,0.0824864722185562
+"Benin",2020-03-18,1,"confirmed",2,0.164972944437112
+"Benin",2020-03-19,0,"confirmed",2,0.164972944437112
+"Benin",2020-03-20,0,"confirmed",2,0.164972944437112
+"Benin",2020-03-21,0,"confirmed",2,0.164972944437112
+"Benin",2020-03-22,0,"confirmed",2,0.164972944437112
+"Benin",2020-03-23,3,"confirmed",5,0.412432361092781
+"Benin",2020-03-24,1,"confirmed",6,0.494918833311337
+"Benin",2020-03-25,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-26,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-27,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-28,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-29,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-30,0,"confirmed",6,0.494918833311337
+"Benin",2020-03-31,3,"confirmed",9,0.742378249967005
+"Benin",2020-04-01,4,"confirmed",13,1.07232413884123
+"Benin",2020-04-02,0,"confirmed",13,1.07232413884123
+"Benin",2020-04-03,3,"confirmed",16,1.3197835554969
+"Benin",2020-04-04,0,"confirmed",16,1.3197835554969
+"Benin",2020-04-05,6,"confirmed",22,1.81470238880824
+"Benin",2020-04-06,4,"confirmed",26,2.14464827768246
+"Benin",2020-04-07,0,"confirmed",26,2.14464827768246
+"Benin",2020-04-08,0,"confirmed",26,2.14464827768246
+"Benin",2020-04-09,0,"confirmed",26,2.14464827768246
+"Benin",2020-04-10,9,"confirmed",35,2.88702652764947
+"Benin",2020-04-11,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-12,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-13,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-14,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-15,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-16,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-17,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-18,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-19,0,"confirmed",35,2.88702652764947
+"Benin",2020-04-20,19,"confirmed",54,4.45426949980203
+"Benin",2020-04-21,0,"confirmed",54,4.45426949980203
+"Benin",2020-04-22,0,"confirmed",54,4.45426949980203
+"Benin",2020-04-23,0,"confirmed",54,4.45426949980203
+"Benin",2020-04-24,0,"confirmed",54,4.45426949980203
+"Benin",2020-04-25,0,"confirmed",54,4.45426949980203
+"Benin",2020-04-26,10,"confirmed",64,5.27913422198759
+"Benin",2020-04-27,0,"confirmed",64,5.27913422198759
+"Benin",2020-04-28,0,"confirmed",64,5.27913422198759
+"Benin",2020-04-29,0,"confirmed",64,5.27913422198759
+"Benin",2020-04-30,0,"confirmed",64,5.27913422198759
+"Benin",2020-05-01,26,"confirmed",90,7.42378249967005
+"Benin",2020-05-02,0,"confirmed",90,7.42378249967005
+"Benin",2020-05-03,0,"confirmed",90,7.42378249967005
+"Benin",2020-05-04,6,"confirmed",96,7.91870133298139
+"Benin",2020-05-05,0,"confirmed",96,7.91870133298139
+"Benin",2020-05-06,0,"confirmed",96,7.91870133298139
+"Benin",2020-05-07,44,"confirmed",140,11.5481061105979
+"Benin",2020-05-08,102,"confirmed",242,19.9617262768906
+"Benin",2020-05-09,42,"confirmed",284,23.4261581100699
+"Benin",2020-05-10,35,"confirmed",319,26.3131846377194
+"Benin",2020-05-11,0,"confirmed",319,26.3131846377194
+"Benin",2020-05-12,8,"confirmed",327,26.9730764154679
+"Benin",2020-05-13,0,"confirmed",327,26.9730764154679
+"Benin",2020-05-14,12,"confirmed",339,27.9629140820905
+"Benin",2020-05-15,0,"confirmed",339,27.9629140820905
+"Benin",2020-05-16,0,"confirmed",339,27.9629140820905
+"Benin",2020-05-17,0,"confirmed",339,27.9629140820905
+"Benin",2020-05-18,0,"confirmed",339,27.9629140820905
+"Benin",2020-05-19,-209,"confirmed",130,10.7232413884123
+"Benin",2020-05-20,0,"confirmed",130,10.7232413884123
+"Benin",2020-05-21,5,"confirmed",135,11.1356737495051
+"Benin",2020-05-22,0,"confirmed",135,11.1356737495051
+"Benin",2020-05-23,0,"confirmed",135,11.1356737495051
+"Benin",2020-05-24,56,"confirmed",191,15.7549161937442
+"Benin",2020-05-25,0,"confirmed",191,15.7549161937442
+"Benin",2020-05-26,17,"confirmed",208,17.1571862214597
+"Benin",2020-05-27,2,"confirmed",210,17.3221591658968
+"Benin",2020-05-28,0,"confirmed",210,17.3221591658968
+"Benin",2020-05-29,14,"confirmed",224,18.4769697769566
+"Benin",2020-05-30,0,"confirmed",224,18.4769697769566
+"Benin",2020-05-31,8,"confirmed",232,19.136861554705
+"Benin",2020-06-01,11,"confirmed",243,20.0442127491091
+"Benin",2020-06-02,1,"confirmed",244,20.1266992213277
+"Benin",2020-06-03,0,"confirmed",244,20.1266992213277
+"Benin",2020-06-04,17,"confirmed",261,21.5289692490432
+"Benin",2020-06-05,0,"confirmed",261,21.5289692490432
+"Benin",2020-06-06,0,"confirmed",261,21.5289692490432
+"Benin",2020-06-07,0,"confirmed",261,21.5289692490432
+"Benin",2020-06-08,27,"confirmed",288,23.7561039989442
+"Benin",2020-06-09,17,"confirmed",305,25.1583740266596
+"Benin",2020-06-10,0,"confirmed",305,25.1583740266596
+"Benin",2020-06-11,0,"confirmed",305,25.1583740266596
+"Benin",2020-06-12,83,"confirmed",388,32.0047512207998
+"Benin",2020-06-13,24,"confirmed",412,33.9844265540451
+"Benin",2020-06-14,30,"confirmed",442,36.4590207206018
+"Benin",2020-06-15,41,"confirmed",483,39.8409660815626
+"Benin",2020-06-16,49,"confirmed",532,43.8828032202719
+"Benin",2020-06-17,40,"confirmed",572,47.1822621090141
+"Burkina Faso",2020-01-22,0,"confirmed",0,0
+"Burkina Faso",2020-01-23,0,"confirmed",0,0
+"Burkina Faso",2020-01-24,0,"confirmed",0,0
+"Burkina Faso",2020-01-25,0,"confirmed",0,0
+"Burkina Faso",2020-01-26,0,"confirmed",0,0
+"Burkina Faso",2020-01-27,0,"confirmed",0,0
+"Burkina Faso",2020-01-28,0,"confirmed",0,0
+"Burkina Faso",2020-01-29,0,"confirmed",0,0
+"Burkina Faso",2020-01-30,0,"confirmed",0,0
+"Burkina Faso",2020-01-31,0,"confirmed",0,0
+"Burkina Faso",2020-02-01,0,"confirmed",0,0
+"Burkina Faso",2020-02-02,0,"confirmed",0,0
+"Burkina Faso",2020-02-03,0,"confirmed",0,0
+"Burkina Faso",2020-02-04,0,"confirmed",0,0
+"Burkina Faso",2020-02-05,0,"confirmed",0,0
+"Burkina Faso",2020-02-06,0,"confirmed",0,0
+"Burkina Faso",2020-02-07,0,"confirmed",0,0
+"Burkina Faso",2020-02-08,0,"confirmed",0,0
+"Burkina Faso",2020-02-09,0,"confirmed",0,0
+"Burkina Faso",2020-02-10,0,"confirmed",0,0
+"Burkina Faso",2020-02-11,0,"confirmed",0,0
+"Burkina Faso",2020-02-12,0,"confirmed",0,0
+"Burkina Faso",2020-02-13,0,"confirmed",0,0
+"Burkina Faso",2020-02-14,0,"confirmed",0,0
+"Burkina Faso",2020-02-15,0,"confirmed",0,0
+"Burkina Faso",2020-02-16,0,"confirmed",0,0
+"Burkina Faso",2020-02-17,0,"confirmed",0,0
+"Burkina Faso",2020-02-18,0,"confirmed",0,0
+"Burkina Faso",2020-02-19,0,"confirmed",0,0
+"Burkina Faso",2020-02-20,0,"confirmed",0,0
+"Burkina Faso",2020-02-21,0,"confirmed",0,0
+"Burkina Faso",2020-02-22,0,"confirmed",0,0
+"Burkina Faso",2020-02-23,0,"confirmed",0,0
+"Burkina Faso",2020-02-24,0,"confirmed",0,0
+"Burkina Faso",2020-02-25,0,"confirmed",0,0
+"Burkina Faso",2020-02-26,0,"confirmed",0,0
+"Burkina Faso",2020-02-27,0,"confirmed",0,0
+"Burkina Faso",2020-02-28,0,"confirmed",0,0
+"Burkina Faso",2020-02-29,0,"confirmed",0,0
+"Burkina Faso",2020-03-01,0,"confirmed",0,0
+"Burkina Faso",2020-03-02,0,"confirmed",0,0
+"Burkina Faso",2020-03-03,0,"confirmed",0,0
+"Burkina Faso",2020-03-04,0,"confirmed",0,0
+"Burkina Faso",2020-03-05,0,"confirmed",0,0
+"Burkina Faso",2020-03-06,0,"confirmed",0,0
+"Burkina Faso",2020-03-07,0,"confirmed",0,0
+"Burkina Faso",2020-03-08,0,"confirmed",0,0
+"Burkina Faso",2020-03-09,0,"confirmed",0,0
+"Burkina Faso",2020-03-10,1,"confirmed",1,0.0478393981650625
+"Burkina Faso",2020-03-11,1,"confirmed",2,0.095678796330125
+"Burkina Faso",2020-03-12,0,"confirmed",2,0.095678796330125
+"Burkina Faso",2020-03-13,0,"confirmed",2,0.095678796330125
+"Burkina Faso",2020-03-14,0,"confirmed",2,0.095678796330125
+"Burkina Faso",2020-03-15,1,"confirmed",3,0.143518194495187
+"Burkina Faso",2020-03-16,12,"confirmed",15,0.717590972475937
+"Burkina Faso",2020-03-17,0,"confirmed",15,0.717590972475937
+"Burkina Faso",2020-03-18,5,"confirmed",20,0.956787963301249
+"Burkina Faso",2020-03-19,13,"confirmed",33,1.57870013944706
+"Burkina Faso",2020-03-20,7,"confirmed",40,1.9135759266025
+"Burkina Faso",2020-03-21,24,"confirmed",64,3.061721482564
+"Burkina Faso",2020-03-22,11,"confirmed",75,3.58795486237969
+"Burkina Faso",2020-03-23,24,"confirmed",99,4.73610041834119
+"Burkina Faso",2020-03-24,15,"confirmed",114,5.45369139081712
+"Burkina Faso",2020-03-25,32,"confirmed",146,6.98455213209912
+"Burkina Faso",2020-03-26,6,"confirmed",152,7.2715885210895
+"Burkina Faso",2020-03-27,28,"confirmed",180,8.61109166971125
+"Burkina Faso",2020-03-28,27,"confirmed",207,9.90275542016793
+"Burkina Faso",2020-03-29,15,"confirmed",222,10.6203463926439
+"Burkina Faso",2020-03-30,24,"confirmed",246,11.7684919486054
+"Burkina Faso",2020-03-31,15,"confirmed",261,12.4860829210813
+"Burkina Faso",2020-04-01,21,"confirmed",282,13.4907102825476
+"Burkina Faso",2020-04-02,6,"confirmed",288,13.777746671538
+"Burkina Faso",2020-04-03,14,"confirmed",302,14.4474982458489
+"Burkina Faso",2020-04-04,16,"confirmed",318,15.2129286164899
+"Burkina Faso",2020-04-05,27,"confirmed",345,16.5045923669466
+"Burkina Faso",2020-04-06,19,"confirmed",364,17.4135409320827
+"Burkina Faso",2020-04-07,20,"confirmed",384,18.370328895384
+"Burkina Faso",2020-04-08,30,"confirmed",414,19.8055108403359
+"Burkina Faso",2020-04-09,29,"confirmed",443,21.1928533871227
+"Burkina Faso",2020-04-10,0,"confirmed",443,21.1928533871227
+"Burkina Faso",2020-04-11,41,"confirmed",484,23.1542687118902
+"Burkina Faso",2020-04-12,13,"confirmed",497,23.7761808880361
+"Burkina Faso",2020-04-13,0,"confirmed",497,23.7761808880361
+"Burkina Faso",2020-04-14,31,"confirmed",528,25.259202231153
+"Burkina Faso",2020-04-15,14,"confirmed",542,25.9289538054639
+"Burkina Faso",2020-04-16,4,"confirmed",546,26.1203113981241
+"Burkina Faso",2020-04-17,11,"confirmed",557,26.6465447779398
+"Burkina Faso",2020-04-18,8,"confirmed",565,27.0292599632603
+"Burkina Faso",2020-04-19,11,"confirmed",576,27.555493343076
+"Burkina Faso",2020-04-20,5,"confirmed",581,27.7946903339013
+"Burkina Faso",2020-04-21,19,"confirmed",600,28.7036388990375
+"Burkina Faso",2020-04-22,9,"confirmed",609,29.134193482523
+"Burkina Faso",2020-04-23,7,"confirmed",616,29.4690692696785
+"Burkina Faso",2020-04-24,13,"confirmed",629,30.0909814458243
+"Burkina Faso",2020-04-25,0,"confirmed",629,30.0909814458243
+"Burkina Faso",2020-04-26,3,"confirmed",632,30.2344996403195
+"Burkina Faso",2020-04-27,3,"confirmed",635,30.3780178348147
+"Burkina Faso",2020-04-28,3,"confirmed",638,30.5215360293099
+"Burkina Faso",2020-04-29,3,"confirmed",641,30.665054223805
+"Burkina Faso",2020-04-30,4,"confirmed",645,30.8564118164653
+"Burkina Faso",2020-05-01,4,"confirmed",649,31.0477694091255
+"Burkina Faso",2020-05-02,3,"confirmed",652,31.1912876036207
+"Burkina Faso",2020-05-03,10,"confirmed",662,31.6696815852714
+"Burkina Faso",2020-05-04,10,"confirmed",672,32.148075566922
+"Burkina Faso",2020-05-05,16,"confirmed",688,32.913505937563
+"Burkina Faso",2020-05-06,41,"confirmed",729,34.8749212623305
+"Burkina Faso",2020-05-07,7,"confirmed",736,35.209797049486
+"Burkina Faso",2020-05-08,8,"confirmed",744,35.5925122348065
+"Burkina Faso",2020-05-09,4,"confirmed",748,35.7838698274667
+"Burkina Faso",2020-05-10,3,"confirmed",751,35.9273880219619
+"Burkina Faso",2020-05-11,9,"confirmed",760,36.3579426054475
+"Burkina Faso",2020-05-12,6,"confirmed",766,36.6449789944379
+"Burkina Faso",2020-05-13,7,"confirmed",773,36.9798547815933
+"Burkina Faso",2020-05-14,0,"confirmed",773,36.9798547815933
+"Burkina Faso",2020-05-15,7,"confirmed",780,37.3147305687487
+"Burkina Faso",2020-05-16,2,"confirmed",782,37.4104093650789
+"Burkina Faso",2020-05-17,14,"confirmed",796,38.0801609393897
+"Burkina Faso",2020-05-18,0,"confirmed",796,38.0801609393897
+"Burkina Faso",2020-05-19,0,"confirmed",796,38.0801609393897
+"Burkina Faso",2020-05-20,13,"confirmed",809,38.7020731155355
+"Burkina Faso",2020-05-21,3,"confirmed",812,38.8455913100307
+"Burkina Faso",2020-05-22,2,"confirmed",814,38.9412701063609
+"Burkina Faso",2020-05-23,0,"confirmed",814,38.9412701063609
+"Burkina Faso",2020-05-24,0,"confirmed",814,38.9412701063609
+"Burkina Faso",2020-05-25,18,"confirmed",832,39.802379273332
+"Burkina Faso",2020-05-26,0,"confirmed",832,39.802379273332
+"Burkina Faso",2020-05-27,13,"confirmed",845,40.4242914494778
+"Burkina Faso",2020-05-28,2,"confirmed",847,40.5199702458079
+"Burkina Faso",2020-05-29,0,"confirmed",847,40.5199702458079
+"Burkina Faso",2020-05-30,0,"confirmed",847,40.5199702458079
+"Burkina Faso",2020-05-31,0,"confirmed",847,40.5199702458079
+"Burkina Faso",2020-06-01,0,"confirmed",847,40.5199702458079
+"Burkina Faso",2020-06-02,34,"confirmed",881,42.14650978342
+"Burkina Faso",2020-06-03,3,"confirmed",884,42.2900279779152
+"Burkina Faso",2020-06-04,1,"confirmed",885,42.3378673760803
+"Burkina Faso",2020-06-05,3,"confirmed",888,42.4813855705755
+"Burkina Faso",2020-06-06,0,"confirmed",888,42.4813855705755
+"Burkina Faso",2020-06-07,1,"confirmed",889,42.5292249687405
+"Burkina Faso",2020-06-08,1,"confirmed",890,42.5770643669056
+"Burkina Faso",2020-06-09,1,"confirmed",891,42.6249037650707
+"Burkina Faso",2020-06-10,0,"confirmed",891,42.6249037650707
+"Burkina Faso",2020-06-11,1,"confirmed",892,42.6727431632357
+"Burkina Faso",2020-06-12,0,"confirmed",892,42.6727431632357
+"Burkina Faso",2020-06-13,0,"confirmed",892,42.6727431632357
+"Burkina Faso",2020-06-14,2,"confirmed",894,42.7684219595659
+"Burkina Faso",2020-06-15,0,"confirmed",894,42.7684219595659
+"Burkina Faso",2020-06-16,1,"confirmed",895,42.8162613577309
+"Burkina Faso",2020-06-17,4,"confirmed",899,43.0076189503912
+"Cabo Verde",2020-01-22,0,"confirmed",0,0
+"Cabo Verde",2020-01-23,0,"confirmed",0,0
+"Cabo Verde",2020-01-24,0,"confirmed",0,0
+"Cabo Verde",2020-01-25,0,"confirmed",0,0
+"Cabo Verde",2020-01-26,0,"confirmed",0,0
+"Cabo Verde",2020-01-27,0,"confirmed",0,0
+"Cabo Verde",2020-01-28,0,"confirmed",0,0
+"Cabo Verde",2020-01-29,0,"confirmed",0,0
+"Cabo Verde",2020-01-30,0,"confirmed",0,0
+"Cabo Verde",2020-01-31,0,"confirmed",0,0
+"Cabo Verde",2020-02-01,0,"confirmed",0,0
+"Cabo Verde",2020-02-02,0,"confirmed",0,0
+"Cabo Verde",2020-02-03,0,"confirmed",0,0
+"Cabo Verde",2020-02-04,0,"confirmed",0,0
+"Cabo Verde",2020-02-05,0,"confirmed",0,0
+"Cabo Verde",2020-02-06,0,"confirmed",0,0
+"Cabo Verde",2020-02-07,0,"confirmed",0,0
+"Cabo Verde",2020-02-08,0,"confirmed",0,0
+"Cabo Verde",2020-02-09,0,"confirmed",0,0
+"Cabo Verde",2020-02-10,0,"confirmed",0,0
+"Cabo Verde",2020-02-11,0,"confirmed",0,0
+"Cabo Verde",2020-02-12,0,"confirmed",0,0
+"Cabo Verde",2020-02-13,0,"confirmed",0,0
+"Cabo Verde",2020-02-14,0,"confirmed",0,0
+"Cabo Verde",2020-02-15,0,"confirmed",0,0
+"Cabo Verde",2020-02-16,0,"confirmed",0,0
+"Cabo Verde",2020-02-17,0,"confirmed",0,0
+"Cabo Verde",2020-02-18,0,"confirmed",0,0
+"Cabo Verde",2020-02-19,0,"confirmed",0,0
+"Cabo Verde",2020-02-20,0,"confirmed",0,0
+"Cabo Verde",2020-02-21,0,"confirmed",0,0
+"Cabo Verde",2020-02-22,0,"confirmed",0,0
+"Cabo Verde",2020-02-23,0,"confirmed",0,0
+"Cabo Verde",2020-02-24,0,"confirmed",0,0
+"Cabo Verde",2020-02-25,0,"confirmed",0,0
+"Cabo Verde",2020-02-26,0,"confirmed",0,0
+"Cabo Verde",2020-02-27,0,"confirmed",0,0
+"Cabo Verde",2020-02-28,0,"confirmed",0,0
+"Cabo Verde",2020-02-29,0,"confirmed",0,0
+"Cabo Verde",2020-03-01,0,"confirmed",0,0
+"Cabo Verde",2020-03-02,0,"confirmed",0,0
+"Cabo Verde",2020-03-03,0,"confirmed",0,0
+"Cabo Verde",2020-03-04,0,"confirmed",0,0
+"Cabo Verde",2020-03-05,0,"confirmed",0,0
+"Cabo Verde",2020-03-06,0,"confirmed",0,0
+"Cabo Verde",2020-03-07,0,"confirmed",0,0
+"Cabo Verde",2020-03-08,0,"confirmed",0,0
+"Cabo Verde",2020-03-09,0,"confirmed",0,0
+"Cabo Verde",2020-03-10,0,"confirmed",0,0
+"Cabo Verde",2020-03-11,0,"confirmed",0,0
+"Cabo Verde",2020-03-12,0,"confirmed",0,0
+"Cabo Verde",2020-03-13,0,"confirmed",0,0
+"Cabo Verde",2020-03-14,0,"confirmed",0,0
+"Cabo Verde",2020-03-15,0,"confirmed",0,0
+"Cabo Verde",2020-03-16,0,"confirmed",0,0
+"Cabo Verde",2020-03-17,0,"confirmed",0,0
+"Cabo Verde",2020-03-18,0,"confirmed",0,0
+"Cabo Verde",2020-03-19,0,"confirmed",0,0
+"Cabo Verde",2020-03-20,1,"confirmed",1,1.79860320475119
+"Cabo Verde",2020-03-21,2,"confirmed",3,5.39580961425357
+"Cabo Verde",2020-03-22,0,"confirmed",3,5.39580961425357
+"Cabo Verde",2020-03-23,0,"confirmed",3,5.39580961425357
+"Cabo Verde",2020-03-24,0,"confirmed",3,5.39580961425357
+"Cabo Verde",2020-03-25,1,"confirmed",4,7.19441281900476
+"Cabo Verde",2020-03-26,0,"confirmed",4,7.19441281900476
+"Cabo Verde",2020-03-27,1,"confirmed",5,8.99301602375595
+"Cabo Verde",2020-03-28,0,"confirmed",5,8.99301602375595
+"Cabo Verde",2020-03-29,1,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-03-30,0,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-03-31,0,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-04-01,0,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-04-02,0,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-04-03,0,"confirmed",6,10.7916192285071
+"Cabo Verde",2020-04-04,1,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-05,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-06,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-07,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-08,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-09,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-10,0,"confirmed",7,12.5902224332583
+"Cabo Verde",2020-04-11,1,"confirmed",8,14.3888256380095
+"Cabo Verde",2020-04-12,0,"confirmed",8,14.3888256380095
+"Cabo Verde",2020-04-13,2,"confirmed",10,17.9860320475119
+"Cabo Verde",2020-04-14,1,"confirmed",11,19.7846352522631
+"Cabo Verde",2020-04-15,45,"confirmed",56,100.721779466067
+"Cabo Verde",2020-04-16,0,"confirmed",56,100.721779466067
+"Cabo Verde",2020-04-17,0,"confirmed",56,100.721779466067
+"Cabo Verde",2020-04-18,2,"confirmed",58,104.318985875569
+"Cabo Verde",2020-04-19,3,"confirmed",61,109.714795489823
+"Cabo Verde",2020-04-20,6,"confirmed",67,120.50641471833
+"Cabo Verde",2020-04-21,1,"confirmed",68,122.305017923081
+"Cabo Verde",2020-04-22,5,"confirmed",73,131.298033946837
+"Cabo Verde",2020-04-23,9,"confirmed",82,147.485462789598
+"Cabo Verde",2020-04-24,6,"confirmed",88,158.277082018105
+"Cabo Verde",2020-04-25,2,"confirmed",90,161.874288427607
+"Cabo Verde",2020-04-26,16,"confirmed",106,190.651939703626
+"Cabo Verde",2020-04-27,3,"confirmed",109,196.04774931788
+"Cabo Verde",2020-04-28,5,"confirmed",114,205.040765341636
+"Cabo Verde",2020-04-29,0,"confirmed",114,205.040765341636
+"Cabo Verde",2020-04-30,7,"confirmed",121,217.630987774894
+"Cabo Verde",2020-05-01,1,"confirmed",122,219.429590979645
+"Cabo Verde",2020-05-02,30,"confirmed",152,273.387687122181
+"Cabo Verde",2020-05-03,13,"confirmed",165,296.769528783946
+"Cabo Verde",2020-05-04,10,"confirmed",175,314.755560831458
+"Cabo Verde",2020-05-05,11,"confirmed",186,334.540196083721
+"Cabo Verde",2020-05-06,5,"confirmed",191,343.533212107477
+"Cabo Verde",2020-05-07,27,"confirmed",218,392.095498635759
+"Cabo Verde",2020-05-08,12,"confirmed",230,413.678737092774
+"Cabo Verde",2020-05-09,6,"confirmed",236,424.470356321281
+"Cabo Verde",2020-05-10,10,"confirmed",246,442.456388368793
+"Cabo Verde",2020-05-11,14,"confirmed",260,467.636833235309
+"Cabo Verde",2020-05-12,7,"confirmed",267,480.227055668568
+"Cabo Verde",2020-05-13,22,"confirmed",289,519.796326173094
+"Cabo Verde",2020-05-14,26,"confirmed",315,566.560009496625
+"Cabo Verde",2020-05-15,11,"confirmed",326,586.344644748888
+"Cabo Verde",2020-05-16,2,"confirmed",328,589.94185115839
+"Cabo Verde",2020-05-17,0,"confirmed",328,589.94185115839
+"Cabo Verde",2020-05-18,0,"confirmed",328,589.94185115839
+"Cabo Verde",2020-05-19,7,"confirmed",335,602.532073591649
+"Cabo Verde",2020-05-20,14,"confirmed",349,627.712518458165
+"Cabo Verde",2020-05-21,7,"confirmed",356,640.302740891424
+"Cabo Verde",2020-05-22,6,"confirmed",362,651.094360119931
+"Cabo Verde",2020-05-23,9,"confirmed",371,667.281788962692
+"Cabo Verde",2020-05-24,9,"confirmed",380,683.469217805452
+"Cabo Verde",2020-05-25,10,"confirmed",390,701.455249852964
+"Cabo Verde",2020-05-26,0,"confirmed",390,701.455249852964
+"Cabo Verde",2020-05-27,0,"confirmed",390,701.455249852964
+"Cabo Verde",2020-05-28,0,"confirmed",390,701.455249852964
+"Cabo Verde",2020-05-29,15,"confirmed",405,728.434297924232
+"Cabo Verde",2020-05-30,16,"confirmed",421,757.211949200251
+"Cabo Verde",2020-05-31,14,"confirmed",435,782.392394066768
+"Cabo Verde",2020-06-01,23,"confirmed",458,823.760267776045
+"Cabo Verde",2020-06-02,8,"confirmed",466,838.149093414055
+"Cabo Verde",2020-06-03,11,"confirmed",477,857.933728666318
+"Cabo Verde",2020-06-04,25,"confirmed",502,902.898808785097
+"Cabo Verde",2020-06-05,34,"confirmed",536,964.051317746638
+"Cabo Verde",2020-06-06,6,"confirmed",542,974.842936975145
+"Cabo Verde",2020-06-07,12,"confirmed",554,996.426175432159
+"Cabo Verde",2020-06-08,13,"confirmed",567,1019.80801709392
+"Cabo Verde",2020-06-09,18,"confirmed",585,1052.18287477945
+"Cabo Verde",2020-06-10,30,"confirmed",615,1106.14097092198
+"Cabo Verde",2020-06-11,42,"confirmed",657,1181.68230552153
+"Cabo Verde",2020-06-12,40,"confirmed",697,1253.62643371158
+"Cabo Verde",2020-06-13,29,"confirmed",726,1305.78592664936
+"Cabo Verde",2020-06-14,24,"confirmed",750,1348.95240356339
+"Cabo Verde",2020-06-15,10,"confirmed",760,1366.9384356109
+"Cabo Verde",2020-06-16,21,"confirmed",781,1404.70910291068
+"Cabo Verde",2020-06-17,11,"confirmed",792,1424.49373816294
+"Cote d'Ivoire",2020-01-22,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-23,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-24,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-25,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-26,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-27,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-28,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-29,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-30,0,"confirmed",0,0
+"Cote d'Ivoire",2020-01-31,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-01,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-02,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-03,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-04,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-05,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-06,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-07,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-08,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-09,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-10,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-11,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-12,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-13,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-14,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-15,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-16,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-17,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-18,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-19,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-20,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-21,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-22,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-23,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-24,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-25,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-26,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-27,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-28,0,"confirmed",0,0
+"Cote d'Ivoire",2020-02-29,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-01,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-02,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-03,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-04,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-05,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-06,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-07,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-08,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-09,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-10,0,"confirmed",0,0
+"Cote d'Ivoire",2020-03-11,1,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-12,0,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-13,0,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-14,0,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-15,0,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-16,0,"confirmed",1,0.0379099860741457
+"Cote d'Ivoire",2020-03-17,4,"confirmed",5,0.189549930370729
+"Cote d'Ivoire",2020-03-18,1,"confirmed",6,0.227459916444874
+"Cote d'Ivoire",2020-03-19,3,"confirmed",9,0.341189874667311
+"Cote d'Ivoire",2020-03-20,0,"confirmed",9,0.341189874667311
+"Cote d'Ivoire",2020-03-21,5,"confirmed",14,0.53073980503804
+"Cote d'Ivoire",2020-03-22,0,"confirmed",14,0.53073980503804
+"Cote d'Ivoire",2020-03-23,11,"confirmed",25,0.947749651853643
+"Cote d'Ivoire",2020-03-24,48,"confirmed",73,2.76742898341264
+"Cote d'Ivoire",2020-03-25,7,"confirmed",80,3.03279888593166
+"Cote d'Ivoire",2020-03-26,16,"confirmed",96,3.63935866311799
+"Cote d'Ivoire",2020-03-27,5,"confirmed",101,3.82890859348872
+"Cote d'Ivoire",2020-03-28,0,"confirmed",101,3.82890859348872
+"Cote d'Ivoire",2020-03-29,64,"confirmed",165,6.25514770223404
+"Cote d'Ivoire",2020-03-30,3,"confirmed",168,6.36887766045648
+"Cote d'Ivoire",2020-03-31,11,"confirmed",179,6.78588750727208
+"Cote d'Ivoire",2020-04-01,11,"confirmed",190,7.20289735408769
+"Cote d'Ivoire",2020-04-02,4,"confirmed",194,7.35453729838427
+"Cote d'Ivoire",2020-04-03,24,"confirmed",218,8.26437696416377
+"Cote d'Ivoire",2020-04-04,27,"confirmed",245,9.2879465881657
+"Cote d'Ivoire",2020-04-05,16,"confirmed",261,9.89450636535203
+"Cote d'Ivoire",2020-04-06,62,"confirmed",323,12.2449255019491
+"Cote d'Ivoire",2020-04-07,26,"confirmed",349,13.2305851398769
+"Cote d'Ivoire",2020-04-08,35,"confirmed",384,14.557434652472
+"Cote d'Ivoire",2020-04-09,60,"confirmed",444,16.8320338169207
+"Cote d'Ivoire",2020-04-10,0,"confirmed",444,16.8320338169207
+"Cote d'Ivoire",2020-04-11,89,"confirmed",533,20.2060225775197
+"Cote d'Ivoire",2020-04-12,41,"confirmed",574,21.7603320065596
+"Cote d'Ivoire",2020-04-13,52,"confirmed",626,23.7316512824152
+"Cote d'Ivoire",2020-04-14,12,"confirmed",638,24.186571115305
+"Cote d'Ivoire",2020-04-15,0,"confirmed",638,24.186571115305
+"Cote d'Ivoire",2020-04-16,16,"confirmed",654,24.7931308924913
+"Cote d'Ivoire",2020-04-17,34,"confirmed",688,26.0820704190123
+"Cote d'Ivoire",2020-04-18,113,"confirmed",801,30.3658988453907
+"Cote d'Ivoire",2020-04-19,46,"confirmed",847,32.1097582048014
+"Cote d'Ivoire",2020-04-20,0,"confirmed",847,32.1097582048014
+"Cote d'Ivoire",2020-04-21,69,"confirmed",916,34.7255472439175
+"Cote d'Ivoire",2020-04-22,36,"confirmed",952,36.0903067425867
+"Cote d'Ivoire",2020-04-23,52,"confirmed",1004,38.0616260184423
+"Cote d'Ivoire",2020-04-24,73,"confirmed",1077,40.8290550018549
+"Cote d'Ivoire",2020-04-25,0,"confirmed",1077,40.8290550018549
+"Cote d'Ivoire",2020-04-26,73,"confirmed",1150,43.5964839852676
+"Cote d'Ivoire",2020-04-27,14,"confirmed",1164,44.1272237903056
+"Cote d'Ivoire",2020-04-28,19,"confirmed",1183,44.8475135257144
+"Cote d'Ivoire",2020-04-29,55,"confirmed",1238,46.9325627597924
+"Cote d'Ivoire",2020-04-30,37,"confirmed",1275,48.3352322445358
+"Cote d'Ivoire",2020-05-01,58,"confirmed",1333,50.5340114368362
+"Cote d'Ivoire",2020-05-02,29,"confirmed",1362,51.6334010329865
+"Cote d'Ivoire",2020-05-03,36,"confirmed",1398,52.9981605316557
+"Cote d'Ivoire",2020-05-04,34,"confirmed",1432,54.2871000581767
+"Cote d'Ivoire",2020-05-05,32,"confirmed",1464,55.5002196125493
+"Cote d'Ivoire",2020-05-06,52,"confirmed",1516,57.4715388884049
+"Cote d'Ivoire",2020-05-07,55,"confirmed",1571,59.5565881224829
+"Cote d'Ivoire",2020-05-08,31,"confirmed",1602,60.7317976907814
+"Cote d'Ivoire",2020-05-09,65,"confirmed",1667,63.1959467856009
+"Cote d'Ivoire",2020-05-10,33,"confirmed",1700,64.4469763260477
+"Cote d'Ivoire",2020-05-11,30,"confirmed",1730,65.5842759082721
+"Cote d'Ivoire",2020-05-12,127,"confirmed",1857,70.3988441396886
+"Cote d'Ivoire",2020-05-13,55,"confirmed",1912,72.4838933737666
+"Cote d'Ivoire",2020-05-14,59,"confirmed",1971,74.7205825521412
+"Cote d'Ivoire",2020-05-15,46,"confirmed",2017,76.4644419115519
+"Cote d'Ivoire",2020-05-16,44,"confirmed",2061,78.1324812988143
+"Cote d'Ivoire",2020-05-17,48,"confirmed",2109,79.9521606303733
+"Cote d'Ivoire",2020-05-18,10,"confirmed",2119,80.3312604911148
+"Cote d'Ivoire",2020-05-19,34,"confirmed",2153,81.6202000176357
+"Cote d'Ivoire",2020-05-20,78,"confirmed",2231,84.5771789314191
+"Cote d'Ivoire",2020-05-21,70,"confirmed",2301,87.2308779566093
+"Cote d'Ivoire",2020-05-22,40,"confirmed",2341,88.7472773995751
+"Cote d'Ivoire",2020-05-23,25,"confirmed",2366,89.6950270514288
+"Cote d'Ivoire",2020-05-24,10,"confirmed",2376,90.0741269121702
+"Cote d'Ivoire",2020-05-25,47,"confirmed",2423,91.8558962576551
+"Cote d'Ivoire",2020-05-26,54,"confirmed",2477,93.9030355056589
+"Cote d'Ivoire",2020-05-27,79,"confirmed",2556,96.8979244055164
+"Cote d'Ivoire",2020-05-28,85,"confirmed",2641,100.120273221819
+"Cote d'Ivoire",2020-05-29,109,"confirmed",2750,104.252461703901
+"Cote d'Ivoire",2020-05-30,49,"confirmed",2799,106.110051021534
+"Cote d'Ivoire",2020-05-31,34,"confirmed",2833,107.398990548055
+"Cote d'Ivoire",2020-06-01,118,"confirmed",2951,111.872368904804
+"Cote d'Ivoire",2020-06-02,73,"confirmed",3024,114.639797888217
+"Cote d'Ivoire",2020-06-03,86,"confirmed",3110,117.900056690593
+"Cote d'Ivoire",2020-06-04,152,"confirmed",3262,123.662374573863
+"Cote d'Ivoire",2020-06-05,169,"confirmed",3431,130.069162220394
+"Cote d'Ivoire",2020-06-06,126,"confirmed",3557,134.845820465736
+"Cote d'Ivoire",2020-06-07,182,"confirmed",3739,141.745437931231
+"Cote d'Ivoire",2020-06-08,142,"confirmed",3881,147.12865595376
+"Cote d'Ivoire",2020-06-09,114,"confirmed",3995,151.450394366212
+"Cote d'Ivoire",2020-06-10,186,"confirmed",4181,158.501651776003
+"Cote d'Ivoire",2020-06-11,223,"confirmed",4404,166.955578670538
+"Cote d'Ivoire",2020-06-12,280,"confirmed",4684,177.570374771299
+"Cote d'Ivoire",2020-06-13,164,"confirmed",4848,183.787612487458
+"Cote d'Ivoire",2020-06-14,236,"confirmed",5084,192.734369200957
+"Cote d'Ivoire",2020-06-15,355,"confirmed",5439,206.192414257279
+"Cote d'Ivoire",2020-06-16,240,"confirmed",5679,215.290810915074
+"Cote d'Ivoire",2020-06-17,384,"confirmed",6063,229.848245567545
+"Gambia",2020-01-22,0,"confirmed",0,0
+"Gambia",2020-01-23,0,"confirmed",0,0
+"Gambia",2020-01-24,0,"confirmed",0,0
+"Gambia",2020-01-25,0,"confirmed",0,0
+"Gambia",2020-01-26,0,"confirmed",0,0
+"Gambia",2020-01-27,0,"confirmed",0,0
+"Gambia",2020-01-28,0,"confirmed",0,0
+"Gambia",2020-01-29,0,"confirmed",0,0
+"Gambia",2020-01-30,0,"confirmed",0,0
+"Gambia",2020-01-31,0,"confirmed",0,0
+"Gambia",2020-02-01,0,"confirmed",0,0
+"Gambia",2020-02-02,0,"confirmed",0,0
+"Gambia",2020-02-03,0,"confirmed",0,0
+"Gambia",2020-02-04,0,"confirmed",0,0
+"Gambia",2020-02-05,0,"confirmed",0,0
+"Gambia",2020-02-06,0,"confirmed",0,0
+"Gambia",2020-02-07,0,"confirmed",0,0
+"Gambia",2020-02-08,0,"confirmed",0,0
+"Gambia",2020-02-09,0,"confirmed",0,0
+"Gambia",2020-02-10,0,"confirmed",0,0
+"Gambia",2020-02-11,0,"confirmed",0,0
+"Gambia",2020-02-12,0,"confirmed",0,0
+"Gambia",2020-02-13,0,"confirmed",0,0
+"Gambia",2020-02-14,0,"confirmed",0,0
+"Gambia",2020-02-15,0,"confirmed",0,0
+"Gambia",2020-02-16,0,"confirmed",0,0
+"Gambia",2020-02-17,0,"confirmed",0,0
+"Gambia",2020-02-18,0,"confirmed",0,0
+"Gambia",2020-02-19,0,"confirmed",0,0
+"Gambia",2020-02-20,0,"confirmed",0,0
+"Gambia",2020-02-21,0,"confirmed",0,0
+"Gambia",2020-02-22,0,"confirmed",0,0
+"Gambia",2020-02-23,0,"confirmed",0,0
+"Gambia",2020-02-24,0,"confirmed",0,0
+"Gambia",2020-02-25,0,"confirmed",0,0
+"Gambia",2020-02-26,0,"confirmed",0,0
+"Gambia",2020-02-27,0,"confirmed",0,0
+"Gambia",2020-02-28,0,"confirmed",0,0
+"Gambia",2020-02-29,0,"confirmed",0,0
+"Gambia",2020-03-01,0,"confirmed",0,0
+"Gambia",2020-03-02,0,"confirmed",0,0
+"Gambia",2020-03-03,0,"confirmed",0,0
+"Gambia",2020-03-04,0,"confirmed",0,0
+"Gambia",2020-03-05,0,"confirmed",0,0
+"Gambia",2020-03-06,0,"confirmed",0,0
+"Gambia",2020-03-07,0,"confirmed",0,0
+"Gambia",2020-03-08,0,"confirmed",0,0
+"Gambia",2020-03-09,0,"confirmed",0,0
+"Gambia",2020-03-10,0,"confirmed",0,0
+"Gambia",2020-03-11,0,"confirmed",0,0
+"Gambia",2020-03-12,0,"confirmed",0,0
+"Gambia",2020-03-13,0,"confirmed",0,0
+"Gambia",2020-03-14,0,"confirmed",0,0
+"Gambia",2020-03-15,0,"confirmed",0,0
+"Gambia",2020-03-16,0,"confirmed",0,0
+"Gambia",2020-03-17,1,"confirmed",1,0.413792875148759
+"Gambia",2020-03-18,0,"confirmed",1,0.413792875148759
+"Gambia",2020-03-19,0,"confirmed",1,0.413792875148759
+"Gambia",2020-03-20,0,"confirmed",1,0.413792875148759
+"Gambia",2020-03-21,0,"confirmed",1,0.413792875148759
+"Gambia",2020-03-22,0,"confirmed",1,0.413792875148759
+"Gambia",2020-03-23,1,"confirmed",2,0.827585750297517
+"Gambia",2020-03-24,1,"confirmed",3,1.24137862544628
+"Gambia",2020-03-25,0,"confirmed",3,1.24137862544628
+"Gambia",2020-03-26,0,"confirmed",3,1.24137862544628
+"Gambia",2020-03-27,0,"confirmed",3,1.24137862544628
+"Gambia",2020-03-28,0,"confirmed",3,1.24137862544628
+"Gambia",2020-03-29,1,"confirmed",4,1.65517150059503
+"Gambia",2020-03-30,0,"confirmed",4,1.65517150059503
+"Gambia",2020-03-31,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-01,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-02,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-03,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-04,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-05,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-06,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-07,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-08,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-09,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-10,0,"confirmed",4,1.65517150059503
+"Gambia",2020-04-11,5,"confirmed",9,3.72413587633883
+"Gambia",2020-04-12,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-13,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-14,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-15,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-16,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-17,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-18,0,"confirmed",9,3.72413587633883
+"Gambia",2020-04-19,1,"confirmed",10,4.13792875148759
+"Gambia",2020-04-20,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-21,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-22,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-23,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-24,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-25,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-26,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-27,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-28,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-29,0,"confirmed",10,4.13792875148759
+"Gambia",2020-04-30,1,"confirmed",11,4.55172162663634
+"Gambia",2020-05-01,1,"confirmed",12,4.9655145017851
+"Gambia",2020-05-02,5,"confirmed",17,7.0344788775289
+"Gambia",2020-05-03,0,"confirmed",17,7.0344788775289
+"Gambia",2020-05-04,0,"confirmed",17,7.0344788775289
+"Gambia",2020-05-05,0,"confirmed",17,7.0344788775289
+"Gambia",2020-05-06,0,"confirmed",17,7.0344788775289
+"Gambia",2020-05-07,1,"confirmed",18,7.44827175267765
+"Gambia",2020-05-08,2,"confirmed",20,8.27585750297517
+"Gambia",2020-05-09,0,"confirmed",20,8.27585750297517
+"Gambia",2020-05-10,0,"confirmed",20,8.27585750297517
+"Gambia",2020-05-11,2,"confirmed",22,9.10344325327269
+"Gambia",2020-05-12,0,"confirmed",22,9.10344325327269
+"Gambia",2020-05-13,1,"confirmed",23,9.51723612842145
+"Gambia",2020-05-14,0,"confirmed",23,9.51723612842145
+"Gambia",2020-05-15,0,"confirmed",23,9.51723612842145
+"Gambia",2020-05-16,0,"confirmed",23,9.51723612842145
+"Gambia",2020-05-17,0,"confirmed",23,9.51723612842145
+"Gambia",2020-05-18,1,"confirmed",24,9.93102900357021
+"Gambia",2020-05-19,0,"confirmed",24,9.93102900357021
+"Gambia",2020-05-20,0,"confirmed",24,9.93102900357021
+"Gambia",2020-05-21,0,"confirmed",24,9.93102900357021
+"Gambia",2020-05-22,1,"confirmed",25,10.344821878719
+"Gambia",2020-05-23,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-24,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-25,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-26,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-27,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-28,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-29,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-30,0,"confirmed",25,10.344821878719
+"Gambia",2020-05-31,0,"confirmed",25,10.344821878719
+"Gambia",2020-06-01,0,"confirmed",25,10.344821878719
+"Gambia",2020-06-02,0,"confirmed",25,10.344821878719
+"Gambia",2020-06-03,1,"confirmed",26,10.7586147538677
+"Gambia",2020-06-04,0,"confirmed",26,10.7586147538677
+"Gambia",2020-06-05,0,"confirmed",26,10.7586147538677
+"Gambia",2020-06-06,0,"confirmed",26,10.7586147538677
+"Gambia",2020-06-07,0,"confirmed",26,10.7586147538677
+"Gambia",2020-06-08,2,"confirmed",28,11.5862005041652
+"Gambia",2020-06-09,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-10,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-11,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-12,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-13,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-14,0,"confirmed",28,11.5862005041652
+"Gambia",2020-06-15,2,"confirmed",30,12.4137862544628
+"Gambia",2020-06-16,4,"confirmed",34,14.0689577550578
+"Gambia",2020-06-17,0,"confirmed",34,14.0689577550578
+"Ghana",2020-01-22,0,"confirmed",0,0
+"Ghana",2020-01-23,0,"confirmed",0,0
+"Ghana",2020-01-24,0,"confirmed",0,0
+"Ghana",2020-01-25,0,"confirmed",0,0
+"Ghana",2020-01-26,0,"confirmed",0,0
+"Ghana",2020-01-27,0,"confirmed",0,0
+"Ghana",2020-01-28,0,"confirmed",0,0
+"Ghana",2020-01-29,0,"confirmed",0,0
+"Ghana",2020-01-30,0,"confirmed",0,0
+"Ghana",2020-01-31,0,"confirmed",0,0
+"Ghana",2020-02-01,0,"confirmed",0,0
+"Ghana",2020-02-02,0,"confirmed",0,0
+"Ghana",2020-02-03,0,"confirmed",0,0
+"Ghana",2020-02-04,0,"confirmed",0,0
+"Ghana",2020-02-05,0,"confirmed",0,0
+"Ghana",2020-02-06,0,"confirmed",0,0
+"Ghana",2020-02-07,0,"confirmed",0,0
+"Ghana",2020-02-08,0,"confirmed",0,0
+"Ghana",2020-02-09,0,"confirmed",0,0
+"Ghana",2020-02-10,0,"confirmed",0,0
+"Ghana",2020-02-11,0,"confirmed",0,0
+"Ghana",2020-02-12,0,"confirmed",0,0
+"Ghana",2020-02-13,0,"confirmed",0,0
+"Ghana",2020-02-14,0,"confirmed",0,0
+"Ghana",2020-02-15,0,"confirmed",0,0
+"Ghana",2020-02-16,0,"confirmed",0,0
+"Ghana",2020-02-17,0,"confirmed",0,0
+"Ghana",2020-02-18,0,"confirmed",0,0
+"Ghana",2020-02-19,0,"confirmed",0,0
+"Ghana",2020-02-20,0,"confirmed",0,0
+"Ghana",2020-02-21,0,"confirmed",0,0
+"Ghana",2020-02-22,0,"confirmed",0,0
+"Ghana",2020-02-23,0,"confirmed",0,0
+"Ghana",2020-02-24,0,"confirmed",0,0
+"Ghana",2020-02-25,0,"confirmed",0,0
+"Ghana",2020-02-26,0,"confirmed",0,0
+"Ghana",2020-02-27,0,"confirmed",0,0
+"Ghana",2020-02-28,0,"confirmed",0,0
+"Ghana",2020-02-29,0,"confirmed",0,0
+"Ghana",2020-03-01,0,"confirmed",0,0
+"Ghana",2020-03-02,0,"confirmed",0,0
+"Ghana",2020-03-03,0,"confirmed",0,0
+"Ghana",2020-03-04,0,"confirmed",0,0
+"Ghana",2020-03-05,0,"confirmed",0,0
+"Ghana",2020-03-06,0,"confirmed",0,0
+"Ghana",2020-03-07,0,"confirmed",0,0
+"Ghana",2020-03-08,0,"confirmed",0,0
+"Ghana",2020-03-09,0,"confirmed",0,0
+"Ghana",2020-03-10,0,"confirmed",0,0
+"Ghana",2020-03-11,0,"confirmed",0,0
+"Ghana",2020-03-12,0,"confirmed",0,0
+"Ghana",2020-03-13,0,"confirmed",0,0
+"Ghana",2020-03-14,3,"confirmed",3,0.0965470277353865
+"Ghana",2020-03-15,3,"confirmed",6,0.193094055470773
+"Ghana",2020-03-16,0,"confirmed",6,0.193094055470773
+"Ghana",2020-03-17,1,"confirmed",7,0.225276398049235
+"Ghana",2020-03-18,0,"confirmed",7,0.225276398049235
+"Ghana",2020-03-19,4,"confirmed",11,0.354005768363084
+"Ghana",2020-03-20,5,"confirmed",16,0.514917481255395
+"Ghana",2020-03-21,3,"confirmed",19,0.611464508990781
+"Ghana",2020-03-22,4,"confirmed",23,0.74019387930463
+"Ghana",2020-03-23,4,"confirmed",27,0.868923249618478
+"Ghana",2020-03-24,26,"confirmed",53,1.70566415665849
+"Ghana",2020-03-25,40,"confirmed",93,2.99295785979698
+"Ghana",2020-03-26,39,"confirmed",132,4.24806922035701
+"Ghana",2020-03-27,5,"confirmed",137,4.40898093324932
+"Ghana",2020-03-28,4,"confirmed",141,4.53771030356316
+"Ghana",2020-03-29,11,"confirmed",152,4.89171607192625
+"Ghana",2020-03-30,0,"confirmed",152,4.89171607192625
+"Ghana",2020-03-31,9,"confirmed",161,5.18135715513241
+"Ghana",2020-04-01,34,"confirmed",195,6.27555680280012
+"Ghana",2020-04-02,9,"confirmed",204,6.56519788600628
+"Ghana",2020-04-03,1,"confirmed",205,6.59738022858474
+"Ghana",2020-04-04,0,"confirmed",205,6.59738022858474
+"Ghana",2020-04-05,9,"confirmed",214,6.8870213117909
+"Ghana",2020-04-06,0,"confirmed",214,6.8870213117909
+"Ghana",2020-04-07,73,"confirmed",287,9.23633232001864
+"Ghana",2020-04-08,26,"confirmed",313,10.0730732270587
+"Ghana",2020-04-09,65,"confirmed",378,12.1649254946587
+"Ghana",2020-04-10,0,"confirmed",378,12.1649254946587
+"Ghana",2020-04-11,30,"confirmed",408,13.1303957720126
+"Ghana",2020-04-12,158,"confirmed",566,18.2152058994096
+"Ghana",2020-04-13,0,"confirmed",566,18.2152058994096
+"Ghana",2020-04-14,70,"confirmed",636,20.4679698799019
+"Ghana",2020-04-15,0,"confirmed",636,20.4679698799019
+"Ghana",2020-04-16,5,"confirmed",641,20.6288815927942
+"Ghana",2020-04-17,0,"confirmed",641,20.6288815927942
+"Ghana",2020-04-18,193,"confirmed",834,26.8400737104374
+"Ghana",2020-04-19,208,"confirmed",1042,33.5340009667576
+"Ghana",2020-04-20,0,"confirmed",1042,33.5340009667576
+"Ghana",2020-04-21,0,"confirmed",1042,33.5340009667576
+"Ghana",2020-04-22,112,"confirmed",1154,37.1384233355453
+"Ghana",2020-04-23,0,"confirmed",1154,37.1384233355453
+"Ghana",2020-04-24,125,"confirmed",1279,41.1612161578531
+"Ghana",2020-04-25,0,"confirmed",1279,41.1612161578531
+"Ghana",2020-04-26,271,"confirmed",1550,49.8826309966163
+"Ghana",2020-04-27,0,"confirmed",1550,49.8826309966163
+"Ghana",2020-04-28,121,"confirmed",1671,53.7766944486103
+"Ghana",2020-04-29,0,"confirmed",1671,53.7766944486103
+"Ghana",2020-04-30,403,"confirmed",2074,66.7461785077305
+"Ghana",2020-05-01,0,"confirmed",2074,66.7461785077305
+"Ghana",2020-05-02,95,"confirmed",2169,69.8035010526844
+"Ghana",2020-05-03,0,"confirmed",2169,69.8035010526844
+"Ghana",2020-05-04,550,"confirmed",2719,87.5037894708386
+"Ghana",2020-05-05,0,"confirmed",2719,87.5037894708386
+"Ghana",2020-05-06,372,"confirmed",3091,99.4756209100265
+"Ghana",2020-05-07,0,"confirmed",3091,99.4756209100265
+"Ghana",2020-05-08,921,"confirmed",4012,129.11555842479
+"Ghana",2020-05-09,251,"confirmed",4263,137.193326411984
+"Ghana",2020-05-10,0,"confirmed",4263,137.193326411984
+"Ghana",2020-05-11,437,"confirmed",4700,151.257010118772
+"Ghana",2020-05-12,427,"confirmed",5127,164.998870399776
+"Ghana",2020-05-13,281,"confirmed",5408,174.042108664323
+"Ghana",2020-05-14,122,"confirmed",5530,177.968354458896
+"Ghana",2020-05-15,108,"confirmed",5638,181.44404745737
+"Ghana",2020-05-16,97,"confirmed",5735,184.565734687481
+"Ghana",2020-05-17,0,"confirmed",5735,184.565734687481
+"Ghana",2020-05-18,0,"confirmed",5735,184.565734687481
+"Ghana",2020-05-19,361,"confirmed",6096,196.183560358305
+"Ghana",2020-05-20,173,"confirmed",6269,201.751105624379
+"Ghana",2020-05-21,0,"confirmed",6269,201.751105624379
+"Ghana",2020-05-22,217,"confirmed",6486,208.734673963906
+"Ghana",2020-05-23,131,"confirmed",6617,212.950560841684
+"Ghana",2020-05-24,66,"confirmed",6683,215.074595451863
+"Ghana",2020-05-25,125,"confirmed",6808,219.09738827417
+"Ghana",2020-05-26,309,"confirmed",7117,229.041732130915
+"Ghana",2020-05-27,186,"confirmed",7303,235.027647850509
+"Ghana",2020-05-28,0,"confirmed",7303,235.027647850509
+"Ghana",2020-05-29,313,"confirmed",7616,245.100721077568
+"Ghana",2020-05-30,152,"confirmed",7768,249.992437149494
+"Ghana",2020-05-31,302,"confirmed",8070,259.71150460819
+"Ghana",2020-06-01,0,"confirmed",8070,259.71150460819
+"Ghana",2020-06-02,227,"confirmed",8297,267.016896373501
+"Ghana",2020-06-03,251,"confirmed",8548,275.094664360695
+"Ghana",2020-06-04,337,"confirmed",8885,285.940113809636
+"Ghana",2020-06-05,283,"confirmed",9168,295.047716759341
+"Ghana",2020-06-06,294,"confirmed",9462,304.509325477409
+"Ghana",2020-06-07,176,"confirmed",9638,310.173417771218
+"Ghana",2020-06-08,272,"confirmed",9910,318.92701495256
+"Ghana",2020-06-09,291,"confirmed",10201,328.292076642893
+"Ghana",2020-06-10,0,"confirmed",10201,328.292076642893
+"Ghana",2020-06-11,157,"confirmed",10358,333.344704427711
+"Ghana",2020-06-12,498,"confirmed",10856,349.371511031785
+"Ghana",2020-06-13,262,"confirmed",11118,357.803284787342
+"Ghana",2020-06-14,846,"confirmed",11964,385.029546608721
+"Ghana",2020-06-15,0,"confirmed",11964,385.029546608721
+"Ghana",2020-06-16,229,"confirmed",12193,392.399303059189
+"Ghana",2020-06-17,397,"confirmed",12590,405.175693062839
+"Guinea",2020-01-22,0,"confirmed",0,0
+"Guinea",2020-01-23,0,"confirmed",0,0
+"Guinea",2020-01-24,0,"confirmed",0,0
+"Guinea",2020-01-25,0,"confirmed",0,0
+"Guinea",2020-01-26,0,"confirmed",0,0
+"Guinea",2020-01-27,0,"confirmed",0,0
+"Guinea",2020-01-28,0,"confirmed",0,0
+"Guinea",2020-01-29,0,"confirmed",0,0
+"Guinea",2020-01-30,0,"confirmed",0,0
+"Guinea",2020-01-31,0,"confirmed",0,0
+"Guinea",2020-02-01,0,"confirmed",0,0
+"Guinea",2020-02-02,0,"confirmed",0,0
+"Guinea",2020-02-03,0,"confirmed",0,0
+"Guinea",2020-02-04,0,"confirmed",0,0
+"Guinea",2020-02-05,0,"confirmed",0,0
+"Guinea",2020-02-06,0,"confirmed",0,0
+"Guinea",2020-02-07,0,"confirmed",0,0
+"Guinea",2020-02-08,0,"confirmed",0,0
+"Guinea",2020-02-09,0,"confirmed",0,0
+"Guinea",2020-02-10,0,"confirmed",0,0
+"Guinea",2020-02-11,0,"confirmed",0,0
+"Guinea",2020-02-12,0,"confirmed",0,0
+"Guinea",2020-02-13,0,"confirmed",0,0
+"Guinea",2020-02-14,0,"confirmed",0,0
+"Guinea",2020-02-15,0,"confirmed",0,0
+"Guinea",2020-02-16,0,"confirmed",0,0
+"Guinea",2020-02-17,0,"confirmed",0,0
+"Guinea",2020-02-18,0,"confirmed",0,0
+"Guinea",2020-02-19,0,"confirmed",0,0
+"Guinea",2020-02-20,0,"confirmed",0,0
+"Guinea",2020-02-21,0,"confirmed",0,0
+"Guinea",2020-02-22,0,"confirmed",0,0
+"Guinea",2020-02-23,0,"confirmed",0,0
+"Guinea",2020-02-24,0,"confirmed",0,0
+"Guinea",2020-02-25,0,"confirmed",0,0
+"Guinea",2020-02-26,0,"confirmed",0,0
+"Guinea",2020-02-27,0,"confirmed",0,0
+"Guinea",2020-02-28,0,"confirmed",0,0
+"Guinea",2020-02-29,0,"confirmed",0,0
+"Guinea",2020-03-01,0,"confirmed",0,0
+"Guinea",2020-03-02,0,"confirmed",0,0
+"Guinea",2020-03-03,0,"confirmed",0,0
+"Guinea",2020-03-04,0,"confirmed",0,0
+"Guinea",2020-03-05,0,"confirmed",0,0
+"Guinea",2020-03-06,0,"confirmed",0,0
+"Guinea",2020-03-07,0,"confirmed",0,0
+"Guinea",2020-03-08,0,"confirmed",0,0
+"Guinea",2020-03-09,0,"confirmed",0,0
+"Guinea",2020-03-10,0,"confirmed",0,0
+"Guinea",2020-03-11,0,"confirmed",0,0
+"Guinea",2020-03-12,0,"confirmed",0,0
+"Guinea",2020-03-13,1,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-14,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-15,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-16,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-17,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-18,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-19,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-20,0,"confirmed",1,0.0761452531620268
+"Guinea",2020-03-21,1,"confirmed",2,0.152290506324054
+"Guinea",2020-03-22,0,"confirmed",2,0.152290506324054
+"Guinea",2020-03-23,2,"confirmed",4,0.304581012648107
+"Guinea",2020-03-24,0,"confirmed",4,0.304581012648107
+"Guinea",2020-03-25,0,"confirmed",4,0.304581012648107
+"Guinea",2020-03-26,0,"confirmed",4,0.304581012648107
+"Guinea",2020-03-27,4,"confirmed",8,0.609162025296215
+"Guinea",2020-03-28,0,"confirmed",8,0.609162025296215
+"Guinea",2020-03-29,8,"confirmed",16,1.21832405059243
+"Guinea",2020-03-30,6,"confirmed",22,1.67519556956459
+"Guinea",2020-03-31,0,"confirmed",22,1.67519556956459
+"Guinea",2020-04-01,8,"confirmed",30,2.2843575948608
+"Guinea",2020-04-02,22,"confirmed",52,3.95955316442539
+"Guinea",2020-04-03,21,"confirmed",73,5.55860348082796
+"Guinea",2020-04-04,38,"confirmed",111,8.45212310098498
+"Guinea",2020-04-05,10,"confirmed",121,9.21357563260525
+"Guinea",2020-04-06,7,"confirmed",128,9.74659240473943
+"Guinea",2020-04-07,16,"confirmed",144,10.9649164553319
+"Guinea",2020-04-08,20,"confirmed",164,12.4878215185724
+"Guinea",2020-04-09,30,"confirmed",194,14.7721791134332
+"Guinea",2020-04-10,18,"confirmed",212,16.1427936703497
+"Guinea",2020-04-11,38,"confirmed",250,19.0363132905067
+"Guinea",2020-04-12,0,"confirmed",250,19.0363132905067
+"Guinea",2020-04-13,69,"confirmed",319,24.2903357586866
+"Guinea",2020-04-14,44,"confirmed",363,27.6407268978157
+"Guinea",2020-04-15,41,"confirmed",404,30.7626822774588
+"Guinea",2020-04-16,34,"confirmed",438,33.3516208849677
+"Guinea",2020-04-17,39,"confirmed",477,36.3212857582868
+"Guinea",2020-04-18,41,"confirmed",518,39.4432411379299
+"Guinea",2020-04-19,61,"confirmed",579,44.0881015808135
+"Guinea",2020-04-20,43,"confirmed",622,47.3623474667807
+"Guinea",2020-04-21,66,"confirmed",688,52.3879341754744
+"Guinea",2020-04-22,73,"confirmed",761,57.9465376563024
+"Guinea",2020-04-23,101,"confirmed",862,65.6372082256671
+"Guinea",2020-04-24,92,"confirmed",954,72.6425715165736
+"Guinea",2020-04-25,42,"confirmed",996,75.8406721493787
+"Guinea",2020-04-26,0,"confirmed",996,75.8406721493787
+"Guinea",2020-04-27,167,"confirmed",1163,88.5569294274372
+"Guinea",2020-04-28,77,"confirmed",1240,94.4201139209133
+"Guinea",2020-04-29,111,"confirmed",1351,102.872237021898
+"Guinea",2020-04-30,144,"confirmed",1495,113.83715347723
+"Guinea",2020-05-01,42,"confirmed",1537,117.035254110035
+"Guinea",2020-05-02,49,"confirmed",1586,120.766371514975
+"Guinea",2020-05-03,0,"confirmed",1586,120.766371514975
+"Guinea",2020-05-04,124,"confirmed",1710,130.208382907066
+"Guinea",2020-05-05,101,"confirmed",1811,137.899053476431
+"Guinea",2020-05-06,45,"confirmed",1856,141.325589868722
+"Guinea",2020-05-07,71,"confirmed",1927,146.731902843226
+"Guinea",2020-05-08,82,"confirmed",2009,152.975813602512
+"Guinea",2020-05-09,33,"confirmed",2042,155.488606956859
+"Guinea",2020-05-10,104,"confirmed",2146,163.40771328571
+"Guinea",2020-05-11,0,"confirmed",2146,163.40771328571
+"Guinea",2020-05-12,152,"confirmed",2298,174.981791766338
+"Guinea",2020-05-13,76,"confirmed",2374,180.768831006652
+"Guinea",2020-05-14,99,"confirmed",2473,188.307211069692
+"Guinea",2020-05-15,0,"confirmed",2473,188.307211069692
+"Guinea",2020-05-16,185,"confirmed",2658,202.394082904667
+"Guinea",2020-05-17,0,"confirmed",2658,202.394082904667
+"Guinea",2020-05-18,138,"confirmed",2796,212.902127841027
+"Guinea",2020-05-19,67,"confirmed",2863,218.003859802883
+"Guinea",2020-05-20,0,"confirmed",2863,218.003859802883
+"Guinea",2020-05-21,204,"confirmed",3067,233.537491447936
+"Guinea",2020-05-22,0,"confirmed",3067,233.537491447936
+"Guinea",2020-05-23,109,"confirmed",3176,241.837324042597
+"Guinea",2020-05-24,99,"confirmed",3275,249.375704105638
+"Guinea",2020-05-25,0,"confirmed",3275,249.375704105638
+"Guinea",2020-05-26,0,"confirmed",3275,249.375704105638
+"Guinea",2020-05-27,0,"confirmed",3275,249.375704105638
+"Guinea",2020-05-28,278,"confirmed",3553,270.544084484681
+"Guinea",2020-05-29,103,"confirmed",3656,278.38704556037
+"Guinea",2020-05-30,50,"confirmed",3706,282.194308218471
+"Guinea",2020-05-31,0,"confirmed",3706,282.194308218471
+"Guinea",2020-06-01,138,"confirmed",3844,292.702353154831
+"Guinea",2020-06-02,42,"confirmed",3886,295.900453787636
+"Guinea",2020-06-03,47,"confirmed",3933,299.479280686251
+"Guinea",2020-06-04,58,"confirmed",3991,303.895705369649
+"Guinea",2020-06-05,69,"confirmed",4060,309.149727837829
+"Guinea",2020-06-06,57,"confirmed",4117,313.490007268064
+"Guinea",2020-06-07,0,"confirmed",4117,313.490007268064
+"Guinea",2020-06-08,99,"confirmed",4216,321.028387331105
+"Guinea",2020-06-09,42,"confirmed",4258,324.22648796391
+"Guinea",2020-06-10,0,"confirmed",4258,324.22648796391
+"Guinea",2020-06-11,114,"confirmed",4372,332.907046824381
+"Guinea",2020-06-12,54,"confirmed",4426,337.018890495131
+"Guinea",2020-06-13,58,"confirmed",4484,341.435315178528
+"Guinea",2020-06-14,48,"confirmed",4532,345.090287330306
+"Guinea",2020-06-15,40,"confirmed",4572,348.136097456787
+"Guinea",2020-06-16,67,"confirmed",4639,353.237829418642
+"Guinea",2020-06-17,29,"confirmed",4668,355.446041760341
+"Guinea-Bissau",2020-01-22,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-23,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-24,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-25,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-26,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-27,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-28,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-29,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-30,0,"confirmed",0,0
+"Guinea-Bissau",2020-01-31,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-01,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-02,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-03,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-04,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-05,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-06,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-07,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-08,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-09,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-10,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-11,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-12,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-13,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-14,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-15,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-16,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-17,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-18,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-19,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-20,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-21,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-22,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-23,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-24,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-25,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-26,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-27,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-28,0,"confirmed",0,0
+"Guinea-Bissau",2020-02-29,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-01,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-02,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-03,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-04,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-05,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-06,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-07,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-08,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-09,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-10,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-11,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-12,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-13,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-14,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-15,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-16,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-17,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-18,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-19,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-20,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-21,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-22,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-23,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-24,0,"confirmed",0,0
+"Guinea-Bissau",2020-03-25,2,"confirmed",2,1.01625964620953
+"Guinea-Bissau",2020-03-26,0,"confirmed",2,1.01625964620953
+"Guinea-Bissau",2020-03-27,0,"confirmed",2,1.01625964620953
+"Guinea-Bissau",2020-03-28,0,"confirmed",2,1.01625964620953
+"Guinea-Bissau",2020-03-29,0,"confirmed",2,1.01625964620953
+"Guinea-Bissau",2020-03-30,6,"confirmed",8,4.06503858483812
+"Guinea-Bissau",2020-03-31,0,"confirmed",8,4.06503858483812
+"Guinea-Bissau",2020-04-01,1,"confirmed",9,4.57316840794288
+"Guinea-Bissau",2020-04-02,0,"confirmed",9,4.57316840794288
+"Guinea-Bissau",2020-04-03,6,"confirmed",15,7.62194734657147
+"Guinea-Bissau",2020-04-04,3,"confirmed",18,9.14633681588577
+"Guinea-Bissau",2020-04-05,0,"confirmed",18,9.14633681588577
+"Guinea-Bissau",2020-04-06,0,"confirmed",18,9.14633681588577
+"Guinea-Bissau",2020-04-07,15,"confirmed",33,16.7682841624572
+"Guinea-Bissau",2020-04-08,0,"confirmed",33,16.7682841624572
+"Guinea-Bissau",2020-04-09,3,"confirmed",36,18.2926736317715
+"Guinea-Bissau",2020-04-10,0,"confirmed",36,18.2926736317715
+"Guinea-Bissau",2020-04-11,2,"confirmed",38,19.3089332779811
+"Guinea-Bissau",2020-04-12,0,"confirmed",38,19.3089332779811
+"Guinea-Bissau",2020-04-13,0,"confirmed",38,19.3089332779811
+"Guinea-Bissau",2020-04-14,0,"confirmed",38,19.3089332779811
+"Guinea-Bissau",2020-04-15,5,"confirmed",43,21.8495823935049
+"Guinea-Bissau",2020-04-16,0,"confirmed",43,21.8495823935049
+"Guinea-Bissau",2020-04-17,0,"confirmed",43,21.8495823935049
+"Guinea-Bissau",2020-04-18,3,"confirmed",46,23.3739718628192
+"Guinea-Bissau",2020-04-19,4,"confirmed",50,25.4064911552382
+"Guinea-Bissau",2020-04-20,0,"confirmed",50,25.4064911552382
+"Guinea-Bissau",2020-04-21,0,"confirmed",50,25.4064911552382
+"Guinea-Bissau",2020-04-22,0,"confirmed",50,25.4064911552382
+"Guinea-Bissau",2020-04-23,0,"confirmed",50,25.4064911552382
+"Guinea-Bissau",2020-04-24,2,"confirmed",52,26.4227508014478
+"Guinea-Bissau",2020-04-25,0,"confirmed",52,26.4227508014478
+"Guinea-Bissau",2020-04-26,1,"confirmed",53,26.9308806245525
+"Guinea-Bissau",2020-04-27,20,"confirmed",73,37.0934770866478
+"Guinea-Bissau",2020-04-28,0,"confirmed",73,37.0934770866478
+"Guinea-Bissau",2020-04-29,132,"confirmed",205,104.166613736477
+"Guinea-Bissau",2020-04-30,0,"confirmed",205,104.166613736477
+"Guinea-Bissau",2020-05-01,52,"confirmed",257,130.589364537925
+"Guinea-Bissau",2020-05-02,0,"confirmed",257,130.589364537925
+"Guinea-Bissau",2020-05-03,0,"confirmed",257,130.589364537925
+"Guinea-Bissau",2020-05-04,156,"confirmed",413,209.857616942268
+"Guinea-Bissau",2020-05-05,0,"confirmed",413,209.857616942268
+"Guinea-Bissau",2020-05-06,62,"confirmed",475,241.361665974763
+"Guinea-Bissau",2020-05-07,89,"confirmed",564,286.585220231087
+"Guinea-Bissau",2020-05-08,30,"confirmed",594,301.82911492423
+"Guinea-Bissau",2020-05-09,47,"confirmed",641,325.711216610154
+"Guinea-Bissau",2020-05-10,85,"confirmed",726,368.902251574059
+"Guinea-Bissau",2020-05-11,35,"confirmed",761,386.686795382726
+"Guinea-Bissau",2020-05-12,59,"confirmed",820,416.666454945907
+"Guinea-Bissau",2020-05-13,16,"confirmed",836,424.796532115583
+"Guinea-Bissau",2020-05-14,77,"confirmed",913,463.92252849465
+"Guinea-Bissau",2020-05-15,0,"confirmed",913,463.92252849465
+"Guinea-Bissau",2020-05-16,56,"confirmed",969,492.377798588517
+"Guinea-Bissau",2020-05-17,21,"confirmed",990,503.048524873717
+"Guinea-Bissau",2020-05-18,42,"confirmed",1032,524.389977444117
+"Guinea-Bissau",2020-05-19,6,"confirmed",1038,527.438756382746
+"Guinea-Bissau",2020-05-20,51,"confirmed",1089,553.353377361089
+"Guinea-Bissau",2020-05-21,20,"confirmed",1109,563.515973823184
+"Guinea-Bissau",2020-05-22,5,"confirmed",1114,566.056622938708
+"Guinea-Bissau",2020-05-23,0,"confirmed",1114,566.056622938708
+"Guinea-Bissau",2020-05-24,0,"confirmed",1114,566.056622938708
+"Guinea-Bissau",2020-05-25,64,"confirmed",1178,598.576931617413
+"Guinea-Bissau",2020-05-26,0,"confirmed",1178,598.576931617413
+"Guinea-Bissau",2020-05-27,17,"confirmed",1195,607.215138610194
+"Guinea-Bissau",2020-05-28,0,"confirmed",1195,607.215138610194
+"Guinea-Bissau",2020-05-29,61,"confirmed",1256,638.211057819585
+"Guinea-Bissau",2020-05-30,0,"confirmed",1256,638.211057819585
+"Guinea-Bissau",2020-05-31,0,"confirmed",1256,638.211057819585
+"Guinea-Bissau",2020-06-01,83,"confirmed",1339,680.38583313728
+"Guinea-Bissau",2020-06-02,0,"confirmed",1339,680.38583313728
+"Guinea-Bissau",2020-06-03,0,"confirmed",1339,680.38583313728
+"Guinea-Bissau",2020-06-04,0,"confirmed",1339,680.38583313728
+"Guinea-Bissau",2020-06-05,29,"confirmed",1368,695.121598007318
+"Guinea-Bissau",2020-06-06,0,"confirmed",1368,695.121598007318
+"Guinea-Bissau",2020-06-07,0,"confirmed",1368,695.121598007318
+"Guinea-Bissau",2020-06-08,21,"confirmed",1389,705.792324292518
+"Guinea-Bissau",2020-06-09,0,"confirmed",1389,705.792324292518
+"Guinea-Bissau",2020-06-10,0,"confirmed",1389,705.792324292518
+"Guinea-Bissau",2020-06-11,0,"confirmed",1389,705.792324292518
+"Guinea-Bissau",2020-06-12,71,"confirmed",1460,741.869541732956
+"Guinea-Bissau",2020-06-13,0,"confirmed",1460,741.869541732956
+"Guinea-Bissau",2020-06-14,0,"confirmed",1460,741.869541732956
+"Guinea-Bissau",2020-06-15,32,"confirmed",1492,758.129696072309
+"Guinea-Bissau",2020-06-16,0,"confirmed",1492,758.129696072309
+"Guinea-Bissau",2020-06-17,0,"confirmed",1492,758.129696072309
+"Liberia",2020-01-22,0,"confirmed",0,0
+"Liberia",2020-01-23,0,"confirmed",0,0
+"Liberia",2020-01-24,0,"confirmed",0,0
+"Liberia",2020-01-25,0,"confirmed",0,0
+"Liberia",2020-01-26,0,"confirmed",0,0
+"Liberia",2020-01-27,0,"confirmed",0,0
+"Liberia",2020-01-28,0,"confirmed",0,0
+"Liberia",2020-01-29,0,"confirmed",0,0
+"Liberia",2020-01-30,0,"confirmed",0,0
+"Liberia",2020-01-31,0,"confirmed",0,0
+"Liberia",2020-02-01,0,"confirmed",0,0
+"Liberia",2020-02-02,0,"confirmed",0,0
+"Liberia",2020-02-03,0,"confirmed",0,0
+"Liberia",2020-02-04,0,"confirmed",0,0
+"Liberia",2020-02-05,0,"confirmed",0,0
+"Liberia",2020-02-06,0,"confirmed",0,0
+"Liberia",2020-02-07,0,"confirmed",0,0
+"Liberia",2020-02-08,0,"confirmed",0,0
+"Liberia",2020-02-09,0,"confirmed",0,0
+"Liberia",2020-02-10,0,"confirmed",0,0
+"Liberia",2020-02-11,0,"confirmed",0,0
+"Liberia",2020-02-12,0,"confirmed",0,0
+"Liberia",2020-02-13,0,"confirmed",0,0
+"Liberia",2020-02-14,0,"confirmed",0,0
+"Liberia",2020-02-15,0,"confirmed",0,0
+"Liberia",2020-02-16,0,"confirmed",0,0
+"Liberia",2020-02-17,0,"confirmed",0,0
+"Liberia",2020-02-18,0,"confirmed",0,0
+"Liberia",2020-02-19,0,"confirmed",0,0
+"Liberia",2020-02-20,0,"confirmed",0,0
+"Liberia",2020-02-21,0,"confirmed",0,0
+"Liberia",2020-02-22,0,"confirmed",0,0
+"Liberia",2020-02-23,0,"confirmed",0,0
+"Liberia",2020-02-24,0,"confirmed",0,0
+"Liberia",2020-02-25,0,"confirmed",0,0
+"Liberia",2020-02-26,0,"confirmed",0,0
+"Liberia",2020-02-27,0,"confirmed",0,0
+"Liberia",2020-02-28,0,"confirmed",0,0
+"Liberia",2020-02-29,0,"confirmed",0,0
+"Liberia",2020-03-01,0,"confirmed",0,0
+"Liberia",2020-03-02,0,"confirmed",0,0
+"Liberia",2020-03-03,0,"confirmed",0,0
+"Liberia",2020-03-04,0,"confirmed",0,0
+"Liberia",2020-03-05,0,"confirmed",0,0
+"Liberia",2020-03-06,0,"confirmed",0,0
+"Liberia",2020-03-07,0,"confirmed",0,0
+"Liberia",2020-03-08,0,"confirmed",0,0
+"Liberia",2020-03-09,0,"confirmed",0,0
+"Liberia",2020-03-10,0,"confirmed",0,0
+"Liberia",2020-03-11,0,"confirmed",0,0
+"Liberia",2020-03-12,0,"confirmed",0,0
+"Liberia",2020-03-13,0,"confirmed",0,0
+"Liberia",2020-03-14,0,"confirmed",0,0
+"Liberia",2020-03-15,0,"confirmed",0,0
+"Liberia",2020-03-16,1,"confirmed",1,0.197719073227434
+"Liberia",2020-03-17,0,"confirmed",1,0.197719073227434
+"Liberia",2020-03-18,1,"confirmed",2,0.395438146454867
+"Liberia",2020-03-19,0,"confirmed",2,0.395438146454867
+"Liberia",2020-03-20,0,"confirmed",2,0.395438146454867
+"Liberia",2020-03-21,1,"confirmed",3,0.593157219682301
+"Liberia",2020-03-22,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-23,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-24,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-25,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-26,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-27,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-28,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-29,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-30,0,"confirmed",3,0.593157219682301
+"Liberia",2020-03-31,0,"confirmed",3,0.593157219682301
+"Liberia",2020-04-01,3,"confirmed",6,1.1863144393646
+"Liberia",2020-04-02,0,"confirmed",6,1.1863144393646
+"Liberia",2020-04-03,1,"confirmed",7,1.38403351259204
+"Liberia",2020-04-04,3,"confirmed",10,1.97719073227434
+"Liberia",2020-04-05,3,"confirmed",13,2.57034795195664
+"Liberia",2020-04-06,1,"confirmed",14,2.76806702518407
+"Liberia",2020-04-07,0,"confirmed",14,2.76806702518407
+"Liberia",2020-04-08,17,"confirmed",31,6.12929127005044
+"Liberia",2020-04-09,0,"confirmed",31,6.12929127005044
+"Liberia",2020-04-10,6,"confirmed",37,7.31560570941505
+"Liberia",2020-04-11,11,"confirmed",48,9.49051551491682
+"Liberia",2020-04-12,2,"confirmed",50,9.88595366137168
+"Liberia",2020-04-13,9,"confirmed",59,11.6654253204186
+"Liberia",2020-04-14,0,"confirmed",59,11.6654253204186
+"Liberia",2020-04-15,0,"confirmed",59,11.6654253204186
+"Liberia",2020-04-16,0,"confirmed",59,11.6654253204186
+"Liberia",2020-04-17,17,"confirmed",76,15.026649565285
+"Liberia",2020-04-18,0,"confirmed",76,15.026649565285
+"Liberia",2020-04-19,15,"confirmed",91,17.9924356636965
+"Liberia",2020-04-20,8,"confirmed",99,19.5741882495159
+"Liberia",2020-04-21,2,"confirmed",101,19.9696263959708
+"Liberia",2020-04-22,0,"confirmed",101,19.9696263959708
+"Liberia",2020-04-23,0,"confirmed",101,19.9696263959708
+"Liberia",2020-04-24,16,"confirmed",117,23.1331315676097
+"Liberia",2020-04-25,3,"confirmed",120,23.726288787292
+"Liberia",2020-04-26,4,"confirmed",124,24.5171650802018
+"Liberia",2020-04-27,0,"confirmed",124,24.5171650802018
+"Liberia",2020-04-28,17,"confirmed",141,27.8783893250681
+"Liberia",2020-04-29,0,"confirmed",141,27.8783893250681
+"Liberia",2020-04-30,0,"confirmed",141,27.8783893250681
+"Liberia",2020-05-01,11,"confirmed",152,30.0532991305699
+"Liberia",2020-05-02,2,"confirmed",154,30.4487372770248
+"Liberia",2020-05-03,4,"confirmed",158,31.2396135699345
+"Liberia",2020-05-04,8,"confirmed",166,32.821366155754
+"Liberia",2020-05-05,4,"confirmed",170,33.6122424486637
+"Liberia",2020-05-06,8,"confirmed",178,35.1939950344832
+"Liberia",2020-05-07,11,"confirmed",189,37.368904839985
+"Liberia",2020-05-08,10,"confirmed",199,39.3460955722593
+"Liberia",2020-05-09,0,"confirmed",199,39.3460955722593
+"Liberia",2020-05-10,0,"confirmed",199,39.3460955722593
+"Liberia",2020-05-11,12,"confirmed",211,41.7187244509885
+"Liberia",2020-05-12,0,"confirmed",211,41.7187244509885
+"Liberia",2020-05-13,2,"confirmed",213,42.1141625974434
+"Liberia",2020-05-14,2,"confirmed",215,42.5096007438982
+"Liberia",2020-05-15,4,"confirmed",219,43.300477036808
+"Liberia",2020-05-16,4,"confirmed",223,44.0913533297177
+"Liberia",2020-05-17,3,"confirmed",226,44.6845105494
+"Liberia",2020-05-18,3,"confirmed",229,45.2776677690823
+"Liberia",2020-05-19,4,"confirmed",233,46.068544061992
+"Liberia",2020-05-20,5,"confirmed",238,47.0571394281292
+"Liberia",2020-05-21,2,"confirmed",240,47.4525775745841
+"Liberia",2020-05-22,9,"confirmed",249,49.232049233631
+"Liberia",2020-05-23,6,"confirmed",255,50.4183636729956
+"Liberia",2020-05-24,10,"confirmed",265,52.3955544052699
+"Liberia",2020-05-25,0,"confirmed",265,52.3955544052699
+"Liberia",2020-05-26,1,"confirmed",266,52.5932734784974
+"Liberia",2020-05-27,0,"confirmed",266,52.5932734784974
+"Liberia",2020-05-28,3,"confirmed",269,53.1864306981797
+"Liberia",2020-05-29,4,"confirmed",273,53.9773069910894
+"Liberia",2020-05-30,7,"confirmed",280,55.3613405036814
+"Liberia",2020-05-31,8,"confirmed",288,56.9430930895009
+"Liberia",2020-06-01,8,"confirmed",296,58.5248456753204
+"Liberia",2020-06-02,15,"confirmed",311,61.4906317737319
+"Liberia",2020-06-03,5,"confirmed",316,62.479227139869
+"Liberia",2020-06-04,5,"confirmed",321,63.4678225060062
+"Liberia",2020-06-05,13,"confirmed",334,66.0381704579628
+"Liberia",2020-06-06,11,"confirmed",345,68.2130802634646
+"Liberia",2020-06-07,14,"confirmed",359,70.9811472886487
+"Liberia",2020-06-08,11,"confirmed",370,73.1560570941505
+"Liberia",2020-06-09,13,"confirmed",383,75.7264050461071
+"Liberia",2020-06-10,14,"confirmed",397,78.4944720712912
+"Liberia",2020-06-11,13,"confirmed",410,81.0648200232478
+"Liberia",2020-06-12,11,"confirmed",421,83.2397298287496
+"Liberia",2020-06-13,25,"confirmed",446,88.1827066594354
+"Liberia",2020-06-14,12,"confirmed",458,90.5553355381646
+"Liberia",2020-06-15,40,"confirmed",498,98.464098467262
+"Liberia",2020-06-16,11,"confirmed",509,100.639008272764
+"Liberia",2020-06-17,7,"confirmed",516,102.023041785356
+"Mali",2020-01-22,0,"confirmed",0,0
+"Mali",2020-01-23,0,"confirmed",0,0
+"Mali",2020-01-24,0,"confirmed",0,0
+"Mali",2020-01-25,0,"confirmed",0,0
+"Mali",2020-01-26,0,"confirmed",0,0
+"Mali",2020-01-27,0,"confirmed",0,0
+"Mali",2020-01-28,0,"confirmed",0,0
+"Mali",2020-01-29,0,"confirmed",0,0
+"Mali",2020-01-30,0,"confirmed",0,0
+"Mali",2020-01-31,0,"confirmed",0,0
+"Mali",2020-02-01,0,"confirmed",0,0
+"Mali",2020-02-02,0,"confirmed",0,0
+"Mali",2020-02-03,0,"confirmed",0,0
+"Mali",2020-02-04,0,"confirmed",0,0
+"Mali",2020-02-05,0,"confirmed",0,0
+"Mali",2020-02-06,0,"confirmed",0,0
+"Mali",2020-02-07,0,"confirmed",0,0
+"Mali",2020-02-08,0,"confirmed",0,0
+"Mali",2020-02-09,0,"confirmed",0,0
+"Mali",2020-02-10,0,"confirmed",0,0
+"Mali",2020-02-11,0,"confirmed",0,0
+"Mali",2020-02-12,0,"confirmed",0,0
+"Mali",2020-02-13,0,"confirmed",0,0
+"Mali",2020-02-14,0,"confirmed",0,0
+"Mali",2020-02-15,0,"confirmed",0,0
+"Mali",2020-02-16,0,"confirmed",0,0
+"Mali",2020-02-17,0,"confirmed",0,0
+"Mali",2020-02-18,0,"confirmed",0,0
+"Mali",2020-02-19,0,"confirmed",0,0
+"Mali",2020-02-20,0,"confirmed",0,0
+"Mali",2020-02-21,0,"confirmed",0,0
+"Mali",2020-02-22,0,"confirmed",0,0
+"Mali",2020-02-23,0,"confirmed",0,0
+"Mali",2020-02-24,0,"confirmed",0,0
+"Mali",2020-02-25,0,"confirmed",0,0
+"Mali",2020-02-26,0,"confirmed",0,0
+"Mali",2020-02-27,0,"confirmed",0,0
+"Mali",2020-02-28,0,"confirmed",0,0
+"Mali",2020-02-29,0,"confirmed",0,0
+"Mali",2020-03-01,0,"confirmed",0,0
+"Mali",2020-03-02,0,"confirmed",0,0
+"Mali",2020-03-03,0,"confirmed",0,0
+"Mali",2020-03-04,0,"confirmed",0,0
+"Mali",2020-03-05,0,"confirmed",0,0
+"Mali",2020-03-06,0,"confirmed",0,0
+"Mali",2020-03-07,0,"confirmed",0,0
+"Mali",2020-03-08,0,"confirmed",0,0
+"Mali",2020-03-09,0,"confirmed",0,0
+"Mali",2020-03-10,0,"confirmed",0,0
+"Mali",2020-03-11,0,"confirmed",0,0
+"Mali",2020-03-12,0,"confirmed",0,0
+"Mali",2020-03-13,0,"confirmed",0,0
+"Mali",2020-03-14,0,"confirmed",0,0
+"Mali",2020-03-15,0,"confirmed",0,0
+"Mali",2020-03-16,0,"confirmed",0,0
+"Mali",2020-03-17,0,"confirmed",0,0
+"Mali",2020-03-18,0,"confirmed",0,0
+"Mali",2020-03-19,0,"confirmed",0,0
+"Mali",2020-03-20,0,"confirmed",0,0
+"Mali",2020-03-21,0,"confirmed",0,0
+"Mali",2020-03-22,0,"confirmed",0,0
+"Mali",2020-03-23,0,"confirmed",0,0
+"Mali",2020-03-24,0,"confirmed",0,0
+"Mali",2020-03-25,2,"confirmed",2,0.0987613694705793
+"Mali",2020-03-26,2,"confirmed",4,0.197522738941159
+"Mali",2020-03-27,7,"confirmed",11,0.543187532088186
+"Mali",2020-03-28,7,"confirmed",18,0.888852325235214
+"Mali",2020-03-29,0,"confirmed",18,0.888852325235214
+"Mali",2020-03-30,7,"confirmed",25,1.23451711838224
+"Mali",2020-03-31,3,"confirmed",28,1.38265917258811
+"Mali",2020-04-01,3,"confirmed",31,1.53080122679398
+"Mali",2020-04-02,5,"confirmed",36,1.77770465047043
+"Mali",2020-04-03,3,"confirmed",39,1.9258467046763
+"Mali",2020-04-04,2,"confirmed",41,2.02460807414688
+"Mali",2020-04-05,4,"confirmed",45,2.22213081308803
+"Mali",2020-04-06,2,"confirmed",47,2.32089218255861
+"Mali",2020-04-07,9,"confirmed",56,2.76531834517622
+"Mali",2020-04-08,3,"confirmed",59,2.91346039938209
+"Mali",2020-04-09,15,"confirmed",74,3.65417067041143
+"Mali",2020-04-10,13,"confirmed",87,4.2961195719702
+"Mali",2020-04-11,0,"confirmed",87,4.2961195719702
+"Mali",2020-04-12,18,"confirmed",105,5.18497189720541
+"Mali",2020-04-13,18,"confirmed",123,6.07382422244063
+"Mali",2020-04-14,21,"confirmed",144,7.11081860188171
+"Mali",2020-04-15,4,"confirmed",148,7.30834134082287
+"Mali",2020-04-16,23,"confirmed",171,8.44409708973453
+"Mali",2020-04-17,0,"confirmed",171,8.44409708973453
+"Mali",2020-04-18,45,"confirmed",216,10.6662279028226
+"Mali",2020-04-19,8,"confirmed",224,11.0612733807049
+"Mali",2020-04-20,22,"confirmed",246,12.1476484448813
+"Mali",2020-04-21,12,"confirmed",258,12.7402166617047
+"Mali",2020-04-22,35,"confirmed",293,14.4685406274399
+"Mali",2020-04-23,16,"confirmed",309,15.2586315832045
+"Mali",2020-04-24,16,"confirmed",325,16.0487225389691
+"Mali",2020-04-25,45,"confirmed",370,18.2708533520572
+"Mali",2020-04-26,19,"confirmed",389,19.2090863620277
+"Mali",2020-04-27,19,"confirmed",408,20.1473193719982
+"Mali",2020-04-28,16,"confirmed",424,20.9374103277628
+"Mali",2020-04-29,58,"confirmed",482,23.8014900424096
+"Mali",2020-04-30,8,"confirmed",490,24.1965355202919
+"Mali",2020-05-01,18,"confirmed",508,25.0853878455271
+"Mali",2020-05-02,36,"confirmed",544,26.8630924959976
+"Mali",2020-05-03,19,"confirmed",563,27.8013255059681
+"Mali",2020-05-04,17,"confirmed",580,28.640797146468
+"Mali",2020-05-05,32,"confirmed",612,30.2209790579973
+"Mali",2020-05-06,19,"confirmed",631,31.1592120679678
+"Mali",2020-05-07,19,"confirmed",650,32.0974450779383
+"Mali",2020-05-08,18,"confirmed",668,32.9862974031735
+"Mali",2020-05-09,24,"confirmed",692,34.1714338368204
+"Mali",2020-05-10,12,"confirmed",704,34.7640020536439
+"Mali",2020-05-11,8,"confirmed",712,35.1590475315262
+"Mali",2020-05-12,18,"confirmed",730,36.0478998567614
+"Mali",2020-05-13,28,"confirmed",758,37.4305590293496
+"Mali",2020-05-14,21,"confirmed",779,38.4675534087906
+"Mali",2020-05-15,27,"confirmed",806,39.8008318966435
+"Mali",2020-05-16,29,"confirmed",835,41.2328717539669
+"Mali",2020-05-17,25,"confirmed",860,42.4673888723491
+"Mali",2020-05-18,14,"confirmed",874,43.1587184586432
+"Mali",2020-05-19,27,"confirmed",901,44.491996946496
+"Mali",2020-05-20,30,"confirmed",931,45.9734174885547
+"Mali",2020-05-21,16,"confirmed",947,46.7635084443193
+"Mali",2020-05-22,22,"confirmed",969,47.8498835084957
+"Mali",2020-05-23,46,"confirmed",1015,50.121395006319
+"Mali",2020-05-24,15,"confirmed",1030,50.8621052773483
+"Mali",2020-05-25,29,"confirmed",1059,52.2941451346717
+"Mali",2020-05-26,18,"confirmed",1077,53.182997459907
+"Mali",2020-05-27,39,"confirmed",1116,55.1088441645833
+"Mali",2020-05-28,78,"confirmed",1194,58.9605375739359
+"Mali",2020-05-29,32,"confirmed",1226,60.5407194854651
+"Mali",2020-05-30,24,"confirmed",1250,61.7258559191121
+"Mali",2020-05-31,15,"confirmed",1265,62.4665661901414
+"Mali",2020-06-01,50,"confirmed",1315,64.9356004269059
+"Mali",2020-06-02,36,"confirmed",1351,66.7133050773763
+"Mali",2020-06-03,35,"confirmed",1386,68.4416290431115
+"Mali",2020-06-04,75,"confirmed",1461,72.1451803982582
+"Mali",2020-06-05,24,"confirmed",1485,73.3303168319051
+"Mali",2020-06-06,38,"confirmed",1523,75.2067828518461
+"Mali",2020-06-07,10,"confirmed",1533,75.700589699199
+"Mali",2020-06-08,14,"confirmed",1547,76.3919192854931
+"Mali",2020-06-09,39,"confirmed",1586,78.3177659901694
+"Mali",2020-06-10,81,"confirmed",1667,82.3176014537279
+"Mali",2020-06-11,55,"confirmed",1722,85.0335391141688
+"Mali",2020-06-12,30,"confirmed",1752,86.5149596562275
+"Mali",2020-06-13,24,"confirmed",1776,87.7000960898744
+"Mali",2020-06-14,33,"confirmed",1809,89.329658686139
+"Mali",2020-06-15,51,"confirmed",1860,91.8480736076388
+"Mali",2020-06-16,25,"confirmed",1885,93.082590726021
+"Mali",2020-06-17,5,"confirmed",1890,93.3294941496975
+"Mauritania",2020-01-22,0,"confirmed",0,0
+"Mauritania",2020-01-23,0,"confirmed",0,0
+"Mauritania",2020-01-24,0,"confirmed",0,0
+"Mauritania",2020-01-25,0,"confirmed",0,0
+"Mauritania",2020-01-26,0,"confirmed",0,0
+"Mauritania",2020-01-27,0,"confirmed",0,0
+"Mauritania",2020-01-28,0,"confirmed",0,0
+"Mauritania",2020-01-29,0,"confirmed",0,0
+"Mauritania",2020-01-30,0,"confirmed",0,0
+"Mauritania",2020-01-31,0,"confirmed",0,0
+"Mauritania",2020-02-01,0,"confirmed",0,0
+"Mauritania",2020-02-02,0,"confirmed",0,0
+"Mauritania",2020-02-03,0,"confirmed",0,0
+"Mauritania",2020-02-04,0,"confirmed",0,0
+"Mauritania",2020-02-05,0,"confirmed",0,0
+"Mauritania",2020-02-06,0,"confirmed",0,0
+"Mauritania",2020-02-07,0,"confirmed",0,0
+"Mauritania",2020-02-08,0,"confirmed",0,0
+"Mauritania",2020-02-09,0,"confirmed",0,0
+"Mauritania",2020-02-10,0,"confirmed",0,0
+"Mauritania",2020-02-11,0,"confirmed",0,0
+"Mauritania",2020-02-12,0,"confirmed",0,0
+"Mauritania",2020-02-13,0,"confirmed",0,0
+"Mauritania",2020-02-14,0,"confirmed",0,0
+"Mauritania",2020-02-15,0,"confirmed",0,0
+"Mauritania",2020-02-16,0,"confirmed",0,0
+"Mauritania",2020-02-17,0,"confirmed",0,0
+"Mauritania",2020-02-18,0,"confirmed",0,0
+"Mauritania",2020-02-19,0,"confirmed",0,0
+"Mauritania",2020-02-20,0,"confirmed",0,0
+"Mauritania",2020-02-21,0,"confirmed",0,0
+"Mauritania",2020-02-22,0,"confirmed",0,0
+"Mauritania",2020-02-23,0,"confirmed",0,0
+"Mauritania",2020-02-24,0,"confirmed",0,0
+"Mauritania",2020-02-25,0,"confirmed",0,0
+"Mauritania",2020-02-26,0,"confirmed",0,0
+"Mauritania",2020-02-27,0,"confirmed",0,0
+"Mauritania",2020-02-28,0,"confirmed",0,0
+"Mauritania",2020-02-29,0,"confirmed",0,0
+"Mauritania",2020-03-01,0,"confirmed",0,0
+"Mauritania",2020-03-02,0,"confirmed",0,0
+"Mauritania",2020-03-03,0,"confirmed",0,0
+"Mauritania",2020-03-04,0,"confirmed",0,0
+"Mauritania",2020-03-05,0,"confirmed",0,0
+"Mauritania",2020-03-06,0,"confirmed",0,0
+"Mauritania",2020-03-07,0,"confirmed",0,0
+"Mauritania",2020-03-08,0,"confirmed",0,0
+"Mauritania",2020-03-09,0,"confirmed",0,0
+"Mauritania",2020-03-10,0,"confirmed",0,0
+"Mauritania",2020-03-11,0,"confirmed",0,0
+"Mauritania",2020-03-12,0,"confirmed",0,0
+"Mauritania",2020-03-13,0,"confirmed",0,0
+"Mauritania",2020-03-14,1,"confirmed",1,0.21506958146169
+"Mauritania",2020-03-15,0,"confirmed",1,0.21506958146169
+"Mauritania",2020-03-16,0,"confirmed",1,0.21506958146169
+"Mauritania",2020-03-17,0,"confirmed",1,0.21506958146169
+"Mauritania",2020-03-18,0,"confirmed",1,0.21506958146169
+"Mauritania",2020-03-19,1,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-20,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-21,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-22,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-23,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-24,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-25,0,"confirmed",2,0.430139162923381
+"Mauritania",2020-03-26,1,"confirmed",3,0.645208744385071
+"Mauritania",2020-03-27,0,"confirmed",3,0.645208744385071
+"Mauritania",2020-03-28,2,"confirmed",5,1.07534790730845
+"Mauritania",2020-03-29,0,"confirmed",5,1.07534790730845
+"Mauritania",2020-03-30,0,"confirmed",5,1.07534790730845
+"Mauritania",2020-03-31,1,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-01,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-02,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-03,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-04,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-05,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-06,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-07,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-08,0,"confirmed",6,1.29041748877014
+"Mauritania",2020-04-09,1,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-10,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-11,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-12,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-13,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-14,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-15,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-16,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-17,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-18,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-19,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-20,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-21,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-22,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-23,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-24,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-25,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-26,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-27,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-28,0,"confirmed",7,1.50548707023183
+"Mauritania",2020-04-29,1,"confirmed",8,1.72055665169352
+"Mauritania",2020-04-30,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-01,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-02,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-03,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-04,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-05,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-06,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-07,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-08,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-09,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-10,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-11,0,"confirmed",8,1.72055665169352
+"Mauritania",2020-05-12,1,"confirmed",9,1.93562623315521
+"Mauritania",2020-05-13,6,"confirmed",15,3.22604372192535
+"Mauritania",2020-05-14,5,"confirmed",20,4.30139162923381
+"Mauritania",2020-05-15,9,"confirmed",29,6.23701786238902
+"Mauritania",2020-05-16,11,"confirmed",40,8.60278325846761
+"Mauritania",2020-05-17,22,"confirmed",62,13.3343140506248
+"Mauritania",2020-05-18,19,"confirmed",81,17.4206360983969
+"Mauritania",2020-05-19,50,"confirmed",131,28.1741151714814
+"Mauritania",2020-05-20,10,"confirmed",141,30.3248109860983
+"Mauritania",2020-05-21,32,"confirmed",173,37.2070375928724
+"Mauritania",2020-05-22,27,"confirmed",200,43.0139162923381
+"Mauritania",2020-05-23,27,"confirmed",227,48.8207949918037
+"Mauritania",2020-05-24,10,"confirmed",237,50.9714908064206
+"Mauritania",2020-05-25,25,"confirmed",262,56.3482303429629
+"Mauritania",2020-05-26,6,"confirmed",268,57.638647831733
+"Mauritania",2020-05-27,24,"confirmed",292,62.8003177868136
+"Mauritania",2020-05-28,54,"confirmed",346,74.4140751857448
+"Mauritania",2020-05-29,77,"confirmed",423,90.974432958295
+"Mauritania",2020-05-30,60,"confirmed",483,103.878607845996
+"Mauritania",2020-05-31,47,"confirmed",530,113.986878174696
+"Mauritania",2020-06-01,58,"confirmed",588,126.460913899474
+"Mauritania",2020-06-02,80,"confirmed",668,143.666480416409
+"Mauritania",2020-06-03,77,"confirmed",745,160.226838188959
+"Mauritania",2020-06-04,39,"confirmed",784,168.614551865965
+"Mauritania",2020-06-05,99,"confirmed",883,189.906440430673
+"Mauritania",2020-06-06,64,"confirmed",947,203.670893644221
+"Mauritania",2020-06-07,102,"confirmed",1049,225.607990953313
+"Mauritania",2020-06-08,55,"confirmed",1104,237.436817933706
+"Mauritania",2020-06-09,58,"confirmed",1162,249.910853658484
+"Mauritania",2020-06-10,121,"confirmed",1283,275.934273015349
+"Mauritania",2020-06-11,156,"confirmed",1439,309.485127723372
+"Mauritania",2020-06-12,133,"confirmed",1572,338.089382057777
+"Mauritania",2020-06-13,110,"confirmed",1682,361.747036018563
+"Mauritania",2020-06-14,101,"confirmed",1783,383.469063746194
+"Mauritania",2020-06-15,104,"confirmed",1887,405.83630021821
+"Mauritania",2020-06-16,170,"confirmed",2057,442.398129066697
+"Mauritania",2020-06-17,166,"confirmed",2223,478.099679589338
+"Niger",2020-01-22,0,"confirmed",0,0
+"Niger",2020-01-23,0,"confirmed",0,0
+"Niger",2020-01-24,0,"confirmed",0,0
+"Niger",2020-01-25,0,"confirmed",0,0
+"Niger",2020-01-26,0,"confirmed",0,0
+"Niger",2020-01-27,0,"confirmed",0,0
+"Niger",2020-01-28,0,"confirmed",0,0
+"Niger",2020-01-29,0,"confirmed",0,0
+"Niger",2020-01-30,0,"confirmed",0,0
+"Niger",2020-01-31,0,"confirmed",0,0
+"Niger",2020-02-01,0,"confirmed",0,0
+"Niger",2020-02-02,0,"confirmed",0,0
+"Niger",2020-02-03,0,"confirmed",0,0
+"Niger",2020-02-04,0,"confirmed",0,0
+"Niger",2020-02-05,0,"confirmed",0,0
+"Niger",2020-02-06,0,"confirmed",0,0
+"Niger",2020-02-07,0,"confirmed",0,0
+"Niger",2020-02-08,0,"confirmed",0,0
+"Niger",2020-02-09,0,"confirmed",0,0
+"Niger",2020-02-10,0,"confirmed",0,0
+"Niger",2020-02-11,0,"confirmed",0,0
+"Niger",2020-02-12,0,"confirmed",0,0
+"Niger",2020-02-13,0,"confirmed",0,0
+"Niger",2020-02-14,0,"confirmed",0,0
+"Niger",2020-02-15,0,"confirmed",0,0
+"Niger",2020-02-16,0,"confirmed",0,0
+"Niger",2020-02-17,0,"confirmed",0,0
+"Niger",2020-02-18,0,"confirmed",0,0
+"Niger",2020-02-19,0,"confirmed",0,0
+"Niger",2020-02-20,0,"confirmed",0,0
+"Niger",2020-02-21,0,"confirmed",0,0
+"Niger",2020-02-22,0,"confirmed",0,0
+"Niger",2020-02-23,0,"confirmed",0,0
+"Niger",2020-02-24,0,"confirmed",0,0
+"Niger",2020-02-25,0,"confirmed",0,0
+"Niger",2020-02-26,0,"confirmed",0,0
+"Niger",2020-02-27,0,"confirmed",0,0
+"Niger",2020-02-28,0,"confirmed",0,0
+"Niger",2020-02-29,0,"confirmed",0,0
+"Niger",2020-03-01,0,"confirmed",0,0
+"Niger",2020-03-02,0,"confirmed",0,0
+"Niger",2020-03-03,0,"confirmed",0,0
+"Niger",2020-03-04,0,"confirmed",0,0
+"Niger",2020-03-05,0,"confirmed",0,0
+"Niger",2020-03-06,0,"confirmed",0,0
+"Niger",2020-03-07,0,"confirmed",0,0
+"Niger",2020-03-08,0,"confirmed",0,0
+"Niger",2020-03-09,0,"confirmed",0,0
+"Niger",2020-03-10,0,"confirmed",0,0
+"Niger",2020-03-11,0,"confirmed",0,0
+"Niger",2020-03-12,0,"confirmed",0,0
+"Niger",2020-03-13,0,"confirmed",0,0
+"Niger",2020-03-14,0,"confirmed",0,0
+"Niger",2020-03-15,0,"confirmed",0,0
+"Niger",2020-03-16,0,"confirmed",0,0
+"Niger",2020-03-17,0,"confirmed",0,0
+"Niger",2020-03-18,0,"confirmed",0,0
+"Niger",2020-03-19,0,"confirmed",0,0
+"Niger",2020-03-20,1,"confirmed",1,0.0413109723099162
+"Niger",2020-03-21,0,"confirmed",1,0.0413109723099162
+"Niger",2020-03-22,1,"confirmed",2,0.0826219446198325
+"Niger",2020-03-23,1,"confirmed",3,0.123932916929749
+"Niger",2020-03-24,0,"confirmed",3,0.123932916929749
+"Niger",2020-03-25,4,"confirmed",7,0.289176806169414
+"Niger",2020-03-26,3,"confirmed",10,0.413109723099162
+"Niger",2020-03-27,0,"confirmed",10,0.413109723099162
+"Niger",2020-03-28,0,"confirmed",10,0.413109723099162
+"Niger",2020-03-29,8,"confirmed",18,0.743597501578492
+"Niger",2020-03-30,9,"confirmed",27,1.11539625236774
+"Niger",2020-03-31,0,"confirmed",27,1.11539625236774
+"Niger",2020-04-01,47,"confirmed",74,3.0570119509338
+"Niger",2020-04-02,24,"confirmed",98,4.04847528637179
+"Niger",2020-04-03,22,"confirmed",120,4.95731667718995
+"Niger",2020-04-04,24,"confirmed",144,5.94878001262794
+"Niger",2020-04-05,40,"confirmed",184,7.60121890502459
+"Niger",2020-04-06,69,"confirmed",253,10.4516759944088
+"Niger",2020-04-07,25,"confirmed",278,11.4844503021567
+"Niger",2020-04-08,64,"confirmed",342,14.1283525299914
+"Niger",2020-04-09,68,"confirmed",410,16.9374986470657
+"Niger",2020-04-10,28,"confirmed",438,18.0942058717433
+"Niger",2020-04-11,53,"confirmed",491,20.2836874041689
+"Niger",2020-04-12,38,"confirmed",529,21.8535043519457
+"Niger",2020-04-13,0,"confirmed",529,21.8535043519457
+"Niger",2020-04-14,41,"confirmed",570,23.5472542166523
+"Niger",2020-04-15,14,"confirmed",584,24.1256078289911
+"Niger",2020-04-16,0,"confirmed",584,24.1256078289911
+"Niger",2020-04-17,43,"confirmed",627,25.9019796383175
+"Niger",2020-04-18,12,"confirmed",639,26.3977113060365
+"Niger",2020-04-19,9,"confirmed",648,26.7695100568257
+"Niger",2020-04-20,0,"confirmed",648,26.7695100568257
+"Niger",2020-04-21,9,"confirmed",657,27.141308807615
+"Niger",2020-04-22,5,"confirmed",662,27.3478636691645
+"Niger",2020-04-23,9,"confirmed",671,27.7196624199538
+"Niger",2020-04-24,10,"confirmed",681,28.132772143053
+"Niger",2020-04-25,3,"confirmed",684,28.2567050599827
+"Niger",2020-04-26,12,"confirmed",696,28.7524367277017
+"Niger",2020-04-27,5,"confirmed",701,28.9589915892513
+"Niger",2020-04-28,8,"confirmed",709,29.2894793677306
+"Niger",2020-04-29,4,"confirmed",713,29.4547232569703
+"Niger",2020-04-30,6,"confirmed",719,29.7025890908298
+"Niger",2020-05-01,9,"confirmed",728,30.074387841619
+"Niger",2020-05-02,8,"confirmed",736,30.4048756200983
+"Niger",2020-05-03,14,"confirmed",750,30.9832292324372
+"Niger",2020-05-04,5,"confirmed",755,31.1897840939868
+"Niger",2020-05-05,8,"confirmed",763,31.5202718724661
+"Niger",2020-05-06,7,"confirmed",770,31.8094486786355
+"Niger",2020-05-07,11,"confirmed",781,32.2638693740446
+"Niger",2020-05-08,14,"confirmed",795,32.8422229863834
+"Niger",2020-05-09,20,"confirmed",815,33.6684424325817
+"Niger",2020-05-10,6,"confirmed",821,33.9163082664412
+"Niger",2020-05-11,11,"confirmed",832,34.3707289618503
+"Niger",2020-05-12,22,"confirmed",854,35.2795703526685
+"Niger",2020-05-13,6,"confirmed",860,35.527436186528
+"Niger",2020-05-14,16,"confirmed",876,36.1884117434866
+"Niger",2020-05-15,9,"confirmed",885,36.5602104942759
+"Niger",2020-05-16,4,"confirmed",889,36.7254543835155
+"Niger",2020-05-17,15,"confirmed",904,37.3451189681643
+"Niger",2020-05-18,5,"confirmed",909,37.5516738297139
+"Niger",2020-05-19,5,"confirmed",914,37.7582286912634
+"Niger",2020-05-20,6,"confirmed",920,38.0060945251229
+"Niger",2020-05-21,4,"confirmed",924,38.1713384143626
+"Niger",2020-05-22,13,"confirmed",937,38.7083810543915
+"Niger",2020-05-23,6,"confirmed",943,38.956246888251
+"Niger",2020-05-24,2,"confirmed",945,39.0388688328708
+"Niger",2020-05-25,6,"confirmed",951,39.2867346667303
+"Niger",2020-05-26,1,"confirmed",952,39.3280456390403
+"Niger",2020-05-27,0,"confirmed",952,39.3280456390403
+"Niger",2020-05-28,3,"confirmed",955,39.45197855597
+"Niger",2020-05-29,0,"confirmed",955,39.45197855597
+"Niger",2020-05-30,1,"confirmed",956,39.4932895282799
+"Niger",2020-05-31,2,"confirmed",958,39.5759114728998
+"Niger",2020-06-01,0,"confirmed",958,39.5759114728998
+"Niger",2020-06-02,2,"confirmed",960,39.6585334175196
+"Niger",2020-06-03,1,"confirmed",961,39.6998443898295
+"Niger",2020-06-04,2,"confirmed",963,39.7824663344493
+"Niger",2020-06-05,3,"confirmed",966,39.9063992513791
+"Niger",2020-06-06,4,"confirmed",970,40.0716431406187
+"Niger",2020-06-07,3,"confirmed",973,40.1955760575485
+"Niger",2020-06-08,0,"confirmed",973,40.1955760575485
+"Niger",2020-06-09,1,"confirmed",974,40.2368870298584
+"Niger",2020-06-10,0,"confirmed",974,40.2368870298584
+"Niger",2020-06-11,0,"confirmed",974,40.2368870298584
+"Niger",2020-06-12,4,"confirmed",978,40.4021309190981
+"Niger",2020-06-13,2,"confirmed",980,40.4847528637179
+"Niger",2020-06-14,0,"confirmed",980,40.4847528637179
+"Niger",2020-06-15,0,"confirmed",980,40.4847528637179
+"Niger",2020-06-16,36,"confirmed",1016,41.9719478668749
+"Niger",2020-06-17,4,"confirmed",1020,42.1371917561146
+"Nigeria",2020-01-22,0,"confirmed",0,0
+"Nigeria",2020-01-23,0,"confirmed",0,0
+"Nigeria",2020-01-24,0,"confirmed",0,0
+"Nigeria",2020-01-25,0,"confirmed",0,0
+"Nigeria",2020-01-26,0,"confirmed",0,0
+"Nigeria",2020-01-27,0,"confirmed",0,0
+"Nigeria",2020-01-28,0,"confirmed",0,0
+"Nigeria",2020-01-29,0,"confirmed",0,0
+"Nigeria",2020-01-30,0,"confirmed",0,0
+"Nigeria",2020-01-31,0,"confirmed",0,0
+"Nigeria",2020-02-01,0,"confirmed",0,0
+"Nigeria",2020-02-02,0,"confirmed",0,0
+"Nigeria",2020-02-03,0,"confirmed",0,0
+"Nigeria",2020-02-04,0,"confirmed",0,0
+"Nigeria",2020-02-05,0,"confirmed",0,0
+"Nigeria",2020-02-06,0,"confirmed",0,0
+"Nigeria",2020-02-07,0,"confirmed",0,0
+"Nigeria",2020-02-08,0,"confirmed",0,0
+"Nigeria",2020-02-09,0,"confirmed",0,0
+"Nigeria",2020-02-10,0,"confirmed",0,0
+"Nigeria",2020-02-11,0,"confirmed",0,0
+"Nigeria",2020-02-12,0,"confirmed",0,0
+"Nigeria",2020-02-13,0,"confirmed",0,0
+"Nigeria",2020-02-14,0,"confirmed",0,0
+"Nigeria",2020-02-15,0,"confirmed",0,0
+"Nigeria",2020-02-16,0,"confirmed",0,0
+"Nigeria",2020-02-17,0,"confirmed",0,0
+"Nigeria",2020-02-18,0,"confirmed",0,0
+"Nigeria",2020-02-19,0,"confirmed",0,0
+"Nigeria",2020-02-20,0,"confirmed",0,0
+"Nigeria",2020-02-21,0,"confirmed",0,0
+"Nigeria",2020-02-22,0,"confirmed",0,0
+"Nigeria",2020-02-23,0,"confirmed",0,0
+"Nigeria",2020-02-24,0,"confirmed",0,0
+"Nigeria",2020-02-25,0,"confirmed",0,0
+"Nigeria",2020-02-26,0,"confirmed",0,0
+"Nigeria",2020-02-27,0,"confirmed",0,0
+"Nigeria",2020-02-28,1,"confirmed",1,0.00485108175897256
+"Nigeria",2020-02-29,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-01,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-02,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-03,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-04,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-05,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-06,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-07,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-08,0,"confirmed",1,0.00485108175897256
+"Nigeria",2020-03-09,1,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-10,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-11,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-12,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-13,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-14,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-15,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-16,0,"confirmed",2,0.00970216351794511
+"Nigeria",2020-03-17,1,"confirmed",3,0.0145532452769177
+"Nigeria",2020-03-18,5,"confirmed",8,0.0388086540717805
+"Nigeria",2020-03-19,0,"confirmed",8,0.0388086540717805
+"Nigeria",2020-03-20,4,"confirmed",12,0.0582129811076707
+"Nigeria",2020-03-21,10,"confirmed",22,0.106723798697396
+"Nigeria",2020-03-22,8,"confirmed",30,0.145532452769177
+"Nigeria",2020-03-23,10,"confirmed",40,0.194043270358902
+"Nigeria",2020-03-24,4,"confirmed",44,0.213447597394792
+"Nigeria",2020-03-25,7,"confirmed",51,0.2474051697076
+"Nigeria",2020-03-26,14,"confirmed",65,0.315320314333216
+"Nigeria",2020-03-27,5,"confirmed",70,0.339575723128079
+"Nigeria",2020-03-28,19,"confirmed",89,0.431746276548558
+"Nigeria",2020-03-29,22,"confirmed",111,0.538470075245954
+"Nigeria",2020-03-30,20,"confirmed",131,0.635491710425405
+"Nigeria",2020-03-31,4,"confirmed",135,0.654896037461295
+"Nigeria",2020-04-01,39,"confirmed",174,0.844088226061225
+"Nigeria",2020-04-02,10,"confirmed",184,0.89259904365095
+"Nigeria",2020-04-03,26,"confirmed",210,1.01872716938424
+"Nigeria",2020-04-04,4,"confirmed",214,1.03813149642013
+"Nigeria",2020-04-05,18,"confirmed",232,1.12545096808163
+"Nigeria",2020-04-06,6,"confirmed",238,1.15455745863547
+"Nigeria",2020-04-07,16,"confirmed",254,1.23217476677903
+"Nigeria",2020-04-08,22,"confirmed",276,1.33889856547643
+"Nigeria",2020-04-09,12,"confirmed",288,1.3971115465841
+"Nigeria",2020-04-10,17,"confirmed",305,1.47957993648663
+"Nigeria",2020-04-11,13,"confirmed",318,1.54264399935327
+"Nigeria",2020-04-12,5,"confirmed",323,1.56689940814814
+"Nigeria",2020-04-13,20,"confirmed",343,1.66392104332759
+"Nigeria",2020-04-14,30,"confirmed",373,1.80945349609676
+"Nigeria",2020-04-15,34,"confirmed",407,1.97439027590183
+"Nigeria",2020-04-16,35,"confirmed",442,2.14417813746587
+"Nigeria",2020-04-17,51,"confirmed",493,2.39158330717347
+"Nigeria",2020-04-18,49,"confirmed",542,2.62928631336313
+"Nigeria",2020-04-19,85,"confirmed",627,3.04162826287579
+"Nigeria",2020-04-20,38,"confirmed",665,3.22596936971675
+"Nigeria",2020-04-21,0,"confirmed",665,3.22596936971675
+"Nigeria",2020-04-22,208,"confirmed",873,4.23499437558304
+"Nigeria",2020-04-23,108,"confirmed",981,4.75891120555208
+"Nigeria",2020-04-24,114,"confirmed",1095,5.31193452607495
+"Nigeria",2020-04-25,87,"confirmed",1182,5.73397863910556
+"Nigeria",2020-04-26,91,"confirmed",1273,6.17542707917206
+"Nigeria",2020-04-27,64,"confirmed",1337,6.48589631174631
+"Nigeria",2020-04-28,195,"confirmed",1532,7.43185725474596
+"Nigeria",2020-04-29,196,"confirmed",1728,8.38266927950458
+"Nigeria",2020-04-30,204,"confirmed",1932,9.37228995833498
+"Nigeria",2020-05-01,238,"confirmed",2170,10.5268474169704
+"Nigeria",2020-05-02,218,"confirmed",2388,11.5843832404265
+"Nigeria",2020-05-03,170,"confirmed",2558,12.4090671394518
+"Nigeria",2020-05-04,244,"confirmed",2802,13.5927310886411
+"Nigeria",2020-05-05,148,"confirmed",2950,14.310691188969
+"Nigeria",2020-05-06,195,"confirmed",3145,15.2566521319687
+"Nigeria",2020-05-07,381,"confirmed",3526,17.1049142821372
+"Nigeria",2020-05-08,386,"confirmed",3912,18.9774318411006
+"Nigeria",2020-05-09,239,"confirmed",4151,20.1368403814951
+"Nigeria",2020-05-10,248,"confirmed",4399,21.3399086577203
+"Nigeria",2020-05-11,242,"confirmed",4641,22.5138704433916
+"Nigeria",2020-05-12,146,"confirmed",4787,23.2221283802016
+"Nigeria",2020-05-13,184,"confirmed",4971,24.1147274238526
+"Nigeria",2020-05-14,191,"confirmed",5162,25.0412840398163
+"Nigeria",2020-05-15,288,"confirmed",5450,26.4383955864004
+"Nigeria",2020-05-16,171,"confirmed",5621,27.2679305671847
+"Nigeria",2020-05-17,338,"confirmed",5959,28.9075962017175
+"Nigeria",2020-05-18,216,"confirmed",6175,29.9554298616555
+"Nigeria",2020-05-19,226,"confirmed",6401,31.0517743391833
+"Nigeria",2020-05-20,276,"confirmed",6677,32.3906729046598
+"Nigeria",2020-05-21,339,"confirmed",7016,34.0351896209515
+"Nigeria",2020-05-22,245,"confirmed",7261,35.2237046518997
+"Nigeria",2020-05-23,265,"confirmed",7526,36.5092413180275
+"Nigeria",2020-05-24,313,"confirmed",7839,38.0276299085859
+"Nigeria",2020-05-25,229,"confirmed",8068,39.1385276313906
+"Nigeria",2020-05-26,276,"confirmed",8344,40.477426196867
+"Nigeria",2020-05-27,389,"confirmed",8733,42.3644970011073
+"Nigeria",2020-05-28,182,"confirmed",8915,43.2473938812403
+"Nigeria",2020-05-29,387,"confirmed",9302,45.1247625219627
+"Nigeria",2020-05-30,553,"confirmed",9855,47.8074107346745
+"Nigeria",2020-05-31,307,"confirmed",10162,49.2966928346791
+"Nigeria",2020-06-01,416,"confirmed",10578,51.3147428464117
+"Nigeria",2020-06-02,241,"confirmed",10819,52.4838535503241
+"Nigeria",2020-06-03,347,"confirmed",11166,54.1671789206876
+"Nigeria",2020-06-04,350,"confirmed",11516,55.865057536328
+"Nigeria",2020-06-05,328,"confirmed",11844,57.456212353271
+"Nigeria",2020-06-06,389,"confirmed",12233,59.3432831575113
+"Nigeria",2020-06-07,253,"confirmed",12486,60.5706068425313
+"Nigeria",2020-06-08,315,"confirmed",12801,62.0986975966077
+"Nigeria",2020-06-09,663,"confirmed",13464,65.3149648028065
+"Nigeria",2020-06-10,409,"confirmed",13873,67.2990572422263
+"Nigeria",2020-06-11,681,"confirmed",14554,70.6026439200866
+"Nigeria",2020-06-12,627,"confirmed",15181,73.6442721829624
+"Nigeria",2020-06-13,501,"confirmed",15682,76.0746641442076
+"Nigeria",2020-06-14,403,"confirmed",16085,78.0296500930736
+"Nigeria",2020-06-15,573,"confirmed",16658,80.8093199409649
+"Nigeria",2020-06-16,490,"confirmed",17148,83.1863500028614
+"Nigeria",2020-06-17,587,"confirmed",17735,86.0339349953783
+"Senegal",2020-01-22,0,"confirmed",0,0
+"Senegal",2020-01-23,0,"confirmed",0,0
+"Senegal",2020-01-24,0,"confirmed",0,0
+"Senegal",2020-01-25,0,"confirmed",0,0
+"Senegal",2020-01-26,0,"confirmed",0,0
+"Senegal",2020-01-27,0,"confirmed",0,0
+"Senegal",2020-01-28,0,"confirmed",0,0
+"Senegal",2020-01-29,0,"confirmed",0,0
+"Senegal",2020-01-30,0,"confirmed",0,0
+"Senegal",2020-01-31,0,"confirmed",0,0
+"Senegal",2020-02-01,0,"confirmed",0,0
+"Senegal",2020-02-02,0,"confirmed",0,0
+"Senegal",2020-02-03,0,"confirmed",0,0
+"Senegal",2020-02-04,0,"confirmed",0,0
+"Senegal",2020-02-05,0,"confirmed",0,0
+"Senegal",2020-02-06,0,"confirmed",0,0
+"Senegal",2020-02-07,0,"confirmed",0,0
+"Senegal",2020-02-08,0,"confirmed",0,0
+"Senegal",2020-02-09,0,"confirmed",0,0
+"Senegal",2020-02-10,0,"confirmed",0,0
+"Senegal",2020-02-11,0,"confirmed",0,0
+"Senegal",2020-02-12,0,"confirmed",0,0
+"Senegal",2020-02-13,0,"confirmed",0,0
+"Senegal",2020-02-14,0,"confirmed",0,0
+"Senegal",2020-02-15,0,"confirmed",0,0
+"Senegal",2020-02-16,0,"confirmed",0,0
+"Senegal",2020-02-17,0,"confirmed",0,0
+"Senegal",2020-02-18,0,"confirmed",0,0
+"Senegal",2020-02-19,0,"confirmed",0,0
+"Senegal",2020-02-20,0,"confirmed",0,0
+"Senegal",2020-02-21,0,"confirmed",0,0
+"Senegal",2020-02-22,0,"confirmed",0,0
+"Senegal",2020-02-23,0,"confirmed",0,0
+"Senegal",2020-02-24,0,"confirmed",0,0
+"Senegal",2020-02-25,0,"confirmed",0,0
+"Senegal",2020-02-26,0,"confirmed",0,0
+"Senegal",2020-02-27,0,"confirmed",0,0
+"Senegal",2020-02-28,0,"confirmed",0,0
+"Senegal",2020-02-29,0,"confirmed",0,0
+"Senegal",2020-03-01,0,"confirmed",0,0
+"Senegal",2020-03-02,1,"confirmed",1,0.0597231461890631
+"Senegal",2020-03-03,1,"confirmed",2,0.119446292378126
+"Senegal",2020-03-04,2,"confirmed",4,0.238892584756252
+"Senegal",2020-03-05,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-06,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-07,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-08,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-09,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-10,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-11,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-12,0,"confirmed",4,0.238892584756252
+"Senegal",2020-03-13,6,"confirmed",10,0.597231461890631
+"Senegal",2020-03-14,0,"confirmed",10,0.597231461890631
+"Senegal",2020-03-15,14,"confirmed",24,1.43335550853751
+"Senegal",2020-03-16,0,"confirmed",24,1.43335550853751
+"Senegal",2020-03-17,2,"confirmed",26,1.55280180091564
+"Senegal",2020-03-18,5,"confirmed",31,1.85141753186095
+"Senegal",2020-03-19,0,"confirmed",31,1.85141753186095
+"Senegal",2020-03-20,7,"confirmed",38,2.2694795551844
+"Senegal",2020-03-21,9,"confirmed",47,2.80698787088596
+"Senegal",2020-03-22,20,"confirmed",67,4.00145079466722
+"Senegal",2020-03-23,12,"confirmed",79,4.71812854893598
+"Senegal",2020-03-24,7,"confirmed",86,5.13619057225942
+"Senegal",2020-03-25,13,"confirmed",99,5.91259147271724
+"Senegal",2020-03-26,6,"confirmed",105,6.27093034985162
+"Senegal",2020-03-27,14,"confirmed",119,7.1070543964985
+"Senegal",2020-03-28,11,"confirmed",130,7.7640090045782
+"Senegal",2020-03-29,12,"confirmed",142,8.48068675884695
+"Senegal",2020-03-30,20,"confirmed",162,9.67514968262821
+"Senegal",2020-03-31,13,"confirmed",175,10.451550583086
+"Senegal",2020-04-01,15,"confirmed",190,11.347397775922
+"Senegal",2020-04-02,5,"confirmed",195,11.6460135068673
+"Senegal",2020-04-03,12,"confirmed",207,12.3626912611361
+"Senegal",2020-04-04,12,"confirmed",219,13.0793690154048
+"Senegal",2020-04-05,3,"confirmed",222,13.258538453972
+"Senegal",2020-04-06,4,"confirmed",226,13.4974310387282
+"Senegal",2020-04-07,11,"confirmed",237,14.1543856468079
+"Senegal",2020-04-08,7,"confirmed",244,14.5724476701314
+"Senegal",2020-04-09,6,"confirmed",250,14.9307865472658
+"Senegal",2020-04-10,15,"confirmed",265,15.8266337401017
+"Senegal",2020-04-11,13,"confirmed",278,16.6030346405595
+"Senegal",2020-04-12,2,"confirmed",280,16.7224809329377
+"Senegal",2020-04-13,11,"confirmed",291,17.3794355410173
+"Senegal",2020-04-14,8,"confirmed",299,17.8572207105299
+"Senegal",2020-04-15,15,"confirmed",314,18.7530679033658
+"Senegal",2020-04-16,21,"confirmed",335,20.0072539733361
+"Senegal",2020-04-17,7,"confirmed",342,20.4253159966596
+"Senegal",2020-04-18,8,"confirmed",350,20.9031011661721
+"Senegal",2020-04-19,17,"confirmed",367,21.9183946513861
+"Senegal",2020-04-20,10,"confirmed",377,22.5156261132768
+"Senegal",2020-04-21,35,"confirmed",412,24.605936229894
+"Senegal",2020-04-22,30,"confirmed",442,26.3976306155659
+"Senegal",2020-04-23,37,"confirmed",479,28.6073870245612
+"Senegal",2020-04-24,66,"confirmed",545,32.5491146730394
+"Senegal",2020-04-25,69,"confirmed",614,36.6700117600847
+"Senegal",2020-04-26,57,"confirmed",671,40.0742310928613
+"Senegal",2020-04-27,65,"confirmed",736,43.9562355951504
+"Senegal",2020-04-28,87,"confirmed",823,49.1521493135989
+"Senegal",2020-04-29,59,"confirmed",882,52.6758149387536
+"Senegal",2020-04-30,51,"confirmed",933,55.7216953943958
+"Senegal",2020-05-01,91,"confirmed",1024,61.1565016976006
+"Senegal",2020-05-02,91,"confirmed",1115,66.5913080008053
+"Senegal",2020-05-03,67,"confirmed",1182,70.5927587954725
+"Senegal",2020-05-04,89,"confirmed",1271,75.9081188062991
+"Senegal",2020-05-05,58,"confirmed",1329,79.3720612852648
+"Senegal",2020-05-06,104,"confirmed",1433,85.5832684889274
+"Senegal",2020-05-07,59,"confirmed",1492,89.1069341140821
+"Senegal",2020-05-08,59,"confirmed",1551,92.6305997392368
+"Senegal",2020-05-09,83,"confirmed",1634,97.587620872929
+"Senegal",2020-05-10,75,"confirmed",1709,102.066856837109
+"Senegal",2020-05-11,177,"confirmed",1886,112.637853712573
+"Senegal",2020-05-12,109,"confirmed",1995,119.147676647181
+"Senegal",2020-05-13,110,"confirmed",2105,125.717222727978
+"Senegal",2020-05-14,84,"confirmed",2189,130.733967007859
+"Senegal",2020-05-15,121,"confirmed",2310,137.960467696736
+"Senegal",2020-05-16,119,"confirmed",2429,145.067522093234
+"Senegal",2020-05-17,51,"confirmed",2480,148.113402548876
+"Senegal",2020-05-18,64,"confirmed",2544,151.935683904976
+"Senegal",2020-05-19,73,"confirmed",2617,156.295473576778
+"Senegal",2020-05-20,97,"confirmed",2714,162.088618757117
+"Senegal",2020-05-21,98,"confirmed",2812,167.941487083645
+"Senegal",2020-05-22,97,"confirmed",2909,173.734632263984
+"Senegal",2020-05-23,67,"confirmed",2976,177.736083058652
+"Senegal",2020-05-24,71,"confirmed",3047,181.976426438075
+"Senegal",2020-05-25,83,"confirmed",3130,186.933447571767
+"Senegal",2020-05-26,31,"confirmed",3161,188.784865103628
+"Senegal",2020-05-27,92,"confirmed",3253,194.279394553022
+"Senegal",2020-05-28,95,"confirmed",3348,199.953093440983
+"Senegal",2020-05-29,81,"confirmed",3429,204.790668282297
+"Senegal",2020-05-30,106,"confirmed",3535,211.121321778338
+"Senegal",2020-05-31,110,"confirmed",3645,217.690867859135
+"Senegal",2020-06-01,94,"confirmed",3739,223.304843600907
+"Senegal",2020-06-02,97,"confirmed",3836,229.097988781246
+"Senegal",2020-06-03,96,"confirmed",3932,234.831410815396
+"Senegal",2020-06-04,89,"confirmed",4021,240.146770826223
+"Senegal",2020-06-05,134,"confirmed",4155,248.149672415557
+"Senegal",2020-06-06,94,"confirmed",4249,253.763648157329
+"Senegal",2020-06-07,79,"confirmed",4328,258.481776706265
+"Senegal",2020-06-08,99,"confirmed",4427,264.394368178982
+"Senegal",2020-06-09,89,"confirmed",4516,269.709728189809
+"Senegal",2020-06-10,124,"confirmed",4640,277.115398317253
+"Senegal",2020-06-11,119,"confirmed",4759,284.222452713751
+"Senegal",2020-06-12,92,"confirmed",4851,289.716982163145
+"Senegal",2020-06-13,145,"confirmed",4996,298.376838360559
+"Senegal",2020-06-14,94,"confirmed",5090,303.990814102331
+"Senegal",2020-06-15,83,"confirmed",5173,308.947835236023
+"Senegal",2020-06-16,74,"confirmed",5247,313.367348054014
+"Senegal",2020-06-17,122,"confirmed",5369,320.65357188908
+"Sierra Leone",2020-01-22,0,"confirmed",0,0
+"Sierra Leone",2020-01-23,0,"confirmed",0,0
+"Sierra Leone",2020-01-24,0,"confirmed",0,0
+"Sierra Leone",2020-01-25,0,"confirmed",0,0
+"Sierra Leone",2020-01-26,0,"confirmed",0,0
+"Sierra Leone",2020-01-27,0,"confirmed",0,0
+"Sierra Leone",2020-01-28,0,"confirmed",0,0
+"Sierra Leone",2020-01-29,0,"confirmed",0,0
+"Sierra Leone",2020-01-30,0,"confirmed",0,0
+"Sierra Leone",2020-01-31,0,"confirmed",0,0
+"Sierra Leone",2020-02-01,0,"confirmed",0,0
+"Sierra Leone",2020-02-02,0,"confirmed",0,0
+"Sierra Leone",2020-02-03,0,"confirmed",0,0
+"Sierra Leone",2020-02-04,0,"confirmed",0,0
+"Sierra Leone",2020-02-05,0,"confirmed",0,0
+"Sierra Leone",2020-02-06,0,"confirmed",0,0
+"Sierra Leone",2020-02-07,0,"confirmed",0,0
+"Sierra Leone",2020-02-08,0,"confirmed",0,0
+"Sierra Leone",2020-02-09,0,"confirmed",0,0
+"Sierra Leone",2020-02-10,0,"confirmed",0,0
+"Sierra Leone",2020-02-11,0,"confirmed",0,0
+"Sierra Leone",2020-02-12,0,"confirmed",0,0
+"Sierra Leone",2020-02-13,0,"confirmed",0,0
+"Sierra Leone",2020-02-14,0,"confirmed",0,0
+"Sierra Leone",2020-02-15,0,"confirmed",0,0
+"Sierra Leone",2020-02-16,0,"confirmed",0,0
+"Sierra Leone",2020-02-17,0,"confirmed",0,0
+"Sierra Leone",2020-02-18,0,"confirmed",0,0
+"Sierra Leone",2020-02-19,0,"confirmed",0,0
+"Sierra Leone",2020-02-20,0,"confirmed",0,0
+"Sierra Leone",2020-02-21,0,"confirmed",0,0
+"Sierra Leone",2020-02-22,0,"confirmed",0,0
+"Sierra Leone",2020-02-23,0,"confirmed",0,0
+"Sierra Leone",2020-02-24,0,"confirmed",0,0
+"Sierra Leone",2020-02-25,0,"confirmed",0,0
+"Sierra Leone",2020-02-26,0,"confirmed",0,0
+"Sierra Leone",2020-02-27,0,"confirmed",0,0
+"Sierra Leone",2020-02-28,0,"confirmed",0,0
+"Sierra Leone",2020-02-29,0,"confirmed",0,0
+"Sierra Leone",2020-03-01,0,"confirmed",0,0
+"Sierra Leone",2020-03-02,0,"confirmed",0,0
+"Sierra Leone",2020-03-03,0,"confirmed",0,0
+"Sierra Leone",2020-03-04,0,"confirmed",0,0
+"Sierra Leone",2020-03-05,0,"confirmed",0,0
+"Sierra Leone",2020-03-06,0,"confirmed",0,0
+"Sierra Leone",2020-03-07,0,"confirmed",0,0
+"Sierra Leone",2020-03-08,0,"confirmed",0,0
+"Sierra Leone",2020-03-09,0,"confirmed",0,0
+"Sierra Leone",2020-03-10,0,"confirmed",0,0
+"Sierra Leone",2020-03-11,0,"confirmed",0,0
+"Sierra Leone",2020-03-12,0,"confirmed",0,0
+"Sierra Leone",2020-03-13,0,"confirmed",0,0
+"Sierra Leone",2020-03-14,0,"confirmed",0,0
+"Sierra Leone",2020-03-15,0,"confirmed",0,0
+"Sierra Leone",2020-03-16,0,"confirmed",0,0
+"Sierra Leone",2020-03-17,0,"confirmed",0,0
+"Sierra Leone",2020-03-18,0,"confirmed",0,0
+"Sierra Leone",2020-03-19,0,"confirmed",0,0
+"Sierra Leone",2020-03-20,0,"confirmed",0,0
+"Sierra Leone",2020-03-21,0,"confirmed",0,0
+"Sierra Leone",2020-03-22,0,"confirmed",0,0
+"Sierra Leone",2020-03-23,0,"confirmed",0,0
+"Sierra Leone",2020-03-24,0,"confirmed",0,0
+"Sierra Leone",2020-03-25,0,"confirmed",0,0
+"Sierra Leone",2020-03-26,0,"confirmed",0,0
+"Sierra Leone",2020-03-27,0,"confirmed",0,0
+"Sierra Leone",2020-03-28,0,"confirmed",0,0
+"Sierra Leone",2020-03-29,0,"confirmed",0,0
+"Sierra Leone",2020-03-30,0,"confirmed",0,0
+"Sierra Leone",2020-03-31,1,"confirmed",1,0.197719073227434
+"Sierra Leone",2020-04-01,1,"confirmed",2,0.395438146454867
+"Sierra Leone",2020-04-02,0,"confirmed",2,0.395438146454867
+"Sierra Leone",2020-04-03,0,"confirmed",2,0.395438146454867
+"Sierra Leone",2020-04-04,2,"confirmed",4,0.790876292909735
+"Sierra Leone",2020-04-05,2,"confirmed",6,1.1863144393646
+"Sierra Leone",2020-04-06,0,"confirmed",6,1.1863144393646
+"Sierra Leone",2020-04-07,0,"confirmed",6,1.1863144393646
+"Sierra Leone",2020-04-08,1,"confirmed",7,1.38403351259204
+"Sierra Leone",2020-04-09,0,"confirmed",7,1.38403351259204
+"Sierra Leone",2020-04-10,1,"confirmed",8,1.58175258581947
+"Sierra Leone",2020-04-11,0,"confirmed",8,1.58175258581947
+"Sierra Leone",2020-04-12,2,"confirmed",10,1.97719073227434
+"Sierra Leone",2020-04-13,0,"confirmed",10,1.97719073227434
+"Sierra Leone",2020-04-14,1,"confirmed",11,2.17490980550177
+"Sierra Leone",2020-04-15,2,"confirmed",13,2.57034795195664
+"Sierra Leone",2020-04-16,2,"confirmed",15,2.96578609841151
+"Sierra Leone",2020-04-17,11,"confirmed",26,5.14069590391328
+"Sierra Leone",2020-04-18,4,"confirmed",30,5.93157219682301
+"Sierra Leone",2020-04-19,5,"confirmed",35,6.92016756296018
+"Sierra Leone",2020-04-20,8,"confirmed",43,8.50192014877965
+"Sierra Leone",2020-04-21,7,"confirmed",50,9.88595366137168
+"Sierra Leone",2020-04-22,11,"confirmed",61,12.0608634668735
+"Sierra Leone",2020-04-23,3,"confirmed",64,12.6540206865558
+"Sierra Leone",2020-04-24,18,"confirmed",82,16.2129640046496
+"Sierra Leone",2020-04-25,0,"confirmed",82,16.2129640046496
+"Sierra Leone",2020-04-26,11,"confirmed",93,18.3878738101513
+"Sierra Leone",2020-04-27,0,"confirmed",93,18.3878738101513
+"Sierra Leone",2020-04-28,11,"confirmed",104,20.5627836156531
+"Sierra Leone",2020-04-29,0,"confirmed",104,20.5627836156531
+"Sierra Leone",2020-04-30,20,"confirmed",124,24.5171650802018
+"Sierra Leone",2020-05-01,12,"confirmed",136,26.889793958931
+"Sierra Leone",2020-05-02,19,"confirmed",155,30.6464563502522
+"Sierra Leone",2020-05-03,11,"confirmed",166,32.821366155754
+"Sierra Leone",2020-05-04,12,"confirmed",178,35.1939950344832
+"Sierra Leone",2020-05-05,21,"confirmed",199,39.3460955722593
+"Sierra Leone",2020-05-06,26,"confirmed",225,44.4867914761726
+"Sierra Leone",2020-05-07,6,"confirmed",231,45.6731059155372
+"Sierra Leone",2020-05-08,26,"confirmed",257,50.8138018194505
+"Sierra Leone",2020-05-09,34,"confirmed",291,57.5362503091832
+"Sierra Leone",2020-05-10,16,"confirmed",307,60.6997554808221
+"Sierra Leone",2020-05-11,31,"confirmed",338,66.8290467508726
+"Sierra Leone",2020-05-12,0,"confirmed",338,66.8290467508726
+"Sierra Leone",2020-05-13,49,"confirmed",387,76.5172813390168
+"Sierra Leone",2020-05-14,21,"confirmed",408,80.6693818767929
+"Sierra Leone",2020-05-15,39,"confirmed",447,88.3804257326629
+"Sierra Leone",2020-05-16,15,"confirmed",462,91.3462118310744
+"Sierra Leone",2020-05-17,43,"confirmed",505,99.848131979854
+"Sierra Leone",2020-05-18,14,"confirmed",519,102.616199005038
+"Sierra Leone",2020-05-19,15,"confirmed",534,105.58198510345
+"Sierra Leone",2020-05-20,36,"confirmed",570,112.699871739637
+"Sierra Leone",2020-05-21,15,"confirmed",585,115.665657838049
+"Sierra Leone",2020-05-22,21,"confirmed",606,119.817758375825
+"Sierra Leone",2020-05-23,15,"confirmed",621,122.783544474236
+"Sierra Leone",2020-05-24,86,"confirmed",707,139.787384771796
+"Sierra Leone",2020-05-25,28,"confirmed",735,145.323518822164
+"Sierra Leone",2020-05-26,19,"confirmed",754,149.080181213485
+"Sierra Leone",2020-05-27,28,"confirmed",782,154.616315263853
+"Sierra Leone",2020-05-28,30,"confirmed",812,160.547887460676
+"Sierra Leone",2020-05-29,17,"confirmed",829,163.909111705543
+"Sierra Leone",2020-05-30,23,"confirmed",852,168.456650389774
+"Sierra Leone",2020-05-31,9,"confirmed",861,170.23612204882
+"Sierra Leone",2020-06-01,4,"confirmed",865,171.02699834173
+"Sierra Leone",2020-06-02,31,"confirmed",896,177.156289611781
+"Sierra Leone",2020-06-03,13,"confirmed",909,179.726637563737
+"Sierra Leone",2020-06-04,5,"confirmed",914,180.715232929874
+"Sierra Leone",2020-06-05,15,"confirmed",929,183.681019028286
+"Sierra Leone",2020-06-06,17,"confirmed",946,187.042243273152
+"Sierra Leone",2020-06-07,23,"confirmed",969,191.589781957383
+"Sierra Leone",2020-06-08,32,"confirmed",1001,197.916792300661
+"Sierra Leone",2020-06-09,24,"confirmed",1025,202.66205005812
+"Sierra Leone",2020-06-10,37,"confirmed",1062,209.977655767535
+"Sierra Leone",2020-06-11,23,"confirmed",1085,214.525194451766
+"Sierra Leone",2020-06-12,18,"confirmed",1103,218.084137769859
+"Sierra Leone",2020-06-13,29,"confirmed",1132,223.817990893455
+"Sierra Leone",2020-06-14,37,"confirmed",1169,231.13359660287
+"Sierra Leone",2020-06-15,7,"confirmed",1176,232.517630115462
+"Sierra Leone",2020-06-16,49,"confirmed",1225,242.205864703606
+"Sierra Leone",2020-06-17,24,"confirmed",1249,246.951122461065
+"Togo",2020-01-22,0,"confirmed",0,0
+"Togo",2020-01-23,0,"confirmed",0,0
+"Togo",2020-01-24,0,"confirmed",0,0
+"Togo",2020-01-25,0,"confirmed",0,0
+"Togo",2020-01-26,0,"confirmed",0,0
+"Togo",2020-01-27,0,"confirmed",0,0
+"Togo",2020-01-28,0,"confirmed",0,0
+"Togo",2020-01-29,0,"confirmed",0,0
+"Togo",2020-01-30,0,"confirmed",0,0
+"Togo",2020-01-31,0,"confirmed",0,0
+"Togo",2020-02-01,0,"confirmed",0,0
+"Togo",2020-02-02,0,"confirmed",0,0
+"Togo",2020-02-03,0,"confirmed",0,0
+"Togo",2020-02-04,0,"confirmed",0,0
+"Togo",2020-02-05,0,"confirmed",0,0
+"Togo",2020-02-06,0,"confirmed",0,0
+"Togo",2020-02-07,0,"confirmed",0,0
+"Togo",2020-02-08,0,"confirmed",0,0
+"Togo",2020-02-09,0,"confirmed",0,0
+"Togo",2020-02-10,0,"confirmed",0,0
+"Togo",2020-02-11,0,"confirmed",0,0
+"Togo",2020-02-12,0,"confirmed",0,0
+"Togo",2020-02-13,0,"confirmed",0,0
+"Togo",2020-02-14,0,"confirmed",0,0
+"Togo",2020-02-15,0,"confirmed",0,0
+"Togo",2020-02-16,0,"confirmed",0,0
+"Togo",2020-02-17,0,"confirmed",0,0
+"Togo",2020-02-18,0,"confirmed",0,0
+"Togo",2020-02-19,0,"confirmed",0,0
+"Togo",2020-02-20,0,"confirmed",0,0
+"Togo",2020-02-21,0,"confirmed",0,0
+"Togo",2020-02-22,0,"confirmed",0,0
+"Togo",2020-02-23,0,"confirmed",0,0
+"Togo",2020-02-24,0,"confirmed",0,0
+"Togo",2020-02-25,0,"confirmed",0,0
+"Togo",2020-02-26,0,"confirmed",0,0
+"Togo",2020-02-27,0,"confirmed",0,0
+"Togo",2020-02-28,0,"confirmed",0,0
+"Togo",2020-02-29,0,"confirmed",0,0
+"Togo",2020-03-01,0,"confirmed",0,0
+"Togo",2020-03-02,0,"confirmed",0,0
+"Togo",2020-03-03,0,"confirmed",0,0
+"Togo",2020-03-04,0,"confirmed",0,0
+"Togo",2020-03-05,0,"confirmed",0,0
+"Togo",2020-03-06,1,"confirmed",1,0.12079156159814
+"Togo",2020-03-07,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-08,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-09,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-10,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-11,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-12,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-13,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-14,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-15,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-16,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-17,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-18,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-19,0,"confirmed",1,0.12079156159814
+"Togo",2020-03-20,8,"confirmed",9,1.08712405438326
+"Togo",2020-03-21,7,"confirmed",16,1.93266498557024
+"Togo",2020-03-22,0,"confirmed",16,1.93266498557024
+"Togo",2020-03-23,2,"confirmed",18,2.17424810876652
+"Togo",2020-03-24,2,"confirmed",20,2.4158312319628
+"Togo",2020-03-25,3,"confirmed",23,2.77820591675722
+"Togo",2020-03-26,0,"confirmed",23,2.77820591675722
+"Togo",2020-03-27,2,"confirmed",25,3.0197890399535
+"Togo",2020-03-28,0,"confirmed",25,3.0197890399535
+"Togo",2020-03-29,0,"confirmed",25,3.0197890399535
+"Togo",2020-03-30,5,"confirmed",30,3.6237468479442
+"Togo",2020-03-31,4,"confirmed",34,4.10691309433676
+"Togo",2020-04-01,2,"confirmed",36,4.34849621753304
+"Togo",2020-04-02,3,"confirmed",39,4.71087090232746
+"Togo",2020-04-03,1,"confirmed",40,4.8316624639256
+"Togo",2020-04-04,1,"confirmed",41,4.95245402552374
+"Togo",2020-04-05,3,"confirmed",44,5.31482871031816
+"Togo",2020-04-06,14,"confirmed",58,7.00591057269212
+"Togo",2020-04-07,7,"confirmed",65,7.8514515038791
+"Togo",2020-04-08,5,"confirmed",70,8.4554093118698
+"Togo",2020-04-09,3,"confirmed",73,8.81778399666422
+"Togo",2020-04-10,3,"confirmed",76,9.18015868145864
+"Togo",2020-04-11,0,"confirmed",76,9.18015868145864
+"Togo",2020-04-12,0,"confirmed",76,9.18015868145864
+"Togo",2020-04-13,1,"confirmed",77,9.30095024305678
+"Togo",2020-04-14,0,"confirmed",77,9.30095024305678
+"Togo",2020-04-15,4,"confirmed",81,9.78411648944934
+"Togo",2020-04-16,0,"confirmed",81,9.78411648944934
+"Togo",2020-04-17,2,"confirmed",83,10.0256996126456
+"Togo",2020-04-18,1,"confirmed",84,10.1464911742438
+"Togo",2020-04-19,0,"confirmed",84,10.1464911742438
+"Togo",2020-04-20,0,"confirmed",84,10.1464911742438
+"Togo",2020-04-21,2,"confirmed",86,10.38807429744
+"Togo",2020-04-22,2,"confirmed",88,10.6296574206363
+"Togo",2020-04-23,0,"confirmed",88,10.6296574206363
+"Togo",2020-04-24,2,"confirmed",90,10.8712405438326
+"Togo",2020-04-25,6,"confirmed",96,11.5959899134214
+"Togo",2020-04-26,2,"confirmed",98,11.8375730366177
+"Togo",2020-04-27,0,"confirmed",98,11.8375730366177
+"Togo",2020-04-28,1,"confirmed",99,11.9583645982159
+"Togo",2020-04-29,10,"confirmed",109,13.1662802141973
+"Togo",2020-04-30,7,"confirmed",116,14.0118211453842
+"Togo",2020-05-01,7,"confirmed",123,14.8573620765712
+"Togo",2020-05-02,0,"confirmed",123,14.8573620765712
+"Togo",2020-05-03,1,"confirmed",124,14.9781536381694
+"Togo",2020-05-04,2,"confirmed",126,15.2197367613656
+"Togo",2020-05-05,2,"confirmed",128,15.4613198845619
+"Togo",2020-05-06,0,"confirmed",128,15.4613198845619
+"Togo",2020-05-07,7,"confirmed",135,16.3068608157489
+"Togo",2020-05-08,10,"confirmed",145,17.5147764317303
+"Togo",2020-05-09,8,"confirmed",153,18.4811089245154
+"Togo",2020-05-10,21,"confirmed",174,21.0177317180764
+"Togo",2020-05-11,7,"confirmed",181,21.8632726492633
+"Togo",2020-05-12,18,"confirmed",199,24.0375207580299
+"Togo",2020-05-13,20,"confirmed",219,26.4533519899927
+"Togo",2020-05-14,19,"confirmed",238,28.7483916603573
+"Togo",2020-05-15,25,"confirmed",263,31.7681807003108
+"Togo",2020-05-16,35,"confirmed",298,35.9958853562457
+"Togo",2020-05-17,3,"confirmed",301,36.3582600410401
+"Togo",2020-05-18,29,"confirmed",330,39.8612153273862
+"Togo",2020-05-19,8,"confirmed",338,40.8275478201713
+"Togo",2020-05-20,2,"confirmed",340,41.0691309433676
+"Togo",2020-05-21,14,"confirmed",354,42.7602128057416
+"Togo",2020-05-22,9,"confirmed",363,43.8473368601248
+"Togo",2020-05-23,10,"confirmed",373,45.0552524761062
+"Togo",2020-05-24,8,"confirmed",381,46.0215849688913
+"Togo",2020-05-25,5,"confirmed",386,46.625542776882
+"Togo",2020-05-26,5,"confirmed",391,47.2295005848727
+"Togo",2020-05-27,4,"confirmed",395,47.7126668312653
+"Togo",2020-05-28,27,"confirmed",422,50.9740389944151
+"Togo",2020-05-29,6,"confirmed",428,51.6987883640039
+"Togo",2020-05-30,5,"confirmed",433,52.3027461719946
+"Togo",2020-05-31,9,"confirmed",442,53.3898702263779
+"Togo",2020-06-01,1,"confirmed",443,53.510661787976
+"Togo",2020-06-02,2,"confirmed",445,53.7522449111723
+"Togo",2020-06-03,7,"confirmed",452,54.5977858423593
+"Togo",2020-06-04,13,"confirmed",465,56.1680761431351
+"Togo",2020-06-05,20,"confirmed",485,58.5839073750979
+"Togo",2020-06-06,2,"confirmed",487,58.8254904982942
+"Togo",2020-06-07,8,"confirmed",495,59.7918229910793
+"Togo",2020-06-08,2,"confirmed",497,60.0334061142756
+"Togo",2020-06-09,4,"confirmed",501,60.5165723606681
+"Togo",2020-06-10,21,"confirmed",522,63.0531951542291
+"Togo",2020-06-11,2,"confirmed",524,63.2947782774254
+"Togo",2020-06-12,1,"confirmed",525,63.4155698390235
+"Togo",2020-06-13,5,"confirmed",530,64.0195276470142
+"Togo",2020-06-14,0,"confirmed",530,64.0195276470142
+"Togo",2020-06-15,1,"confirmed",531,64.1403192086123
+"Togo",2020-06-16,6,"confirmed",537,64.8650685782012
+"Togo",2020-06-17,7,"confirmed",544,65.7106095093882

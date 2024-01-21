@@ -1,0 +1,299 @@
+---
+title: "COVID-19_Nigeria"
+author: "Bbosa Robert"
+date: "4/30/2020"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+---
+
+# Installing important packages
+install.packages("ggpubr")
+install.packages("hrbrthemes")
+
+# Loading libraries
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+library(patchwork)
+library(ggpubr)
+library(hrbrthemes)
+```
+
+
+
+
+# Pulling the coronvirus data from John Hopkins repo
+# https://github.com/CSSEGISandData/COVID-19
+
+#------------ Pulling confirmed cases------------
+
+```{r echo=TRUE}
+conf_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
+csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+
+raw_conf <- read.csv(file = conf_url, stringsAsFactors = FALSE)
+
+lapply(1:ncol(raw_conf), function(i){
+  if(all(is.na(raw_conf[, i]))){
+    raw_conf <<- raw_conf[, -i]
+    return(print(paste("Column", names(raw_conf)[i], "is missing", sep = " ")))
+  } else {
+    return(NULL)
+  }
+})
+```
+
+
+# Transforming the data from wide to long
+# Creating new data frame
+```{r}
+library(tidyr)
+library(dplyr)
+
+df_conf <- raw_conf[, 1:4]
+
+for(i in 5:ncol(raw_conf)){
+
+  raw_conf[,i] <- as.integer(raw_conf[,i])
+  # raw_conf[,i] <- ifelse(is.na(raw_conf[, i]), 0 , raw_conf[, i])
+    print(names(raw_conf)[i])
+
+  if(i == 5){
+    df_conf[[names(raw_conf)[i]]] <- raw_conf[, i]
+  } else {
+    df_conf[[names(raw_conf)[i]]] <- raw_conf[, i] - raw_conf[, i - 1]
+  }
+
+
+}
+
+
+df_conf1 <-  df_conf %>% tidyr::pivot_longer(cols = dplyr::starts_with("X"),
+                                             names_to = "date_temp",
+                                             values_to = "cases_temp")
+```
+
+
+# Parsing the date
+
+```{r}
+df_conf1$month <- sub("X", "", strsplit(df_conf1$date_temp, split = "\\.") %>%
+                        purrr::map_chr(~.x[1]) )
+
+df_conf1$day <- strsplit(df_conf1$date_temp, split = "\\.") %>%
+  purrr::map_chr(~.x[2])
+
+
+df_conf1$date <- as.Date(paste("2020", df_conf1$month, df_conf1$day, sep = "-"))
+```
+
+
+# Aggregate the data to daily
+
+```{r}
+df_conf2 <- df_conf1 %>%
+  dplyr::group_by(Province.State, Country.Region, Lat, Long, date) %>%
+  dplyr::summarise(cases = sum(cases_temp)) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(type = "confirmed",
+                Country.Region = trimws(Country.Region),
+                Province.State = trimws(Province.State))
+```
+
+
+# Pulling death cases
+
+```{r echo=TRUE}
+death_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master
+/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
+
+raw_death <- read.csv(file =death_url, stringsAsFactors = FALSE, fill =FALSE)
+
+lapply(1:ncol(raw_death), function(i){
+  if(all(is.na(raw_death[, i]))){
+    raw_death <<- raw_death[, -i]
+    return(print(paste("Column", names(raw_death)[i], "is missing", sep = " ")))
+  } else {
+    return(NULL)
+  }
+})
+```
+
+# Transforming the data from wide to long
+# Creating new data frame
+
+```{r echo=TRUE}
+df_death <- raw_death[, 1:4]
+
+for(i in 5:ncol(raw_death)){
+  print(i)
+  raw_death[,i] <- as.integer(raw_death[,i])
+  raw_death[,i] <- ifelse(is.na(raw_death[, i]), 0 , raw_death[, i])
+
+  if(i == 5){
+    df_death[[names(raw_death)[i]]] <- raw_death[, i]
+  } else {
+    df_death[[names(raw_death)[i]]] <- raw_death[, i] - raw_death[, i - 1]
+  }
+}
+
+
+df_death1 <-  df_death %>% tidyr::pivot_longer(cols = dplyr::starts_with("X"),
+                                               names_to = "date_temp",
+                                               values_to = "cases_temp")
+```
+
+# Parsing the date
+
+```{r}
+df_death1$month <- sub("X", "",strsplit(df_death1$date_temp, split = "\\.") %>%
+                         purrr::map_chr(~.x[1]) )
+
+df_death1$day <- strsplit(df_death1$date_temp, split = "\\.") %>%
+  purrr::map_chr(~.x[2])
+
+
+df_death1$date <- as.Date(paste("2020", df_death1$month, df_death1$day, sep = "-"))
+```
+
+
+# Aggregate the data to daily
+
+```{r}
+df_death2 <- df_death1 %>%
+  dplyr::group_by(Province.State, Country.Region, Lat, Long, date) %>%
+  dplyr::summarise(cases = sum(cases_temp)) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(type = "death",
+                Country.Region = trimws(Country.Region),
+                Province.State = trimws(Province.State))
+```
+
+
+# Pulling recovered cases
+
+```{r echo=TRUE}
+raw_rec <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19
+/master/csse_covid_19_data/csse_covid_19_time_series
+/time_series_covid19_recovered_global.csv", stringsAsFactors = FALSE, fill =FALSE)
+
+lapply(1:ncol(raw_rec), function(i){
+  if(all(is.na(raw_rec[, i]))){
+    raw_rec <<- raw_rec[, -i]
+    return(print(paste("Column", names(raw_rec)[i], "is missing", sep = " ")))
+  } else {
+    return(NULL)
+  }
+})
+```
+
+
+# Transforming the data from wide to long
+# Creating new data frame
+
+```{r echo=TRUE}
+df_rec <- raw_rec[, 1:4]
+
+for(i in 5:ncol(raw_rec)){
+  print(i)
+  raw_rec[,i] <- as.integer(raw_rec[,i])
+  raw_rec[,i] <- ifelse(is.na(raw_rec[, i]), 0 , raw_rec[, i])
+
+  if(i == 5){
+    df_rec[[names(raw_rec)[i]]] <- raw_rec[, i]
+  } else {
+    df_rec[[names(raw_rec)[i]]] <- raw_rec[, i] - raw_rec[, i - 1]
+  }
+}
+
+
+df_rec1 <-  df_rec %>% tidyr::pivot_longer(cols = dplyr::starts_with("X"),
+                                           names_to = "date_temp",
+                                           values_to = "cases_temp")
+```
+
+
+# Parsing the date
+
+```{r}
+df_rec1$month <- sub("X", "", strsplit(df_rec1$date_temp, split = "\\.") %>%
+                       purrr::map_chr(~.x[1]) )
+
+df_rec1$day <- strsplit(df_rec1$date_temp, split = "\\.") %>%
+  purrr::map_chr(~.x[2])
+
+
+df_rec1$date <- as.Date(paste("2020", df_rec1$month, df_rec1$day, sep = "-"))
+
+```
+
+# Aggregate the data to daily
+
+```{r}
+
+df_rec2 <- df_rec1 %>%
+  dplyr::group_by(Province.State, Country.Region, Lat, Long, date) %>%
+  dplyr::summarise(cases = sum(cases_temp)) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(type = "recovered",
+                Country.Region = trimws(Country.Region),
+                Province.State = trimws(Province.State))
+```
+
+#---------------- Aggregate all cases ----------------
+
+```{r}
+coronavirus <- dplyr::bind_rows(df_conf2, df_death2, df_rec2) %>% as.data.frame()
+
+myformat <- "%Y-%m-%d"
+coronavirus$date <- as.Date(corona_global$date, myformat)
+str(coronavirus)
+
+head(coronavirus)
+```
+
+# Remove variables such as province.state, Lat and Long
+```{r}
+corona_global <-coronavirus %>% 
+  select( -Province.State, -Lat, -Long) %>% 
+  rename(country = Country.Region)     #rename the variable country.region to country
+
+head(corona_global)
+```
+
+# Introduce a variable for cummulative totals of the cases called total_cases
+```{r}
+corona_global_total <- corona_global %>%
+  group_by(country, type ) %>%
+  mutate(total_cases = cumsum(cases))
+head(corona_global_total)
+```
+
+# filter out Nigeria
+```{r}
+COVID_19_Nigeria <- corona_global_total %>% 
+   select(-cases) %>% 
+  filter(country=="Nigeria")
+ 
+head(COVID_19_Nigeria)
+```
+
+# Export it in .csv and .xlsx formarts
+
+```{r}
+writexl::write_xlsx(x = COVID_19_Nigeria, path = "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/COVID_19_Nigeria.xlsx", col_names = TRUE)
+
+write.csv(COVID_19_Nigeria, "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/COVID_19_Nigeria.csv", row.names = FALSE)
+
+```
+
+

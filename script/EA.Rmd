@@ -1,0 +1,642 @@
+---
+title: "Eastern Africa"
+author: "Bbosa Robert"
+date: "6/18/2020"
+output:
+  word_document: 
+    toc: yes
+    fig_caption: yes
+  html_document: default
+---
+
+# Install the necessary packages
+```{r}
+library(tidyverse)
+library(plotly)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+library(patchwork)
+library(ggpubr)
+library(hrbrthemes)
+library(directlabels)
+library(knitr)
+library(pastecs)
+library (RColorBrewer)
+display.brewer.all()
+```
+
+
+
+# Read the file
+```{r}
+EA_global <- read.csv("~/COVID-19/COVID-19_Data/coronavirus.csv", 
+                          header = TRUE, stringsAsFactors = FALSE)
+attach(EA_global)
+summary(EA_global)
+names(EA_global)
+str(EA_global)
+```
+
+
+
+# Eliminate the unnecessary columns
+```{r}
+EA_global <- select(EA_global, -Province.State, -Lat, -Long)
+class(EA_global)
+head(EA_global)
+```
+
+
+# Transfor date from "Character format to date format"
+```{r}
+EA_global <- rename(EA_global, country = Country.Region)
+myformat <- "%Y-%m-%d"
+EA_global$date <- as.Date(EA_global$date, myformat)
+str(EA_global)
+```
+
+
+
+# Check if the date has changed
+```{r}
+EA_global <- tbl_df(EA_global)
+class(EA_global)
+str(EA_global)
+```
+
+# Include a column for totals
+```{r}
+EA_global_total <- EA_global %>%
+  group_by(country, type ) %>%
+  mutate(total_cases = cumsum(cases))
+head(EA_global_total)
+tail(EA_global_total)
+```
+
+
+# Select Eastern Africa countries
+```{r}
+EA_countries <- EA_global_total %>% 
+  filter(country %in% c("Burundi","Djibouti","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"))
+ 
+head(EA_countries)
+tail(EA_countries)
+```
+
+
+# Compute the infection rate
+
+```{r}
+confirmed_cases_EA <- EA_countries %>% 
+  filter(type=="confirmed") %>%
+  group_by(country,type) %>%
+  mutate(infection_rate=ifelse(country=="Burundi",
+                               total_cases*(1000000/11576000),
+                        ifelse(country=="Djibouti",
+                               total_cases*(1000000/986000),
+                        ifelse(country=="Eritrea",  
+                               total_cases*(1000000/5310000),
+                        ifelse(country=="Ethiopia",
+                               total_cases*(1000000/110136000),
+                        ifelse(country=="Kenya",
+                               total_cases*(1000000/52215000),
+                        ifelse(country=="Rwanda",
+                               total_cases*(1000000/12794000),
+                        ifelse(country=="Somalia",
+                               total_cases*(1000000/15636000),
+                        ifelse(country=="South Sudan",
+                               total_cases*(1000000/13263000),
+                        ifelse(country=="Tanzania",
+                               total_cases*(1000000/60914000),
+                               total_cases*(1000000/45712000)))))))))))    
+head(confirmed_cases_EA)
+tail(confirmed_cases_EA)
+str(confirmed_cases_EA)
+summary(confirmed_cases_EA$infection_rate)
+stat.desc(confirmed_cases_EA)
+```
+
+
+# Fatality rate
+
+```{r}
+death_cases_EA <- EA_countries %>% 
+  filter(type %in% c("death", "confirmed")) %>% 
+  select(-total_cases) %>% 
+  spread(type, cases) %>% 
+  mutate(fatality_rate=ifelse(country=="Burundi",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Djibouti",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Eritrea",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Ethiopia",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Kenya",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Rwanda",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Somalia",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="South Sudan",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Tanzania",
+                             round((cumsum(death)/cumsum(confirmed))*100,digits=2),
+                             round((cumsum(death)/cumsum(confirmed))*100,
+                                   digits=2)))))))))))
+
+head(death_cases_EA)
+tail(death_cases_EA)
+str(death_cases_EA)
+stat.desc(death_cases_EA)
+```
+
+
+# Recovery rate 
+
+```{r}
+recovered_cases_EA <- EA_countries %>% 
+  filter(type %in% c("recovered","confirmed")) %>% 
+   select(-total_cases) %>% 
+  spread(type, cases) %>%
+  mutate(recovery_rate=ifelse(country=="Burundi",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Djibouti",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Eritrea",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Ethiopia",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Kenya",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Rwanda",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Somalia",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="South Sudan",
+                             round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                       ifelse(country=="Tanzania", round((cumsum(recovered)/cumsum(confirmed))*100,digits=2),
+                             round((cumsum(recovered)/cumsum(confirmed))*100,
+                                   digits=2)))))))))))
+
+
+head(recovered_cases_EA)
+tail(recovered_cases_EA)
+str(recovered_cases_EA)
+stat.desc(recovered_cases_EA)
+```
+
+
+# Plot a bar chart
+
+```{r}
+EA_countries %>% 
+  filter(country %in% c("Burundi","Djibouti","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"), type=="confirmed", date=="2020-06-15" ) %>% 
+   ggplot( aes(country, total_cases, fill=country)) +
+  geom_bar(aes(reorder(country, total_cases),total_cases),
+            stat= "identity", show.legend = FALSE) +
+  geom_text(aes(label= total_cases), vjust=0.5, hjust=-0.1, colour="black") +
+ scale_fill_brewer(palette = "Paired") +
+  coord_flip() +
+  ggtitle("Comparison of comfirmed cases as at 15 June 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+   xlab("Country")+
+  ylab("Number of Confirmed cases as at 15 June 2020")
+ 
+ ggsave("confirmed_EA1.png",
+       width =30, height = 15, units = "cm", dpi = 70)
+```
+
+
+
+# Plot a line graph as at 30 April
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Djibouti","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-05-01") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 30 April 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-03-01","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA2.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+
+# Plot a line graph as at 30 April
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-05-01") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 30 April 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-03-01","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA3.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+
+# Plot a line graph as at 31 May
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Djibouti","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-06-01") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 31 May 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-02-27","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-02-15","2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA4.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+# Plot a line graph as at 31 May
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-06-01") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 31 May 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-02-27","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-02-15","2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA5.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+
+# Plot a line graph as at 15 June
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Djibouti","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-06-16") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+   scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 15 June 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-02-27","2020-06-30")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-02-15","2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31","2020-06-15"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA6.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+# Plot a line graph as at 15 June
+
+```{r}
+
+confirmed_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania", "Uganda"),
+         date<"2020-06-16") %>%
+  ggplot( aes(x=date, y=infection_rate, group=country, color=country)) +
+  geom_line() +
+  geom_dl(aes(label = country), 
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+   scale_fill_brewer(palette = "Paired") +
+  ggtitle("Comparison of infection rate at 15 June 2020 ") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("infection rate per 1 million population")+
+  xlab("Date") +
+  scale_x_date(limits = as.Date(c("2020-02-27","2020-06-30")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-02-15","2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31","2020-06-15"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, 
+                                   size = 10, face = "bold"))
+
+ggsave("confirmed_EA7.png", #other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".
+width =30, height = 15,
+units = "cm", # other options c("in", "cm", "mm")
+dpi = 70)
+```
+
+
+# Plot a bar graph for the deaths 
+
+```{r}
+EA_countries %>% 
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan", "Tanzania","Uganda"), type=="death", date=="2020-06-15" ) %>% 
+   ggplot( aes(country, total_cases, fill=country)) +
+  geom_bar(aes(reorder(country, total_cases),total_cases),
+            stat= "identity", show.legend = FALSE) +
+  geom_text(aes(label= total_cases), vjust=0.5, hjust=-0.1, colour="black") +
+ scale_fill_brewer(palette = "Paired")  +
+  coord_flip() +
+  ggtitle("Comparison of death as at 15 June 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+   xlab("Country")+
+  ylab("Number of Confirmed cases as at 15 June 2020")
+ 
+ ggsave("death_EA1.png",
+       width =30, height = 15, units = "cm", dpi = 70)
+```
+
+
+# Plot line graph for fatality rate as at 30 April 
+
+```{r}
+death_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-05-01") %>%
+  ggplot( aes(x=date, y=fatality_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+   scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprison of the fatality rate as at 30 April 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(death_cases_EA$fatality_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("death_EA2.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```
+
+
+
+# Plot line graph for fatality rate as at 31 May 
+
+
+```{r}
+death_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-06-01") %>%
+  ggplot( aes(x=date, y=fatality_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+ scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprison of the fatality rate as at 31 May 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(death_cases_EA$fatality_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("death_EA3.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```
+
+
+
+# Plot line graph for fatality rate as at 15 June 
+
+```{r}
+death_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-06-16") %>%
+  ggplot( aes(x=date, y=fatality_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprion of the fatality rate as at 15 June 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(death_cases_EA$fatality_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-30")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31","2020-06-15"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("death_EA4.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```
+
+
+
+# Plot the bar chart for recoveries
+
+```{r}
+EA_countries %>% 
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"), type=="recovered",date=="2020-06-15" ) %>% 
+   ggplot( aes(country, total_cases, fill=country)) +
+  geom_bar(aes(reorder(country, total_cases),total_cases),
+            stat= "identity", show.legend = FALSE) +
+  geom_text(aes(label= total_cases), vjust=0.5, hjust=-0.1, colour="black") +
+ scale_fill_brewer(palette = "Paired") +
+  coord_flip() +
+  ggtitle("Comparison of recovered cases as at 15 June 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+   xlab("Country")+
+  ylab("Number of Confirmed cases as at 15 June 2020")
+ 
+ ggsave("recovered_EA1.png",
+       width =30, height = 15, units = "cm", dpi = 70)
+```
+
+
+
+
+
+
+
+# Plot a line graph for recovery rate as at 30 April
+
+```{r}
+recovered_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-05-01") %>%
+  ggplot( aes(x=date, y=recovery_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+   scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprion of the recovery rate as at 30 April 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(recovered_cases_EA$recovery_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-20")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("recovered_EA2.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```
+
+
+# Plot a line graph for recovery rate as at 31 May
+
+```{r}
+recovered_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-06-01") %>%
+  ggplot( aes(x=date, y=recovery_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+   scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprion of the recovery rate as at 31 May 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(recovered_cases_EA$recovery_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-30")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("recovered_EA3.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```
+
+# Plot a line graph for recovery rate as at 15 June
+
+
+```{r}
+recovered_cases_EA %>%
+  filter(country %in% c("Burundi","Eritrea","Ethiopia","Kenya",
+                        "Rwanda","Somalia", "South Sudan","Tanzania","Uganda"),
+         date<"2020-06-15") %>%
+  ggplot( aes(x=date, y=recovery_rate, group=country, color=country)) +
+  geom_line() +
+   geom_dl(aes(label = country),
+          method = list(dl.trans(x = x + 0.1), "last.polygons")) +
+  scale_fill_brewer(palette = "Paired")  +
+  ggtitle("Comprion of the recovery rate as at 15 June 2020") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab("fatality rate (% of confirmed cases)") +
+  xlab("Date") +
+  scale_y_continuous(limits = c(ymin= 0, 
+                                ymax= max(recovered_cases_EA$recovery_rate)))+
+   scale_x_date(limits = as.Date(c("2020-03-01","2020-06-30")),
+               date_labels = ("%b %d"),
+               breaks = as.Date(c("2020-03-01","2020-03-15","2020-03-30",
+                                  "2020-04-15","2020-04-30","2020-05-15",
+                                "2020-05-31","2020-06-15"))) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   hjust = 1, size = 10,  face = "bold"))
+
+ggsave("recovered_EA4.png",
+       width =30, height = 15,units = "cm",dpi = 70)
+```

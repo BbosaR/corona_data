@@ -1,0 +1,1297 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Aggregating total confirmed cases},
+  pdfauthor={Bbosa Robert},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+\title{Aggregating total confirmed cases}
+\author{Bbosa Robert}
+\date{4/28/2020}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{install-necessary-packages}{%
+\section{Install necessary packages}\label{install-necessary-packages}}
+
+\hypertarget{install-the-necessary-packages}{%
+\section{Install the necessary
+packages}\label{install-the-necessary-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages ------------------------------------------------- tidyverse 1.3.0 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.3.0     v purrr   0.3.4
+## v tibble  3.0.1     v dplyr   0.8.5
+## v tidyr   1.1.0     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.5.0
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ---------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(plotly)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'plotly'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:stats':
+## 
+##     filter
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(ggplot2)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\KeywordTok{library}\NormalTok{(viridis)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: viridisLite
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(patchwork)}
+\KeywordTok{library}\NormalTok{(ggpubr)}
+\KeywordTok{library}\NormalTok{(hrbrthemes)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## NOTE: Either Arial Narrow or Roboto Condensed fonts are required to use these themes.
+\end{verbatim}
+
+\begin{verbatim}
+##       Please use hrbrthemes::import_roboto_condensed() to install Roboto Condensed and
+\end{verbatim}
+
+\begin{verbatim}
+##       if Arial Narrow is not on your system, please see https://bit.ly/arialnarrow
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(directlabels)}
+\KeywordTok{library}\NormalTok{(knitr)}
+\KeywordTok{library}\NormalTok{(pastecs)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'pastecs'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:dplyr':
+## 
+##     first, last
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:tidyr':
+## 
+##     extract
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{ (RColorBrewer)}
+\KeywordTok{display.brewer.all}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\hypertarget{read-the-file}{%
+\section{Read the file}\label{read-the-file}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corona_global <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"~/COVID-19/COVID-19_Data/coronavirus.csv"}\NormalTok{, }
+                          \DataTypeTok{header =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{stringsAsFactors =} \OtherTok{FALSE}\NormalTok{)}
+\KeywordTok{attach}\NormalTok{(corona_global)}
+\KeywordTok{summary}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  Province.State     Country.Region          Lat               Long        
+##  Length:116180      Length:116180      Min.   :-51.796   Min.   :-135.00  
+##  Class :character   Class :character   1st Qu.:  6.611   1st Qu.: -14.45  
+##  Mode  :character   Mode  :character   Median : 22.300   Median :  21.76  
+##                                        Mean   : 20.714   Mean   :  24.35  
+##                                        3rd Qu.: 40.143   3rd Qu.:  81.00  
+##                                        Max.   : 71.707   Max.   : 178.06  
+##      date               cases              type          
+##  Length:116180      Min.   :-10034.0   Length:116180     
+##  Class :character   1st Qu.:     0.0   Class :character  
+##  Mode  :character   Median :     0.0   Mode  :character  
+##                     Mean   :   110.8                     
+##                     3rd Qu.:     3.0                     
+##                     Max.   : 94305.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{names}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Province.State" "Country.Region" "Lat"            "Long"          
+## [5] "date"           "cases"          "type"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    116180 obs. of  7 variables:
+##  $ Province.State: chr  "" "" "" "" ...
+##  $ Country.Region: chr  "Afghanistan" "Afghanistan" "Afghanistan" "Afghanistan" ...
+##  $ Lat           : num  33 33 33 33 33 33 33 33 33 33 ...
+##  $ Long          : num  65 65 65 65 65 65 65 65 65 65 ...
+##  $ date          : chr  "2020-01-22" "2020-01-23" "2020-01-24" "2020-01-25" ...
+##  $ cases         : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ type          : chr  "confirmed" "confirmed" "confirmed" "confirmed" ...
+\end{verbatim}
+
+\hypertarget{eliminate-the-unnecessary-columns}{%
+\section{Eliminate the unnecessary
+columns}\label{eliminate-the-unnecessary-columns}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corona_global <-}\StringTok{ }\KeywordTok{select}\NormalTok{(corona_global, }\OperatorTok{-}\NormalTok{Province.State, }\OperatorTok{-}\NormalTok{Lat, }\OperatorTok{-}\NormalTok{Long)}
+\KeywordTok{class}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "data.frame"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Country.Region       date cases      type
+## 1    Afghanistan 2020-01-22     0 confirmed
+## 2    Afghanistan 2020-01-23     0 confirmed
+## 3    Afghanistan 2020-01-24     0 confirmed
+## 4    Afghanistan 2020-01-25     0 confirmed
+## 5    Afghanistan 2020-01-26     0 confirmed
+## 6    Afghanistan 2020-01-27     0 confirmed
+\end{verbatim}
+
+\hypertarget{transfor-date-from-character-format-to-date-format}{%
+\section{Transfor date from ``Character format to date
+format''}\label{transfor-date-from-character-format-to-date-format}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corona_global <-}\StringTok{ }\KeywordTok{rename}\NormalTok{(corona_global, }\DataTypeTok{country =}\NormalTok{ Country.Region)}
+\NormalTok{myformat <-}\StringTok{ "%Y-%m-%d"}
+\NormalTok{corona_global}\OperatorTok{$}\NormalTok{date <-}\StringTok{ }\KeywordTok{as.Date}\NormalTok{(corona_global}\OperatorTok{$}\NormalTok{date, myformat)}
+\KeywordTok{str}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    116180 obs. of  4 variables:
+##  $ country: chr  "Afghanistan" "Afghanistan" "Afghanistan" "Afghanistan" ...
+##  $ date   : Date, format: "2020-01-22" "2020-01-23" ...
+##  $ cases  : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ type   : chr  "confirmed" "confirmed" "confirmed" "confirmed" ...
+\end{verbatim}
+
+\hypertarget{check-if-the-date-has-changed}{%
+\section{Check if the date has
+changed}\label{check-if-the-date-has-changed}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corona_global <-}\StringTok{ }\KeywordTok{tbl_df}\NormalTok{(corona_global)}
+\KeywordTok{class}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "tbl_df"     "tbl"        "data.frame"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(corona_global)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## tibble [116,180 x 4] (S3: tbl_df/tbl/data.frame)
+##  $ country: chr [1:116180] "Afghanistan" "Afghanistan" "Afghanistan" "Afghanistan" ...
+##  $ date   : Date[1:116180], format: "2020-01-22" "2020-01-23" ...
+##  $ cases  : int [1:116180] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ type   : chr [1:116180] "confirmed" "confirmed" "confirmed" "confirmed" ...
+\end{verbatim}
+
+\hypertarget{include-a-column-for-totals}{%
+\section{Include a column for
+totals}\label{include-a-column-for-totals}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corona_global_total <-}\StringTok{ }\NormalTok{corona_global }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(country, type ) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{total_cases =} \KeywordTok{cumsum}\NormalTok{(cases))}
+\KeywordTok{head}\NormalTok{(corona_global_total)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country, type [1]
+##   country     date       cases type      total_cases
+##   <chr>       <date>     <int> <chr>           <int>
+## 1 Afghanistan 2020-01-22     0 confirmed           0
+## 2 Afghanistan 2020-01-23     0 confirmed           0
+## 3 Afghanistan 2020-01-24     0 confirmed           0
+## 4 Afghanistan 2020-01-25     0 confirmed           0
+## 5 Afghanistan 2020-01-26     0 confirmed           0
+## 6 Afghanistan 2020-01-27     0 confirmed           0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(corona_global_total)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country, type [1]
+##   country date       cases type      total_cases
+##   <chr>   <date>     <int> <chr>           <int>
+## 1 China   2020-06-12     0 recovered       79510
+## 2 China   2020-06-13     0 recovered       79510
+## 3 China   2020-06-14     0 recovered       79510
+## 4 China   2020-06-15     0 recovered       79510
+## 5 China   2020-06-16     0 recovered       79510
+## 6 China   2020-06-17     0 recovered       79510
+\end{verbatim}
+
+\hypertarget{select-southern-africa-countries}{%
+\section{Select Southern Africa
+countries}\label{select-southern-africa-countries}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SA_countries <-}\StringTok{ }\NormalTok{corona_global_total }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}
+                        \StringTok{"Lesotho"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{))}
+ 
+\KeywordTok{head}\NormalTok{(SA_countries)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country, type [1]
+##   country date       cases type      total_cases
+##   <chr>   <date>     <int> <chr>           <int>
+## 1 Angola  2020-01-22     0 confirmed           0
+## 2 Angola  2020-01-23     0 confirmed           0
+## 3 Angola  2020-01-24     0 confirmed           0
+## 4 Angola  2020-01-25     0 confirmed           0
+## 5 Angola  2020-01-26     0 confirmed           0
+## 6 Angola  2020-01-27     0 confirmed           0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(SA_countries)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country, type [1]
+##   country  date       cases type      total_cases
+##   <chr>    <date>     <int> <chr>           <int>
+## 1 Zimbabwe 2020-06-12     0 recovered          51
+## 2 Zimbabwe 2020-06-13     3 recovered          54
+## 3 Zimbabwe 2020-06-14     0 recovered          54
+## 4 Zimbabwe 2020-06-15     0 recovered          54
+## 5 Zimbabwe 2020-06-16     8 recovered          62
+## 6 Zimbabwe 2020-06-17     1 recovered          63
+\end{verbatim}
+
+\hypertarget{compute-the-infection-rate}{%
+\section{Compute the infection rate}\label{compute-the-infection-rate}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{confirmed_cases <-}\StringTok{ }\NormalTok{SA_countries }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(type}\OperatorTok{==}\StringTok{"confirmed"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(country,type) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{infection_rate=}\KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Angola"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{30809762}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Botswana"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{2254125}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Eswatini"}\NormalTok{,  }
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{1136192}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Lesotho"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{2108132}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Malawi"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{18143315}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Mozambique"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{29495962}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Namibia"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{2448255}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"South Africa"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{57779622}\NormalTok{),}
+                        \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Zambia"}\NormalTok{,}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{17351822}\NormalTok{),}
+\NormalTok{                               total_cases}\OperatorTok{*}\NormalTok{(}\DecValTok{1000000}\OperatorTok{/}\DecValTok{14439018}\NormalTok{)))))))))))    }
+\KeywordTok{head}\NormalTok{(confirmed_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 6
+## # Groups:   country, type [1]
+##   country date       cases type      total_cases infection_rate
+##   <chr>   <date>     <int> <chr>           <int>          <dbl>
+## 1 Angola  2020-01-22     0 confirmed           0              0
+## 2 Angola  2020-01-23     0 confirmed           0              0
+## 3 Angola  2020-01-24     0 confirmed           0              0
+## 4 Angola  2020-01-25     0 confirmed           0              0
+## 5 Angola  2020-01-26     0 confirmed           0              0
+## 6 Angola  2020-01-27     0 confirmed           0              0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(confirmed_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 6
+## # Groups:   country, type [1]
+##   country  date       cases type      total_cases infection_rate
+##   <chr>    <date>     <int> <chr>           <int>          <dbl>
+## 1 Zimbabwe 2020-06-12    11 confirmed         343           23.8
+## 2 Zimbabwe 2020-06-13    13 confirmed         356           24.7
+## 3 Zimbabwe 2020-06-14    27 confirmed         383           26.5
+## 4 Zimbabwe 2020-06-15     4 confirmed         387           26.8
+## 5 Zimbabwe 2020-06-16     4 confirmed         391           27.1
+## 6 Zimbabwe 2020-06-17    10 confirmed         401           27.8
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(confirmed_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## tibble [1,480 x 6] (S3: grouped_df/tbl_df/tbl/data.frame)
+##  $ country       : chr [1:1480] "Angola" "Angola" "Angola" "Angola" ...
+##  $ date          : Date[1:1480], format: "2020-01-22" "2020-01-23" ...
+##  $ cases         : int [1:1480] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ type          : chr [1:1480] "confirmed" "confirmed" "confirmed" "confirmed" ...
+##  $ total_cases   : int [1:1480] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ infection_rate: num [1:1480] 0 0 0 0 0 0 0 0 0 0 ...
+##  - attr(*, "groups")= tibble [10 x 3] (S3: tbl_df/tbl/data.frame)
+##   ..$ country: chr [1:10] "Angola" "Botswana" "Eswatini" "Lesotho" ...
+##   ..$ type   : chr [1:10] "confirmed" "confirmed" "confirmed" "confirmed" ...
+##   ..$ .rows  :List of 10
+##   .. ..$ : int [1:148] 1 2 3 4 5 6 7 8 9 10 ...
+##   .. ..$ : int [1:148] 149 150 151 152 153 154 155 156 157 158 ...
+##   .. ..$ : int [1:148] 297 298 299 300 301 302 303 304 305 306 ...
+##   .. ..$ : int [1:148] 445 446 447 448 449 450 451 452 453 454 ...
+##   .. ..$ : int [1:148] 593 594 595 596 597 598 599 600 601 602 ...
+##   .. ..$ : int [1:148] 741 742 743 744 745 746 747 748 749 750 ...
+##   .. ..$ : int [1:148] 889 890 891 892 893 894 895 896 897 898 ...
+##   .. ..$ : int [1:148] 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 ...
+##   .. ..$ : int [1:148] 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 ...
+##   .. ..$ : int [1:148] 1333 1334 1335 1336 1337 1338 1339 1340 1341 1342 ...
+##   ..- attr(*, ".drop")= logi TRUE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(confirmed_cases}\OperatorTok{$}\NormalTok{infection_rate)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+##    0.0000    0.0000    0.7618   29.9542    6.9895 1391.7017
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{stat.desc}\NormalTok{(confirmed_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          country         date         cases type  total_cases infection_rate
+## nbr.val       NA 1.480000e+03   1480.000000   NA 1.480000e+03   1.480000e+03
+## nbr.null      NA 0.000000e+00   1011.000000   NA 6.300000e+02   6.300000e+02
+## nbr.na        NA 0.000000e+00      0.000000   NA 0.000000e+00   0.000000e+00
+## min           NA 1.828300e+04     -6.000000   NA 0.000000e+00   0.000000e+00
+## max           NA 1.843000e+04   4302.000000   NA 8.041200e+04   1.391702e+03
+## range         NA 1.470000e+02   4308.000000   NA 8.041200e+04   1.391702e+03
+## sum           NA 2.716762e+07  84285.000000   NA 1.622753e+06   4.433216e+04
+## median        NA 1.835650e+04      0.000000   NA 7.000000e+00   7.618247e-01
+## mean          NA 1.835650e+04     56.949324   NA 1.096455e+03   2.995416e+01
+## SE.mean       NA 1.110905e+00      8.848960   NA 1.696585e+02   3.131856e+00
+## CI.mean       NA 2.179118e+00     17.357847   NA 3.327969e+02   6.143352e+00
+## var           NA 1.826484e+03 115890.045436   NA 4.260034e+07   1.451661e+04
+## std.dev       NA 4.273739e+01    340.426270   NA 6.526894e+03   1.204849e+02
+## coef.var      NA 2.328188e-03      5.977705   NA 5.952725e+00   4.022309e+00
+\end{verbatim}
+
+\hypertarget{fatality-rate}{%
+\section{Fatality rate}\label{fatality-rate}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{death_cases <-}\StringTok{ }\NormalTok{SA_countries }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"death"}\NormalTok{, }\StringTok{"confirmed"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{total_cases) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{spread}\NormalTok{(type, cases) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{fatality_rate=}\KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Angola"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Botswana"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Eswatini"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Lesotho"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Malawi"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Mozambique"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Namibia"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"South Africa"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Zambia"}\NormalTok{,}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                             \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(death)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}
+                                   \DataTypeTok{digits=}\DecValTok{2}\NormalTok{)))))))))))}
+
+\KeywordTok{head}\NormalTok{(death_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country [1]
+##   country date       confirmed death fatality_rate
+##   <chr>   <date>         <int> <int>         <dbl>
+## 1 Angola  2020-01-22         0     0           NaN
+## 2 Angola  2020-01-23         0     0           NaN
+## 3 Angola  2020-01-24         0     0           NaN
+## 4 Angola  2020-01-25         0     0           NaN
+## 5 Angola  2020-01-26         0     0           NaN
+## 6 Angola  2020-01-27         0     0           NaN
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(death_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country [1]
+##   country  date       confirmed death fatality_rate
+##   <chr>    <date>         <int> <int>         <dbl>
+## 1 Zimbabwe 2020-06-12        11     0          1.17
+## 2 Zimbabwe 2020-06-13        13     0          1.12
+## 3 Zimbabwe 2020-06-14        27     0          1.04
+## 4 Zimbabwe 2020-06-15         4     0          1.03
+## 5 Zimbabwe 2020-06-16         4     0          1.02
+## 6 Zimbabwe 2020-06-17        10     0          1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(death_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## tibble [1,480 x 5] (S3: grouped_df/tbl_df/tbl/data.frame)
+##  $ country      : chr [1:1480] "Angola" "Angola" "Angola" "Angola" ...
+##  $ date         : Date[1:1480], format: "2020-01-22" "2020-01-23" ...
+##  $ confirmed    : int [1:1480] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ death        : int [1:1480] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ fatality_rate: num [1:1480] NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN ...
+##  - attr(*, "groups")= tibble [10 x 2] (S3: tbl_df/tbl/data.frame)
+##   ..$ country: chr [1:10] "Angola" "Botswana" "Eswatini" "Lesotho" ...
+##   ..$ .rows  :List of 10
+##   .. ..$ : int [1:148] 1 2 3 4 5 6 7 8 9 10 ...
+##   .. ..$ : int [1:148] 149 150 151 152 153 154 155 156 157 158 ...
+##   .. ..$ : int [1:148] 297 298 299 300 301 302 303 304 305 306 ...
+##   .. ..$ : int [1:148] 445 446 447 448 449 450 451 452 453 454 ...
+##   .. ..$ : int [1:148] 593 594 595 596 597 598 599 600 601 602 ...
+##   .. ..$ : int [1:148] 741 742 743 744 745 746 747 748 749 750 ...
+##   .. ..$ : int [1:148] 889 890 891 892 893 894 895 896 897 898 ...
+##   .. ..$ : int [1:148] 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 ...
+##   .. ..$ : int [1:148] 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 ...
+##   .. ..$ : int [1:148] 1333 1334 1335 1336 1337 1338 1339 1340 1341 1342 ...
+##   ..- attr(*, ".drop")= logi TRUE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{stat.desc}\NormalTok{(death_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          country         date     confirmed        death fatality_rate
+## nbr.val       NA 1.480000e+03   1480.000000 1480.0000000   850.0000000
+## nbr.null      NA 0.000000e+00   1011.000000 1375.0000000   284.0000000
+## nbr.na        NA 0.000000e+00      0.000000    0.0000000   630.0000000
+## min           NA 1.828300e+04     -6.000000    0.0000000     0.0000000
+## max           NA 1.843000e+04   4302.000000   88.0000000    33.3300000
+## range         NA 1.470000e+02   4308.000000   88.0000000    33.3300000
+## sum           NA 2.716762e+07  84285.000000 1711.0000000  2924.4200000
+## median        NA 1.835650e+04      0.000000    0.0000000     1.1550000
+## mean          NA 1.835650e+04     56.949324    1.1560811     3.4404941
+## SE.mean       NA 1.110905e+00      8.848960    0.1878514     0.1836550
+## CI.mean       NA 2.179118e+00     17.357847    0.3684836     0.3604711
+## var           NA 1.826484e+03 115890.045436   52.2264674    28.6697967
+## std.dev       NA 4.273739e+01    340.426270    7.2267882     5.3544184
+## coef.var      NA 2.328188e-03      5.977705    6.2511084     1.5562934
+\end{verbatim}
+
+\hypertarget{recovery-rate}{%
+\section{Recovery rate}\label{recovery-rate}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{recovered_cases <-}\StringTok{ }\NormalTok{SA_countries }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(type }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"recovered"}\NormalTok{,}\StringTok{"confirmed"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{total_cases) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{spread}\NormalTok{(type, cases) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{recovery_rate=}\KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Angola"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Botswana"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Eswatini"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Lesotho"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Malawi"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Mozambique"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Namibia"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"South Africa"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                       \KeywordTok{ifelse}\NormalTok{(country}\OperatorTok{==}\StringTok{"Zambia"}\NormalTok{,}
+                         \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DataTypeTok{digits=}\DecValTok{2}\NormalTok{),}
+                                \KeywordTok{round}\NormalTok{((}\KeywordTok{cumsum}\NormalTok{(recovered)}\OperatorTok{/}\KeywordTok{cumsum}\NormalTok{(confirmed))}\OperatorTok{*}\DecValTok{100}\NormalTok{,}
+                                      \DataTypeTok{digits=}\DecValTok{2}\NormalTok{)))))))))))}
+
+\KeywordTok{names}\NormalTok{(recovered_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "country"       "date"          "confirmed"     "recovered"    
+## [5] "recovery_rate"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(recovered_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country [1]
+##   country date       confirmed recovered recovery_rate
+##   <chr>   <date>         <int>     <int>         <dbl>
+## 1 Angola  2020-01-22         0         0           NaN
+## 2 Angola  2020-01-23         0         0           NaN
+## 3 Angola  2020-01-24         0         0           NaN
+## 4 Angola  2020-01-25         0         0           NaN
+## 5 Angola  2020-01-26         0         0           NaN
+## 6 Angola  2020-01-27         0         0           NaN
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(recovered_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 5
+## # Groups:   country [1]
+##   country  date       confirmed recovered recovery_rate
+##   <chr>    <date>         <int>     <int>         <dbl>
+## 1 Zimbabwe 2020-06-12        11         0          14.9
+## 2 Zimbabwe 2020-06-13        13         3          15.2
+## 3 Zimbabwe 2020-06-14        27         0          14.1
+## 4 Zimbabwe 2020-06-15         4         0          14.0
+## 5 Zimbabwe 2020-06-16         4         8          15.9
+## 6 Zimbabwe 2020-06-17        10         1          15.7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{stat.desc}\NormalTok{(recovered_cases)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          country         date     confirmed    recovered recovery_rate
+## nbr.val       NA 1.480000e+03   1480.000000  1480.000000  8.500000e+02
+## nbr.null      NA 0.000000e+00   1011.000000  1233.000000  1.780000e+02
+## nbr.na        NA 0.000000e+00      0.000000     0.000000  6.300000e+02
+## min           NA 1.828300e+04     -6.000000     0.000000  0.000000e+00
+## max           NA 1.843000e+04   4302.000000  2907.000000  8.750000e+01
+## range         NA 1.470000e+02   4308.000000  2907.000000  8.750000e+01
+## sum           NA 2.716762e+07  84285.000000 46141.000000  2.436942e+04
+## median        NA 1.835650e+04      0.000000     0.000000  2.585500e+01
+## mean          NA 1.835650e+04     56.949324    31.176351  2.866991e+01
+## SE.mean       NA 1.110905e+00      8.848960     5.372062  7.956803e-01
+## CI.mean       NA 2.179118e+00     17.357847    10.537671  1.561731e+00
+## var           NA 1.826484e+03 115890.045436 42711.388081  5.381411e+02
+## std.dev       NA 4.273739e+01    340.426270   206.667337  2.319787e+01
+## coef.var      NA 2.328188e-03      5.977705     6.628978  8.091365e-01
+\end{verbatim}
+
+\hypertarget{plot-a-bar-chart}{%
+\section{Plot a bar chart}\label{plot-a-bar-chart}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SA_countries }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{, }\StringTok{"Zimbabwe"}\NormalTok{, }\StringTok{"Namibia"}\NormalTok{,}\StringTok{"Lesotho"}\NormalTok{),type}\OperatorTok{==}\StringTok{"confirmed"}\NormalTok{, date}\OperatorTok{==}\StringTok{"2020-06-15"}\NormalTok{ ) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(country, total_cases, }\DataTypeTok{fill=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\KeywordTok{reorder}\NormalTok{(country, total_cases),total_cases),}
+           \DataTypeTok{stat=} \StringTok{"identity"}\NormalTok{, }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label=}\NormalTok{ total_cases), }\DataTypeTok{vjust=}\FloatTok{0.5}\NormalTok{, }\DataTypeTok{hjust=}\OperatorTok{-}\FloatTok{0.1}\NormalTok{, }\DataTypeTok{colour=}\StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{ }\KeywordTok{scale_fill_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Paired"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of comfirmed cases as at 15 June 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Country"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Number of Confirmed cases as at 15 June 2020"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"confirmed_ctg1.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{plot-a-line-graph-as-at-31-may-for-sa-eswatini-and-zambia}{%
+\section{Plot a line graph as at 31 May for SA, Eswatini and
+Zambia}\label{plot-a-line-graph-as-at-31-may-for-sa-eswatini-and-zambia}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{confirmed_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{),date}\OperatorTok{<}\StringTok{"2020-06-01"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{infection_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country), }
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set2"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of infection rate at 31 May 2020 "}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"infection rate per 1 million population"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{)}\OperatorTok{+}
+\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(confirmed_cases}\OperatorTok{$}\NormalTok{infection_rate))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-10"}\NormalTok{,}\StringTok{"2020-06-10"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{size =} \DecValTok{10}\NormalTok{, }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 144 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"confirmed_ctg2.png"}\NormalTok{, }\CommentTok{#other supported files;- "eps", "ps", "tex"                                 # (pictex),"pdf","jpeg", "tiff","bmp", "svg" or "wmf".}
+\DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}
+\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{, }\CommentTok{# other options c("in", "cm", "mm")}
+\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 144 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-a-line-graph-for-as-at-31-may-for-other-countries}{%
+\section{Plot a line graph for as at 31 May for other
+countries}\label{plot-a-line-graph-for-as-at-31-may-for-other-countries}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{confirmed_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Lesotho"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{), date}\OperatorTok{<}\StringTok{"2020-06-01"}\NormalTok{)}\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{infection_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{   }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country), }
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set2"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of infection rate at 31 May 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"infection rate per 1 million population"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{18}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-10"}\NormalTok{,}\StringTok{"2020-06-10"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{size =} \DecValTok{10}\NormalTok{, }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 336 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-15-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"confirmed_ctg3.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{,}\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{, }\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 336 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-a-bar-graph-for-the-deaths}{%
+\section{Plot a bar graph for the
+deaths}\label{plot-a-bar-graph-for-the-deaths}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SA_countries }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{, }\StringTok{"Zimbabwe"}\NormalTok{, }\StringTok{"Namibia"}\NormalTok{,}\StringTok{"Lesotho"}\NormalTok{),type}\OperatorTok{==}\StringTok{"death"}\NormalTok{, date}\OperatorTok{==}\StringTok{"2020-06-15"}\NormalTok{ ) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(country, total_cases, }\DataTypeTok{fill=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\KeywordTok{reorder}\NormalTok{(country, total_cases),total_cases),}
+           \DataTypeTok{stat=} \StringTok{"identity"}\NormalTok{, }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label=}\NormalTok{ total_cases), }\DataTypeTok{vjust=}\FloatTok{0.5}\NormalTok{, }\DataTypeTok{hjust=}\OperatorTok{-}\FloatTok{0.1}\NormalTok{, }\DataTypeTok{colour=}\StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{ }\KeywordTok{scale_fill_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Paired"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of death cases as at 15 June 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Country"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Death cases as at 15 June 2020"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-16-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"death_ctg1.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{plot-line-graph-for-fatality-rate-as-at-30-april}{%
+\section{Plot line graph for fatality rate as at 30
+April}\label{plot-line-graph-for-fatality-rate-as-at-30-april}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{death_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{,}\StringTok{"Eswatini"}\NormalTok{, }\StringTok{"South Africa"}\NormalTok{),date}\OperatorTok{<}\StringTok{"2020-05-01"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{fatality_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{   }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country),}
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set1"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comprion of the fatality rate as at 30 April 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"fatality rate (% of confirmed cases)"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(death_cases}\OperatorTok{$}\NormalTok{fatality_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-06-20"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"death_ctg2.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-the-line-graph-for-the-fatality-rate-as-at-31-may}{%
+\section{Plot the line graph for the fatality rate as at 31
+May}\label{plot-the-line-graph-for-the-fatality-rate-as-at-31-may}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{death_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{,}\StringTok{"Eswatini"}\NormalTok{, }\StringTok{"South Africa"}\NormalTok{),date}\OperatorTok{<}\StringTok{"2020-06-01"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{fatality_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{   }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country),}
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set1"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comprion of the fatality rate as at 31 May 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"fatality rate (% of confirmed cases)"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(death_cases}\OperatorTok{$}\NormalTok{fatality_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-06-20"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-18-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"death_ctg3.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-the-fatality-graph-as-at-12-june}{%
+\section{Plot the fatality graph as at 12
+June}\label{plot-the-fatality-graph-as-at-12-june}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{death_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Zambia"}\NormalTok{,}\StringTok{"Eswatini"}\NormalTok{, }\StringTok{"South Africa"}\NormalTok{),date}\OperatorTok{<}\StringTok{"2020-06-13"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{fatality_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{   }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country),}
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set1"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comprion of the fatality rate as at 12 June 2020"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"fatality rate (% of confirmed cases)"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(death_cases}\OperatorTok{$}\NormalTok{fatality_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-06-30"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{,}\StringTok{"2020-06-12"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-19-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"death_ctg4.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 466 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-the-bar-chart-for-recoveries}{%
+\section{Plot the bar chart for
+recoveries}\label{plot-the-bar-chart-for-recoveries}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SA_countries }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}
+                        \StringTok{"Zambia"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{,}\StringTok{"Lesotho"}\NormalTok{),}
+\NormalTok{         type}\OperatorTok{==}\StringTok{"recovered"}\NormalTok{, date}\OperatorTok{==}\StringTok{"2020-06-15"}\NormalTok{ ) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(country, total_cases, }\DataTypeTok{fill=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_bar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\KeywordTok{reorder}\NormalTok{(country, total_cases),total_cases),}
+           \DataTypeTok{stat=} \StringTok{"identity"}\NormalTok{, }\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label=}\NormalTok{total_cases), }\DataTypeTok{vjust=}\FloatTok{0.5}\NormalTok{, }\DataTypeTok{hjust=}\OperatorTok{-}\FloatTok{0.05}\NormalTok{, }\DataTypeTok{colour=}\StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{ }\KeywordTok{scale_fill_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set3"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{coord_flip}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of recovered cases as at 15 June 2020"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Country"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Recovered cases as at 15 June 2020"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-20-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"recovered_ctg1.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{plot-a-line-graph-for-recovery-rate-as-at-30-april}{%
+\section{Plot a line graph for recovery rate as at 30
+April}\label{plot-a-line-graph-for-recovery-rate-as-at-30-april}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{recovered_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}
+                        \StringTok{"Zambia"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{, }\StringTok{"Lesotho"}\NormalTok{),date}\OperatorTok{<}\StringTok{"2020-05-01"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{recovery_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country), }
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Paired"}\NormalTok{) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of recovery rate as at 30 April 2020"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"recovery rate (% of confirmed cases"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(recovered_cases}\OperatorTok{$}\NormalTok{recovery_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-05-10"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{)) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 618 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-21-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"recovered_ctg2.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 618 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-the-recovery-rate-as-at-31-may}{%
+\section{Plot the recovery rate as at 31
+May}\label{plot-the-recovery-rate-as-at-31-may}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{recovered_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}
+                        \StringTok{"Zambia"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{, }\StringTok{"Lesotho"}\NormalTok{), date}\OperatorTok{<}\StringTok{"2020-06-01"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{recovery_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country), }
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Paired"}\NormalTok{) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of recovery rate as at 31 May 2020"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"recovery rate (% of confirmed cases"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(recovered_cases}\OperatorTok{$}\NormalTok{recovery_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-06-10"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{)) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 630 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-22-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"recovered_ctg3.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 630 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\hypertarget{plot-the-line-graph-of-the-recovery-rata-as-at-12-june}{%
+\section{Plot the line graph of the recovery rata as at 12
+June}\label{plot-the-line-graph-of-the-recovery-rata-as-at-12-june}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{recovered_cases }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(country }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Eswatini"}\NormalTok{,}\StringTok{"Mozambique"}\NormalTok{,}\StringTok{"Angola"}\NormalTok{,}\StringTok{"Malawi"}\NormalTok{,}\StringTok{"Namibia"}\NormalTok{,}\StringTok{"South Africa"}\NormalTok{,}
+                        \StringTok{"Zambia"}\NormalTok{,}\StringTok{"Botswana"}\NormalTok{,}\StringTok{"Zimbabwe"}\NormalTok{, }\StringTok{"Lesotho"}\NormalTok{), date}\OperatorTok{<}\StringTok{"2020-06-12"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{   }\KeywordTok{ggplot}\NormalTok{( }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{date, }\DataTypeTok{y=}\NormalTok{recovery_rate, }\DataTypeTok{group=}\NormalTok{country, }\DataTypeTok{color=}\NormalTok{country)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_dl}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ country), }
+          \DataTypeTok{method =} \KeywordTok{list}\NormalTok{(}\KeywordTok{dl.trans}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x }\OperatorTok{+}\StringTok{ }\FloatTok{0.1}\NormalTok{), }\StringTok{"last.polygons"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_line}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Paired"}\NormalTok{) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Comparison of recovery rate as at 12 June 2020"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{   }\KeywordTok{xlab}\NormalTok{(}\StringTok{"Date"}\NormalTok{)}\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylab}\NormalTok{(}\StringTok{"recovery rate (% of confirmed cases"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{c}\NormalTok{(}\DataTypeTok{ymin=} \DecValTok{0}\NormalTok{, }
+                                \DataTypeTok{ymax=} \KeywordTok{max}\NormalTok{(recovered_cases}\OperatorTok{$}\NormalTok{recovery_rate)))}\OperatorTok{+}
+\StringTok{   }\KeywordTok{scale_x_date}\NormalTok{(}\DataTypeTok{limits =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-06-20"}\NormalTok{)),}
+               \DataTypeTok{date_labels =}\NormalTok{ (}\StringTok{"%b %d"}\NormalTok{),}
+               \DataTypeTok{breaks =} \KeywordTok{as.Date}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"2020-03-01"}\NormalTok{,}\StringTok{"2020-03-15"}\NormalTok{,}\StringTok{"2020-03-30"}\NormalTok{,}
+                                  \StringTok{"2020-04-15"}\NormalTok{,}\StringTok{"2020-04-30"}\NormalTok{,}\StringTok{"2020-05-15"}\NormalTok{,}
+                                \StringTok{"2020-05-31"}\NormalTok{,}\StringTok{"2020-06-12"}\NormalTok{))) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{, }
+                                   \DataTypeTok{hjust =} \DecValTok{1}\NormalTok{, }\DataTypeTok{size =} \DecValTok{10}\NormalTok{,  }\DataTypeTok{face =} \StringTok{"bold"}\NormalTok{)) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 630 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\includegraphics{aggregating_total_cases_files/figure-latex/unnamed-chunk-23-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggsave}\NormalTok{(}\StringTok{"recovered_ctg4.png"}\NormalTok{,}
+       \DataTypeTok{width =}\DecValTok{30}\NormalTok{, }\DataTypeTok{height =} \DecValTok{15}\NormalTok{,}\DataTypeTok{units =} \StringTok{"cm"}\NormalTok{,}\DataTypeTok{dpi =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 630 row(s) containing missing values (geom_path).
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{writexl}\OperatorTok{::}\KeywordTok{write_xlsx}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ confirmed_cases, }\DataTypeTok{path =} \StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/confirmed_cases.xlsx"}\NormalTok{, }\DataTypeTok{col_names =} \OtherTok{TRUE}\NormalTok{)}
+
+\KeywordTok{write.csv}\NormalTok{(confirmed_cases, }\StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/confirmed_cases.csv"}\NormalTok{, }\DataTypeTok{row.names =} \OtherTok{FALSE}\NormalTok{)}
+
+\NormalTok{writexl}\OperatorTok{::}\KeywordTok{write_xlsx}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ recovered_cases, }\DataTypeTok{path =} \StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/recovered_cases.xlsx"}\NormalTok{, }\DataTypeTok{col_names =} \OtherTok{TRUE}\NormalTok{)}
+
+\KeywordTok{write.csv}\NormalTok{(recovered_cases, }\StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/recovered_cases.csv"}\NormalTok{, }\DataTypeTok{row.names =} \OtherTok{FALSE}\NormalTok{)}
+
+
+\NormalTok{writexl}\OperatorTok{::}\KeywordTok{write_xlsx}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ death_cases, }\DataTypeTok{path =} \StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/death_cases.xlsx"}\NormalTok{, }
+                    \DataTypeTok{col_names =} \OtherTok{TRUE}\NormalTok{)}
+
+\KeywordTok{write.csv}\NormalTok{(death_cases, }\StringTok{"C:/Users/uganda/Documents/COVID-19/COVID-19_Data/death_cases.csv"}\NormalTok{, }
+          \DataTypeTok{row.names =} \OtherTok{FALSE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\end{document}

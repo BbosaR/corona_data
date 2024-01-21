@@ -1,0 +1,77 @@
+---
+title: "Importing Data into R_Data_Camp"
+author: "Bbosa Robert"
+date: "5/4/2020"
+output: html_document
+---
+
+# Importing Data into R
+
+# Data can be in five different forms, that is;- 
+
+* Flat files
+  + csv files
+  + tab-delimited files
+  + Exotic file format
+  
+* Excel file
+* Databases
+* Web
+* Statistical Software
+
+# Import swimming_pools.csv: pools
+```{r}
+pools <- read.csv("~/COVID-19/COVID-19_Data/swimming_pools.csv")
+str(pools)
+```
+
+
+However, the following command has changed the variables "Name" and "Address" as characters not factors as before
+```{r}
+pools <- read.csv("~/COVID-19/COVID-19_Data/swimming_pools.csv", stringsAsFactors = FALSE)
+str(pools)
+```
+
+# read.delim
+
+Aside from .csv files, there are also the .txt files which are basically text files. You can import these functions with read.delim(). By default, it sets the sep argument to "\t" (fields in a record are delimited by tabs) and the header argument to TRUE (the first row contains the field names). 
+```{r}
+hotdogs<- read.delim("~/COVID-19/hotdogs.txt", header=FALSE)
+str(hotdogs)
+```
+
+
+# read.table
+
+If you're dealing with more exotic flat file formats, you'll want to use read.table(). It's the most basic importing function; you can specify tons of different arguments in this function. Unlike read.csv() and read.delim(), the header argument defaults to FALSE and the sep argument is "" by default.
+
+```{r}
+hotdogs <- read.table("~/COVID-19/hotdogs.txt", sep = "\t", col.names = c("types","calories", "sodium"))
+str(hotdogs)
+lily <- hotdogs[which.min(hotdogs$calories), ]
+lily
+tom <- hotdogs[which.max(hotdogs$sodium), ]
+tom
+```
+
+
+Column classes
+
+Next to column names, you can also specify the column types or column classes of the resulting data frame. You can do this by setting the colClasses argument to a vector of strings representing classes:
+
+read.delim("my_file.txt", 
+           colClasses = c("character",
+                          "numeric",
+                          "logical"))
+
+This approach can be useful if you have some columns that should be factors and others that should be characters. You don't have to bother with stringsAsFactors anymore; just state for each column what the class should be.
+
+If a column is set to "NULL" in the colClasses vector, this column will be skipped and will not be loaded into the data frame.
+```{r}
+hotdogs2 <- read.delim("~/COVID-19/hotdogs.txt", header = FALSE, 
+                       col.names = c("type", "calories", "sodium"),
+                       colClasses = c("factor","NULL","numeric"))
+hotdogs2
+```
+
+
