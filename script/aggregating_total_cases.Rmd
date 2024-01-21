@@ -43,7 +43,7 @@ display.brewer.all()
 
 # Read the file
 ```{r}
-corona_global <- read.csv("~/COVID-19/COVID-19_Data/coronavirus.csv", 
+corona_global <- read.csv("C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/coronavirus.csv", 
                           header = TRUE, stringsAsFactors = FALSE)
 attach(corona_global)
 summary(corona_global)
@@ -493,22 +493,21 @@ mydt = spread(SA_countries, type, total_cases)
 
 
 ```{r}
-writexl::write_xlsx(x = confirmed_cases, path = "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/confirmed_cases.xlsx", col_names = TRUE)
+writexl::write_xlsx(x = confirmed_cases, path = "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/confirmed_cases.xlsx", col_names = TRUE)
 
-write.csv(confirmed_cases, "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/confirmed_cases.csv", row.names = FALSE)
+write.csv(confirmed_cases, "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/confirmed_cases.csv", row.names = FALSE)
 
-writexl::write_xlsx(x = recovered_cases, path = "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/recovered_cases.xlsx", col_names = TRUE)
+writexl::write_xlsx(x = recovered_cases, path = "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/recovered_cases.xlsx", col_names = TRUE)
 
-write.csv(recovered_cases, "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/recovered_cases.csv", row.names = FALSE)
+write.csv(recovered_cases, "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/recovered_cases.csv", row.names = FALSE)
 
 
-writexl::write_xlsx(x = death_cases, path = "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/death_cases.xlsx", 
+writexl::write_xlsx(x = death_cases, path = "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/death_cases.xlsx", 
                     col_names = TRUE)
 
-write.csv(death_cases, "C:/Users/uganda/Documents/COVID-19/COVID-19_Data/death_cases.csv", 
+write.csv(death_cases, "C:/Users/bbosa/OneDrive/COVID-19/COVID-19_Data/Data/death_cases.csv", 
           row.names = FALSE)
 
 ```
-
 
 

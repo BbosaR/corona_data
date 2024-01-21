@@ -11,8 +11,7 @@ output: html_document
 #------------ Pulling confirmed cases------------
 
 ```{r echo=TRUE}
-confirmed_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
-csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+confirmed_url <- "https://raw.githubusercontent.com/BbosaR/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
 raw_confirmed <- read.csv(file = confirmed_url, stringsAsFactors = FALSE)
 
@@ -89,10 +88,9 @@ tail(df_confirmed2)
 # Pulling death cases
 
 ```{r echo=TRUE}
-death_global_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master
-/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
+death_global_url <- "https://github.com/BbosaR/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
 
-raw_death_global <- read.csv(file =death_global_url, stringsAsFactors = FALSE, fill =FALSE)
+raw_death_global <- read.csv(file = death_global_url, stringsAsFactors = FALSE)
 
 lapply(1:ncol(raw_death_global), function(i){
   if(all(is.na(raw_death_global[, i]))){
@@ -161,14 +159,12 @@ tail(death2)
 # Pulling recovered cases
 
 ```{r echo=TRUE}
-raw_recoveries <- read.csv(file = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19
-/master/csse_covid_19_data/csse_covid_19_time_series
-/time_series_covid19_recovered_global.csv", stringsAsFactors = FALSE, fill =FALSE)
+raw_recoveries <- read.csv(file = "https://github.com/BbosaR/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv", stringsAsFactors = FALSE, fill =FALSE)
 
 lapply(1:ncol(raw_recoveries), function(i){
   if(all(is.na(raw_recoveries[, i]))){
     raw_recoveries <<- raw_recoveries[, -i]
-    return(print(paste("Column", names(raw_recoveries)[i], "is missing", sep = " ")))
+    return(print(paste("Column", names(raw_recoveries)[i],"is missing", sep = " ")))
   } else {
     return(NULL)
   }
